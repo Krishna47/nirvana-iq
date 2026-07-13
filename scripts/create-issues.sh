@@ -238,28 +238,18 @@ gh issue create --title "NIQ-020: Record Demo Video" \
 echo ""
 echo "✅ All 20 issues created successfully!"
 echo ""
-echo "📌 Now adding issues to Nirvana IQ project..."
-echo "   (This may take a moment...)"
-echo ""
-
-# Get all issue numbers
-ISSUES=$(gh issue list -R "$REPO" --limit 100 --state all -q '.[] | .number')
-
-# Add all issues to project
-for ISSUE_NUM in $ISSUES; do
-  gh project item-add "$PROJECT_ID" --owner Krishna47 --id "$ISSUE_NUM" 2>/dev/null || true
-done
-
-echo "✅ Issues added to Nirvana IQ project!"
-echo ""
-echo "🎉 Setup complete! Visit your project board at:"
-echo "   https://github.com/users/Krishna47/projects/1/views/1"
+echo "🎉 Setup complete!"
 echo ""
 echo "📊 Summary:"
 echo "   ✓ 3 Milestones created (Sprint 1, 2, 3)"
 echo "   ✓ 4 Epics created"
 echo "   ✓ 16 Tasks/Stories created"
-echo "   ✓ All 20 issues added to project board"
+echo "   ✓ All issues labeled appropriately"
 echo ""
-echo "📌 NOTE: You can add milestones to issues manually via GitHub UI"
-echo "   or update them later using the gh CLI with issue numbers."
+echo "📌 Next Steps:"
+echo "   1. Visit your project: https://github.com/users/Krishna47/projects/1/views/1"
+echo "   2. Add issues to project board manually (drag & drop in the UI)"
+echo "   3. OR run: ./scripts/add-to-project.sh"
+echo ""
+echo "ℹ️  To assign milestones to issues, run:"
+echo "   ./scripts/assign-milestones.sh"
