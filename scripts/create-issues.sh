@@ -35,7 +35,7 @@ gh issue create --title "NIQ-001: Initialize GitHub Repository" \
 
 ## Acceptance Criteria
 - Repository created with README, MIT license, Python .gitignore." \
-  --label "foundation" --milestone "Sprint 1" -R "$REPO"
+  --label "foundation" -R "$REPO"
 
 # NIQ-002: Create Python Virtual Environment
 echo "Creating NIQ-002..."
@@ -44,7 +44,7 @@ gh issue create --title "NIQ-002: Create Python Virtual Environment" \
 
 ## Acceptance Criteria
 - Virtual environment created and activated." \
-  --label "foundation" --milestone "Sprint 1" -R "$REPO"
+  --label "foundation" -R "$REPO"
 
 # NIQ-003: Install Core Dependencies
 echo "Creating NIQ-003..."
@@ -53,7 +53,7 @@ gh issue create --title "NIQ-003: Install Core Dependencies" \
 
 ## Acceptance Criteria
 - requirements.txt created and packages installed." \
-  --label "python" --milestone "Sprint 1" -R "$REPO"
+  --label "python" -R "$REPO"
 
 # NIQ-004: Create Standard Folder Structure
 echo "Creating NIQ-004..."
@@ -62,7 +62,7 @@ gh issue create --title "NIQ-004: Create Standard Folder Structure" \
 
 ## Acceptance Criteria
 - Folders follow agreed project layout." \
-  --label "architecture" --milestone "Sprint 1" -R "$REPO"
+  --label "architecture" -R "$REPO"
 
 # NIQ-005: Configure Environment Variables
 echo "Creating NIQ-005..."
@@ -71,7 +71,7 @@ gh issue create --title "NIQ-005: Configure Environment Variables" \
 
 ## Acceptance Criteria
 - OpenAI key loaded from .env." \
-  --label "config" --milestone "Sprint 1" -R "$REPO"
+  --label "config" -R "$REPO"
 
 # NIQ-006: Build Streamlit Landing Page
 echo "Creating NIQ-006..."
@@ -80,7 +80,7 @@ gh issue create --title "NIQ-006: Build Streamlit Landing Page" \
 
 ## Acceptance Criteria
 - Landing page launches successfully." \
-  --label "frontend" --milestone "Sprint 1" -R "$REPO"
+  --label "frontend" -R "$REPO"
 
 # EPIC-002: Retail Data Platform
 echo "Creating EPIC-002..."
@@ -98,7 +98,7 @@ gh issue create --title "NIQ-007: Design Retail Database Schema" \
 
 ## Acceptance Criteria
 - ER model finalized." \
-  --label "database" --milestone "Sprint 1" -R "$REPO"
+  --label "database" -R "$REPO"
 
 # NIQ-008: Create Products Table
 echo "Creating NIQ-008..."
@@ -107,7 +107,7 @@ gh issue create --title "NIQ-008: Create Products Table" \
 
 ## Acceptance Criteria
 - Products table created." \
-  --label "database" --milestone "Sprint 1" -R "$REPO"
+  --label "database" -R "$REPO"
 
 # NIQ-009: Create Customers Table
 echo "Creating NIQ-009..."
@@ -116,7 +116,7 @@ gh issue create --title "NIQ-009: Create Customers Table" \
 
 ## Acceptance Criteria
 - Customers table created." \
-  --label "database" --milestone "Sprint 1" -R "$REPO"
+  --label "database" -R "$REPO"
 
 # NIQ-010: Create Orders Table
 echo "Creating NIQ-010..."
@@ -125,7 +125,7 @@ gh issue create --title "NIQ-010: Create Orders Table" \
 
 ## Acceptance Criteria
 - Orders and OrderItems tables created." \
-  --label "database" --milestone "Sprint 1" -R "$REPO"
+  --label "database" -R "$REPO"
 
 # NIQ-011: Seed Sample Retail Data
 echo "Creating NIQ-011..."
@@ -134,7 +134,7 @@ gh issue create --title "NIQ-011: Seed Sample Retail Data" \
 
 ## Acceptance Criteria
 - At least 1000 realistic rows inserted." \
-  --label "database" --milestone "Sprint 1" -R "$REPO"
+  --label "database" -R "$REPO"
 
 # EPIC-003: Enterprise AI Core
 echo "Creating EPIC-003..."
@@ -152,7 +152,7 @@ gh issue create --title "NIQ-012: Implement SQL Agent" \
 
 ## Acceptance Criteria
 - Natural language converted to SQL and executed safely." \
-  --label "agent" --label "sql" --milestone "Sprint 2" -R "$REPO"
+  --label "agent" --label "sql" -R "$REPO"
 
 # NIQ-013: Implement RAG Agent
 echo "Creating NIQ-013..."
@@ -161,7 +161,7 @@ gh issue create --title "NIQ-013: Implement RAG Agent" \
 
 ## Acceptance Criteria
 - Answers generated from company documents with citations." \
-  --label "agent" --label "rag" --milestone "Sprint 2" -R "$REPO"
+  --label "agent" --label "rag" -R "$REPO"
 
 # NIQ-014: Implement Supervisor Agent
 echo "Creating NIQ-014..."
@@ -170,7 +170,7 @@ gh issue create --title "NIQ-014: Implement Supervisor Agent" \
 
 ## Acceptance Criteria
 - Supervisor routes requests to correct agent." \
-  --label "agent" --label "langgraph" --milestone "Sprint 2" -R "$REPO"
+  --label "agent" --label "langgraph" -R "$REPO"
 
 # NIQ-015: Generate Business Charts
 echo "Creating NIQ-015..."
@@ -179,7 +179,7 @@ gh issue create --title "NIQ-015: Generate Business Charts" \
 
 ## Acceptance Criteria
 - Charts generated from SQL results." \
-  --label "analytics" --milestone "Sprint 2" -R "$REPO"
+  --label "analytics" -R "$REPO"
 
 # NIQ-016: Generate Executive PDF Report
 echo "Creating NIQ-016..."
@@ -188,7 +188,7 @@ gh issue create --title "NIQ-016: Generate Executive PDF Report" \
 
 ## Acceptance Criteria
 - Downloadable management report generated." \
-  --label "reports" --milestone "Sprint 2" -R "$REPO"
+  --label "reports" -R "$REPO"
 
 # EPIC-004: Production Readiness
 echo "Creating EPIC-004..."
@@ -206,7 +206,7 @@ gh issue create --title "NIQ-017: Dockerize Application" \
 
 ## Acceptance Criteria
 - Application runs via Docker." \
-  --label "devops" --milestone "Sprint 3" -R "$REPO"
+  --label "devops" -R "$REPO"
 
 # NIQ-018: Deploy to Azure
 echo "Creating NIQ-018..."
@@ -215,7 +215,7 @@ gh issue create --title "NIQ-018: Deploy to Azure" \
 
 ## Acceptance Criteria
 - Application deployed successfully." \
-  --label "azure" --milestone "Sprint 3" -R "$REPO"
+  --label "azure" -R "$REPO"
 
 # NIQ-019: Write Project Documentation
 echo "Creating NIQ-019..."
@@ -224,7 +224,7 @@ gh issue create --title "NIQ-019: Write Project Documentation" \
 
 ## Acceptance Criteria
 - README and architecture docs completed." \
-  --label "docs" --milestone "Sprint 3" -R "$REPO"
+  --label "docs" -R "$REPO"
 
 # NIQ-020: Record Demo Video
 echo "Creating NIQ-020..."
@@ -233,7 +233,7 @@ gh issue create --title "NIQ-020: Record Demo Video" \
 
 ## Acceptance Criteria
 - 5-10 minute demo available." \
-  --label "demo" --milestone "Sprint 3" -R "$REPO"
+  --label "demo" -R "$REPO"
 
 echo ""
 echo "✅ All 20 issues created successfully!"
@@ -260,3 +260,6 @@ echo "   ✓ 3 Milestones created (Sprint 1, 2, 3)"
 echo "   ✓ 4 Epics created"
 echo "   ✓ 16 Tasks/Stories created"
 echo "   ✓ All 20 issues added to project board"
+echo ""
+echo "📌 NOTE: You can add milestones to issues manually via GitHub UI"
+echo "   or update them later using the gh CLI with issue numbers."
