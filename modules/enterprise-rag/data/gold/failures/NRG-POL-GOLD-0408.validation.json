@@ -1,0 +1,82 @@
+{
+  "plan": {
+    "document_id": "NRG-POL-GOLD-0408",
+    "title": "Procurement Policy — Arizona #408",
+    "document_type": "policy",
+    "department": "Procurement",
+    "region": "Arizona",
+    "version": "1.0",
+    "status": "approved",
+    "effective_date": "2026-01-04",
+    "expiry_date": "",
+    "path": "raw/2026/policies/408-policy-arizona.md",
+    "required_facts": {
+      "document_id": "NRG-POL-GOLD-0408",
+      "region": "Arizona",
+      "department": "Procurement",
+      "product_code": "NRG-LAP-1004",
+      "product_name": "Nirvana Gamer X",
+      "week_number": "45",
+      "sample_units": "88",
+      "status": "approved",
+      "version": "1.0"
+    },
+    "sections": [
+      "Summary",
+      "Details",
+      "Controls",
+      "Contacts",
+      "Purpose and Scope",
+      "Policy Statements",
+      "Controls and Metrics",
+      "Executive Summary",
+      "Roles and Responsibilities",
+      "Exceptions and Escalation",
+      "Review Cycle",
+      "Keywords"
+    ],
+    "seed": 455,
+    "corpus": "gold",
+    "trap_tag": "",
+    "confidentiality": "internal",
+    "year": 2026,
+    "evaluation_questions": [
+      {
+        "id": "filler-408-sku",
+        "question": "Which product code is referenced in NRG-POL-GOLD-0408?",
+        "expected_answer": "NRG-LAP-1004",
+        "expected_sources": [
+          "NRG-POL-GOLD-0408"
+        ],
+        "tags": [
+          "exact"
+        ]
+      },
+      {
+        "id": "filler-408-region",
+        "question": "Which region does NRG-POL-GOLD-0408 cover?",
+        "expected_answer": "Arizona",
+        "expected_sources": [
+          "NRG-POL-GOLD-0408"
+        ],
+        "tags": [
+          "exact"
+        ]
+      },
+      {
+        "id": "filler-408-units",
+        "question": "What sample_units value appears in NRG-POL-GOLD-0408?",
+        "expected_answer": "88",
+        "expected_sources": [
+          "NRG-POL-GOLD-0408"
+        ],
+        "tags": [
+          "exact"
+        ]
+      }
+    ]
+  },
+  "errors": [
+    "missing section heading: Controls"
+  ]
+}

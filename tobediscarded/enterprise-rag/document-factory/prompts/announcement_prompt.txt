@@ -1,0 +1,19 @@
+Generate an internal ANNOUNCEMENT from the supplied facts.
+
+Required sections (use these exact headings):
+## Executive Summary
+## Announcement Message
+## Audience and Channels
+## Effective Changes
+## Support Contacts
+## Roles and Responsibilities
+## Exceptions and Escalation
+## Review Cycle
+## Keywords
+
+After Keywords, include:
+## Evaluation Questions
+with exactly three questions as a numbered list. Each item must include Question and Expected Answer lines.
+
+Target length: {{word_min}}-{{word_max}} words.
+Keep tone clear and operational for employees and store teams.

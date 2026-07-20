@@ -1,0 +1,13 @@
+{
+  "corpus": "gold",
+  "generated_at": "2026-07-20T04:20:39.603233+00:00",
+  "planned": 500,
+  "pending": null,
+  "written": 500,
+  "skipped": 0,
+  "failed": 0,
+  "validated_passed": null,
+  "validated_failed": null,
+  "duplicates": null,
+  "manifest_count": 500
+}

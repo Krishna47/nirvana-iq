@@ -1,0 +1,82 @@
+{
+  "plan": {
+    "document_id": "NRG-POL-GOLD-0282",
+    "title": "Procurement Policy — New York #282",
+    "document_type": "policy",
+    "department": "Procurement",
+    "region": "New York",
+    "version": "1.0",
+    "status": "approved",
+    "effective_date": "2026-01-13",
+    "expiry_date": "",
+    "path": "raw/2026/policies/282-policy-new-york.md",
+    "required_facts": {
+      "document_id": "NRG-POL-GOLD-0282",
+      "region": "New York",
+      "department": "Procurement",
+      "product_code": "NRG-LAP-1004",
+      "product_name": "Nirvana Gamer X",
+      "week_number": "23",
+      "sample_units": "82",
+      "status": "approved",
+      "version": "1.0"
+    },
+    "sections": [
+      "Summary",
+      "Details",
+      "Controls",
+      "Contacts",
+      "Purpose and Scope",
+      "Policy Statements",
+      "Controls and Metrics",
+      "Executive Summary",
+      "Roles and Responsibilities",
+      "Exceptions and Escalation",
+      "Review Cycle",
+      "Keywords"
+    ],
+    "seed": 329,
+    "corpus": "gold",
+    "trap_tag": "",
+    "confidentiality": "internal",
+    "year": 2026,
+    "evaluation_questions": [
+      {
+        "id": "filler-282-sku",
+        "question": "Which product code is referenced in NRG-POL-GOLD-0282?",
+        "expected_answer": "NRG-LAP-1004",
+        "expected_sources": [
+          "NRG-POL-GOLD-0282"
+        ],
+        "tags": [
+          "exact"
+        ]
+      },
+      {
+        "id": "filler-282-region",
+        "question": "Which region does NRG-POL-GOLD-0282 cover?",
+        "expected_answer": "New York",
+        "expected_sources": [
+          "NRG-POL-GOLD-0282"
+        ],
+        "tags": [
+          "exact"
+        ]
+      },
+      {
+        "id": "filler-282-units",
+        "question": "What sample_units value appears in NRG-POL-GOLD-0282?",
+        "expected_answer": "82",
+        "expected_sources": [
+          "NRG-POL-GOLD-0282"
+        ],
+        "tags": [
+          "exact"
+        ]
+      }
+    ]
+  },
+  "errors": [
+    "missing section heading: Controls"
+  ]
+}

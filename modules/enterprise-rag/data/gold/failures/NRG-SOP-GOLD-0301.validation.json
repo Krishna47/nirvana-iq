@@ -1,0 +1,83 @@
+{
+  "plan": {
+    "document_id": "NRG-SOP-GOLD-0301",
+    "title": "Cloud Operations Procedure — Texas #301",
+    "document_type": "procedure",
+    "department": "Cloud Operations",
+    "region": "Texas",
+    "version": "1.0",
+    "status": "approved",
+    "effective_date": "2026-02-05",
+    "expiry_date": "",
+    "path": "raw/2026/procedures/301-procedure-texas.md",
+    "required_facts": {
+      "document_id": "NRG-SOP-GOLD-0301",
+      "region": "Texas",
+      "department": "Cloud Operations",
+      "product_code": "NRG-HOM-2001",
+      "product_name": "Nirvana Smart Oven",
+      "week_number": "42",
+      "sample_units": "101",
+      "status": "approved",
+      "version": "1.0"
+    },
+    "sections": [
+      "Summary",
+      "Details",
+      "Controls",
+      "Contacts",
+      "Purpose and Scope",
+      "Prerequisites",
+      "Procedure Steps",
+      "Controls and Metrics",
+      "Executive Summary",
+      "Roles and Responsibilities",
+      "Exceptions and Escalation",
+      "Review Cycle",
+      "Keywords"
+    ],
+    "seed": 348,
+    "corpus": "gold",
+    "trap_tag": "",
+    "confidentiality": "internal",
+    "year": 2026,
+    "evaluation_questions": [
+      {
+        "id": "filler-301-sku",
+        "question": "Which product code is referenced in NRG-SOP-GOLD-0301?",
+        "expected_answer": "NRG-HOM-2001",
+        "expected_sources": [
+          "NRG-SOP-GOLD-0301"
+        ],
+        "tags": [
+          "exact"
+        ]
+      },
+      {
+        "id": "filler-301-region",
+        "question": "Which region does NRG-SOP-GOLD-0301 cover?",
+        "expected_answer": "Texas",
+        "expected_sources": [
+          "NRG-SOP-GOLD-0301"
+        ],
+        "tags": [
+          "exact"
+        ]
+      },
+      {
+        "id": "filler-301-units",
+        "question": "What sample_units value appears in NRG-SOP-GOLD-0301?",
+        "expected_answer": "101",
+        "expected_sources": [
+          "NRG-SOP-GOLD-0301"
+        ],
+        "tags": [
+          "exact"
+        ]
+      }
+    ]
+  },
+  "errors": [
+    "missing section heading: Details"
+  ]
+}

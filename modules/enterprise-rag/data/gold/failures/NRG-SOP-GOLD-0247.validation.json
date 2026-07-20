@@ -1,0 +1,83 @@
+{
+  "plan": {
+    "document_id": "NRG-SOP-GOLD-0247",
+    "title": "Legal Procedure — Georgia #247",
+    "document_type": "procedure",
+    "department": "Legal",
+    "region": "Georgia",
+    "version": "1.0",
+    "status": "approved",
+    "effective_date": "2026-02-05",
+    "expiry_date": "",
+    "path": "raw/2026/procedures/247-procedure-georgia.md",
+    "required_facts": {
+      "document_id": "NRG-SOP-GOLD-0247",
+      "region": "Georgia",
+      "department": "Legal",
+      "product_code": "NRG-HOM-2001",
+      "product_name": "Nirvana Smart Oven",
+      "week_number": "40",
+      "sample_units": "87",
+      "status": "approved",
+      "version": "1.0"
+    },
+    "sections": [
+      "Summary",
+      "Details",
+      "Controls",
+      "Contacts",
+      "Purpose and Scope",
+      "Prerequisites",
+      "Procedure Steps",
+      "Controls and Metrics",
+      "Executive Summary",
+      "Roles and Responsibilities",
+      "Exceptions and Escalation",
+      "Review Cycle",
+      "Keywords"
+    ],
+    "seed": 294,
+    "corpus": "gold",
+    "trap_tag": "",
+    "confidentiality": "internal",
+    "year": 2026,
+    "evaluation_questions": [
+      {
+        "id": "filler-247-sku",
+        "question": "Which product code is referenced in NRG-SOP-GOLD-0247?",
+        "expected_answer": "NRG-HOM-2001",
+        "expected_sources": [
+          "NRG-SOP-GOLD-0247"
+        ],
+        "tags": [
+          "exact"
+        ]
+      },
+      {
+        "id": "filler-247-region",
+        "question": "Which region does NRG-SOP-GOLD-0247 cover?",
+        "expected_answer": "Georgia",
+        "expected_sources": [
+          "NRG-SOP-GOLD-0247"
+        ],
+        "tags": [
+          "exact"
+        ]
+      },
+      {
+        "id": "filler-247-units",
+        "question": "What sample_units value appears in NRG-SOP-GOLD-0247?",
+        "expected_answer": "87",
+        "expected_sources": [
+          "NRG-SOP-GOLD-0247"
+        ],
+        "tags": [
+          "exact"
+        ]
+      }
+    ]
+  },
+  "errors": [
+    "missing section heading: Details"
+  ]
+}

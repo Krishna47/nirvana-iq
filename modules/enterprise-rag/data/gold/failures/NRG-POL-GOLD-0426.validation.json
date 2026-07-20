@@ -1,0 +1,82 @@
+{
+  "plan": {
+    "document_id": "NRG-POL-GOLD-0426",
+    "title": "Data Engineering Policy — Washington #426",
+    "document_type": "policy",
+    "department": "Data Engineering",
+    "region": "Washington",
+    "version": "1.0",
+    "status": "approved",
+    "effective_date": "2026-01-22",
+    "expiry_date": "",
+    "path": "raw/2026/policies/426-policy-washington.md",
+    "required_facts": {
+      "document_id": "NRG-POL-GOLD-0426",
+      "region": "Washington",
+      "department": "Data Engineering",
+      "product_code": "NRG-LAP-1004",
+      "product_name": "Nirvana Gamer X",
+      "week_number": "11",
+      "sample_units": "106",
+      "status": "approved",
+      "version": "1.0"
+    },
+    "sections": [
+      "Summary",
+      "Details",
+      "Controls",
+      "Contacts",
+      "Purpose and Scope",
+      "Policy Statements",
+      "Controls and Metrics",
+      "Executive Summary",
+      "Roles and Responsibilities",
+      "Exceptions and Escalation",
+      "Review Cycle",
+      "Keywords"
+    ],
+    "seed": 473,
+    "corpus": "gold",
+    "trap_tag": "",
+    "confidentiality": "internal",
+    "year": 2026,
+    "evaluation_questions": [
+      {
+        "id": "filler-426-sku",
+        "question": "Which product code is referenced in NRG-POL-GOLD-0426?",
+        "expected_answer": "NRG-LAP-1004",
+        "expected_sources": [
+          "NRG-POL-GOLD-0426"
+        ],
+        "tags": [
+          "exact"
+        ]
+      },
+      {
+        "id": "filler-426-region",
+        "question": "Which region does NRG-POL-GOLD-0426 cover?",
+        "expected_answer": "Washington",
+        "expected_sources": [
+          "NRG-POL-GOLD-0426"
+        ],
+        "tags": [
+          "exact"
+        ]
+      },
+      {
+        "id": "filler-426-units",
+        "question": "What sample_units value appears in NRG-POL-GOLD-0426?",
+        "expected_answer": "106",
+        "expected_sources": [
+          "NRG-POL-GOLD-0426"
+        ],
+        "tags": [
+          "exact"
+        ]
+      }
+    ]
+  },
+  "errors": [
+    "missing section heading: Controls"
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "plan": {
+    "document_id": "NRG-SOP-GOLD-0181",
+    "title": "Compliance Procedure — Texas #181",
+    "document_type": "procedure",
+    "department": "Compliance",
+    "region": "Texas",
+    "version": "1.0",
+    "status": "approved",
+    "effective_date": "2026-02-20",
+    "expiry_date": "",
+    "path": "raw/2026/procedures/181-procedure-texas.md",
+    "required_facts": {
+      "document_id": "NRG-SOP-GOLD-0181",
+      "region": "Texas",
+      "department": "Compliance",
+      "product_code": "NRG-LAP-1002",
+      "product_name": "Nirvana Pro 15",
+      "week_number": "26",
+      "sample_units": "101",
+      "status": "approved",
+      "version": "1.0"
+    },
+    "sections": [
+      "Summary",
+      "Details",
+      "Controls",
+      "Contacts",
+      "Purpose and Scope",
+      "Prerequisites",
+      "Procedure Steps",
+      "Controls and Metrics",
+      "Executive Summary",
+      "Roles and Responsibilities",
+      "Exceptions and Escalation",
+      "Review Cycle",
+      "Keywords"
+    ],
+    "seed": 228,
+    "corpus": "gold",
+    "trap_tag": "",
+    "confidentiality": "internal",
+    "year": 2026,
+    "evaluation_questions": [
+      {
+        "id": "filler-181-sku",
+        "question": "Which product code is referenced in NRG-SOP-GOLD-0181?",
+        "expected_answer": "NRG-LAP-1002",
+        "expected_sources": [
+          "NRG-SOP-GOLD-0181"
+        ],
+        "tags": [
+          "exact"
+        ]
+      },
+      {
+        "id": "filler-181-region",
+        "question": "Which region does NRG-SOP-GOLD-0181 cover?",
+        "expected_answer": "Texas",
+        "expected_sources": [
+          "NRG-SOP-GOLD-0181"
+        ],
+        "tags": [
+          "exact"
+        ]
+      },
+      {
+        "id": "filler-181-units",
+        "question": "What sample_units value appears in NRG-SOP-GOLD-0181?",
+        "expected_answer": "101",
+        "expected_sources": [
+          "NRG-SOP-GOLD-0181"
+        ],
+        "tags": [
+          "exact"
+        ]
+      }
+    ]
+  },
+  "errors": [
+    "missing section heading: Details"
+  ]
+}

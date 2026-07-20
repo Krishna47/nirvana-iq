@@ -1,0 +1,28 @@
+Write the full Markdown document for this plan.
+
+document_id: {{document_id}}
+title: {{title}}
+document_type: {{document_type}}
+department: {{department}}
+region: {{region}}
+version: {{version}}
+status: {{status}}
+effective_date: {{effective_date}}
+expiry_date: {{expiry_date}}
+
+Required facts (each value MUST appear verbatim in the document):
+{{required_facts}}
+
+Required sections (use as ## headings):
+{{sections}}
+
+Grounded evaluation Q&A (answers MUST appear in the document):
+{{evaluation_questions}}
+
+Constraints:
+- Start with YAML front matter listing document_id, title, document_type, department, region, version, status, effective_date, expiry_date, confidentiality.
+- Include an Executive Summary near the top when listed in sections.
+- Do not add facts that contradict the required facts.
+- Do not invent unknown NRG-* product codes.
+- Length: gold core docs ~400–1200 words; scale operational docs ~200–500 words.
+- Fictional demo only.

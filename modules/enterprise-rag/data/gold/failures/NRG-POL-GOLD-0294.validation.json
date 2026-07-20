@@ -1,0 +1,82 @@
+{
+  "plan": {
+    "document_id": "NRG-POL-GOLD-0294",
+    "title": "Sales Policy — North Carolina #294",
+    "document_type": "policy",
+    "department": "Sales",
+    "region": "North Carolina",
+    "version": "1.0",
+    "status": "approved",
+    "effective_date": "2026-01-25",
+    "expiry_date": "",
+    "path": "raw/2026/policies/294-policy-north-carolina.md",
+    "required_facts": {
+      "document_id": "NRG-POL-GOLD-0294",
+      "region": "North Carolina",
+      "department": "Sales",
+      "product_code": "NRG-MOB-3001",
+      "product_name": "Nirvana One Phone",
+      "week_number": "35",
+      "sample_units": "94",
+      "status": "approved",
+      "version": "1.0"
+    },
+    "sections": [
+      "Summary",
+      "Details",
+      "Controls",
+      "Contacts",
+      "Purpose and Scope",
+      "Policy Statements",
+      "Controls and Metrics",
+      "Executive Summary",
+      "Roles and Responsibilities",
+      "Exceptions and Escalation",
+      "Review Cycle",
+      "Keywords"
+    ],
+    "seed": 341,
+    "corpus": "gold",
+    "trap_tag": "",
+    "confidentiality": "internal",
+    "year": 2026,
+    "evaluation_questions": [
+      {
+        "id": "filler-294-sku",
+        "question": "Which product code is referenced in NRG-POL-GOLD-0294?",
+        "expected_answer": "NRG-MOB-3001",
+        "expected_sources": [
+          "NRG-POL-GOLD-0294"
+        ],
+        "tags": [
+          "exact"
+        ]
+      },
+      {
+        "id": "filler-294-region",
+        "question": "Which region does NRG-POL-GOLD-0294 cover?",
+        "expected_answer": "North Carolina",
+        "expected_sources": [
+          "NRG-POL-GOLD-0294"
+        ],
+        "tags": [
+          "exact"
+        ]
+      },
+      {
+        "id": "filler-294-units",
+        "question": "What sample_units value appears in NRG-POL-GOLD-0294?",
+        "expected_answer": "94",
+        "expected_sources": [
+          "NRG-POL-GOLD-0294"
+        ],
+        "tags": [
+          "exact"
+        ]
+      }
+    ]
+  },
+  "errors": [
+    "missing section heading: Details"
+  ]
+}

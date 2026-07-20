@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+
+# Local outputs
+*.log
+.coverage
+htmlcov/
+
+# Enterprise RAG factory outputs
+modules/enterprise-rag/data/scale/raw/
+modules/enterprise-rag/data/scale/manifests/
+modules/enterprise-rag/data/scale/failures/
+modules/enterprise-rag/data/plans/scale.jsonl
+modules/enterprise-rag/document-factory/.venv/
+modules/enterprise-rag/document-factory/.env
+
+# Parked for later deletion (keep until you intentionally remove)
+# tobediscarded/

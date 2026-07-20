@@ -1,0 +1,82 @@
+{
+  "plan": {
+    "document_id": "NRG-POL-GOLD-0204",
+    "title": "Customer Experience Policy — North Carolina #204",
+    "document_type": "policy",
+    "department": "Customer Experience",
+    "region": "North Carolina",
+    "version": "1.0",
+    "status": "approved",
+    "effective_date": "2026-01-16",
+    "expiry_date": "",
+    "path": "raw/2026/policies/204-policy-north-carolina.md",
+    "required_facts": {
+      "document_id": "NRG-POL-GOLD-0204",
+      "region": "North Carolina",
+      "department": "Customer Experience",
+      "product_code": "NRG-MOB-3001",
+      "product_name": "Nirvana One Phone",
+      "week_number": "49",
+      "sample_units": "84",
+      "status": "approved",
+      "version": "1.0"
+    },
+    "sections": [
+      "Summary",
+      "Details",
+      "Controls",
+      "Contacts",
+      "Purpose and Scope",
+      "Policy Statements",
+      "Controls and Metrics",
+      "Executive Summary",
+      "Roles and Responsibilities",
+      "Exceptions and Escalation",
+      "Review Cycle",
+      "Keywords"
+    ],
+    "seed": 251,
+    "corpus": "gold",
+    "trap_tag": "",
+    "confidentiality": "internal",
+    "year": 2026,
+    "evaluation_questions": [
+      {
+        "id": "filler-204-sku",
+        "question": "Which product code is referenced in NRG-POL-GOLD-0204?",
+        "expected_answer": "NRG-MOB-3001",
+        "expected_sources": [
+          "NRG-POL-GOLD-0204"
+        ],
+        "tags": [
+          "exact"
+        ]
+      },
+      {
+        "id": "filler-204-region",
+        "question": "Which region does NRG-POL-GOLD-0204 cover?",
+        "expected_answer": "North Carolina",
+        "expected_sources": [
+          "NRG-POL-GOLD-0204"
+        ],
+        "tags": [
+          "exact"
+        ]
+      },
+      {
+        "id": "filler-204-units",
+        "question": "What sample_units value appears in NRG-POL-GOLD-0204?",
+        "expected_answer": "84",
+        "expected_sources": [
+          "NRG-POL-GOLD-0204"
+        ],
+        "tags": [
+          "exact"
+        ]
+      }
+    ]
+  },
+  "errors": [
+    "missing section heading: Controls"
+  ]
+}

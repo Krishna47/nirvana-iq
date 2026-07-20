@@ -1,0 +1,113 @@
+default_gold_n: 500
+default_scale_n: 10000
+default_seed: 47
+default_concurrency: 3
+max_retries: 3
+retry_base_delay_seconds: 1.5
+duplicate_similarity_threshold: 0.92
+
+# Scale axes: 50 stores × 50 weeks × 4 types = 10,000
+scale_weeks: 50
+scale_doc_types:
+  - sales_weekly
+  - inventory_snapshot
+  - incident_stub
+  - store_announcement
+
+document_type_folders:
+  policy: policies
+  procedure: procedures
+  report: reports
+  runbook: runbooks
+  catalog: multimodal
+  sales_weekly: reports
+  inventory_snapshot: reports
+  incident_stub: reports
+  store_announcement: announcements
+  manual: manuals
+  incident_report: reports
+  meeting_minutes: meetings
+  contract: contracts
+  product_catalog: multimodal
+  architecture_document: architecture
+  announcement: announcements
+
+type_prefixes:
+  policy: POL
+  procedure: SOP
+  report: RPT
+  runbook: RBK
+  catalog: CAT
+  sales_weekly: RPT
+  inventory_snapshot: RPT
+  incident_stub: INC
+  store_announcement: ANN
+  manual: MAN
+  incident_report: INC
+  meeting_minutes: MTG
+  contract: CTR
+  product_catalog: CAT
+  architecture_document: ARC
+  announcement: ANN
+
+word_counts:
+  core:
+    min: 400
+    max: 1500
+  operational:
+    min: 200
+    max: 900
+  scale:
+    min: 150
+    max: 600
+
+document_classes:
+  core:
+    - policy
+    - procedure
+    - report
+    - catalog
+    - product_catalog
+    - contract
+    - architecture_document
+    - manual
+  operational:
+    - runbook
+    - incident_report
+    - incident_stub
+    - meeting_minutes
+    - announcement
+    - store_announcement
+    - sales_weekly
+    - inventory_snapshot
+
+required_sections:
+  common:
+    - Executive Summary
+    - Roles and Responsibilities
+    - Exceptions and Escalation
+    - Review Cycle
+    - Keywords
+  by_type:
+    policy:
+      - Purpose and Scope
+      - Policy Statements
+      - Controls and Metrics
+    procedure:
+      - Purpose and Scope
+      - Prerequisites
+      - Procedure Steps
+      - Controls and Metrics
+    report:
+      - Performance Highlights
+      - Metrics Analysis
+      - Risks and Issues
+      - Recommendations
+
+gold_models:
+  default_env: OPENAI_GOLD_MODEL
+  default: gpt-4.1-mini
+
+scale_models:
+  default_env: OPENAI_SCALE_MODEL
+  default: gpt-4.1-nano

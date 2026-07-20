@@ -1,0 +1,80 @@
+{
+  "plan": {
+    "document_id": "NRG-SOP-SUP-006",
+    "title": "Supplier Delay Standard Operating Procedure",
+    "document_type": "procedure",
+    "department": "Supply Chain",
+    "region": "United States",
+    "version": "1.2",
+    "status": "approved",
+    "effective_date": "2025-09-01",
+    "expiry_date": "",
+    "path": "raw/2025/procedures/06-supplier-delay-sop.md",
+    "required_facts": {
+      "document_id": "NRG-SOP-SUP-006",
+      "escalate_after_hours": "24",
+      "version": "1.2",
+      "status": "approved"
+    },
+    "sections": [
+      "Purpose",
+      "Triggers",
+      "Steps",
+      "Escalation",
+      "Purpose and Scope",
+      "Prerequisites",
+      "Procedure Steps",
+      "Controls and Metrics",
+      "Executive Summary",
+      "Roles and Responsibilities",
+      "Exceptions and Escalation",
+      "Review Cycle",
+      "Keywords"
+    ],
+    "seed": 47,
+    "corpus": "gold",
+    "trap_tag": "policy",
+    "confidentiality": "internal",
+    "year": 2025,
+    "evaluation_questions": [
+      {
+        "id": "sop-escalate",
+        "question": "After how many hours should a supplier delay be escalated?",
+        "expected_answer": "24",
+        "expected_sources": [
+          "NRG-SOP-SUP-006"
+        ],
+        "tags": [
+          "exact",
+          "policy"
+        ]
+      },
+      {
+        "id": "sop-version",
+        "question": "What version is the supplier delay SOP?",
+        "expected_answer": "1.2",
+        "expected_sources": [
+          "NRG-SOP-SUP-006"
+        ],
+        "tags": [
+          "policy"
+        ]
+      },
+      {
+        "id": "sop-status",
+        "question": "What is the status of the supplier delay SOP?",
+        "expected_answer": "approved",
+        "expected_sources": [
+          "NRG-SOP-SUP-006"
+        ],
+        "tags": [
+          "policy"
+        ]
+      }
+    ]
+  },
+  "errors": [
+    "missing section heading: Purpose",
+    "missing section heading: Steps"
+  ]
+}

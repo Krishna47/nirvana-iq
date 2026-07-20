@@ -1,0 +1,115 @@
+default_documents: 1000
+default_start_year: 2020
+default_end_year: 2026
+default_seed: 47
+default_concurrency: 3
+max_retries: 4
+retry_base_delay_seconds: 1.5
+duplicate_similarity_threshold: 0.92
+
+# Relative mix of document types (normalized at runtime).
+document_type_weights:
+  policy: 14
+  procedure: 12
+  report: 14
+  runbook: 10
+  incident_report: 8
+  meeting_minutes: 10
+  contract: 8
+  product_catalog: 6
+  architecture_document: 8
+  announcement: 10
+
+# Word count bounds by document class.
+word_counts:
+  core:
+    min: 800
+    max: 1500
+  operational:
+    min: 400
+    max: 900
+
+document_classes:
+  core:
+    - policy
+    - procedure
+    - report
+    - contract
+    - product_catalog
+    - architecture_document
+  operational:
+    - runbook
+    - incident_report
+    - meeting_minutes
+    - announcement
+
+type_prefixes:
+  policy: POL
+  procedure: SOP
+  report: RPT
+  runbook: RBK
+  incident_report: INC
+  meeting_minutes: MTG
+  contract: CTR
+  product_catalog: CAT
+  architecture_document: ARC
+  announcement: ANN
+
+required_sections:
+  common:
+    - Executive Summary
+    - Roles and Responsibilities
+    - Exceptions and Escalation
+    - Review Cycle
+    - Keywords
+  by_type:
+    policy:
+      - Purpose and Scope
+      - Policy Statements
+      - Controls and Metrics
+    procedure:
+      - Purpose and Scope
+      - Prerequisites
+      - Procedure Steps
+      - Controls and Metrics
+    report:
+      - Performance Highlights
+      - Metrics Analysis
+      - Risks and Issues
+      - Recommendations
+    runbook:
+      - Purpose and Triggers
+      - Operational Steps
+      - Verification and Rollback
+      - Controls and Metrics
+    incident_report:
+      - Incident Summary
+      - Timeline
+      - Impact Assessment
+      - Root Cause
+      - Corrective Actions
+    meeting_minutes:
+      - Attendees
+      - Agenda
+      - Decisions
+      - Action Items
+    contract:
+      - Parties and Term
+      - Commercial Terms
+      - Service Levels
+      - Termination and Remedies
+    product_catalog:
+      - Product Overview
+      - Specifications
+      - Pricing and Availability
+      - Merchandising Notes
+    architecture_document:
+      - Architecture Overview
+      - Components and Interfaces
+      - Data Flows
+      - Security and Operations
+    announcement:
+      - Announcement Message
+      - Audience and Channels
+      - Effective Changes
+      - Support Contacts

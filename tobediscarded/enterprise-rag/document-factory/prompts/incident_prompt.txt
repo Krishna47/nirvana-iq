@@ -1,0 +1,20 @@
+Generate an INCIDENT REPORT from the supplied facts.
+
+Required sections (use these exact headings):
+## Executive Summary
+## Incident Summary
+## Timeline
+## Impact Assessment
+## Root Cause
+## Corrective Actions
+## Roles and Responsibilities
+## Exceptions and Escalation
+## Review Cycle
+## Keywords
+
+After Keywords, include:
+## Evaluation Questions
+with exactly three questions as a numbered list. Each item must include Question and Expected Answer lines.
+
+Target length: {{word_min}}-{{word_max}} words.
+Keep timeline timestamps and impact metrics identical to the facts.

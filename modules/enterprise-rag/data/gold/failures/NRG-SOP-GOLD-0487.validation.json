@@ -1,0 +1,83 @@
+{
+  "plan": {
+    "document_id": "NRG-SOP-GOLD-0487",
+    "title": "Marketing Procedure — Georgia #487",
+    "document_type": "procedure",
+    "department": "Marketing",
+    "region": "Georgia",
+    "version": "1.0",
+    "status": "approved",
+    "effective_date": "2026-02-02",
+    "expiry_date": "",
+    "path": "raw/2026/procedures/487-procedure-georgia.md",
+    "required_facts": {
+      "document_id": "NRG-SOP-GOLD-0487",
+      "region": "Georgia",
+      "department": "Marketing",
+      "product_code": "NRG-LAP-1002",
+      "product_name": "Nirvana Pro 15",
+      "week_number": "20",
+      "sample_units": "87",
+      "status": "approved",
+      "version": "1.0"
+    },
+    "sections": [
+      "Summary",
+      "Details",
+      "Controls",
+      "Contacts",
+      "Purpose and Scope",
+      "Prerequisites",
+      "Procedure Steps",
+      "Controls and Metrics",
+      "Executive Summary",
+      "Roles and Responsibilities",
+      "Exceptions and Escalation",
+      "Review Cycle",
+      "Keywords"
+    ],
+    "seed": 534,
+    "corpus": "gold",
+    "trap_tag": "",
+    "confidentiality": "internal",
+    "year": 2026,
+    "evaluation_questions": [
+      {
+        "id": "filler-487-sku",
+        "question": "Which product code is referenced in NRG-SOP-GOLD-0487?",
+        "expected_answer": "NRG-LAP-1002",
+        "expected_sources": [
+          "NRG-SOP-GOLD-0487"
+        ],
+        "tags": [
+          "exact"
+        ]
+      },
+      {
+        "id": "filler-487-region",
+        "question": "Which region does NRG-SOP-GOLD-0487 cover?",
+        "expected_answer": "Georgia",
+        "expected_sources": [
+          "NRG-SOP-GOLD-0487"
+        ],
+        "tags": [
+          "exact"
+        ]
+      },
+      {
+        "id": "filler-487-units",
+        "question": "What sample_units value appears in NRG-SOP-GOLD-0487?",
+        "expected_answer": "87",
+        "expected_sources": [
+          "NRG-SOP-GOLD-0487"
+        ],
+        "tags": [
+          "exact"
+        ]
+      }
+    ]
+  },
+  "errors": [
+    "missing section heading: Details"
+  ]
+}

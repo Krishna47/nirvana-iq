@@ -1,0 +1,85 @@
+[
+  {
+    "id": "Q001",
+    "question": "When did the California laptop promotion end?",
+    "expected_answer": "March 31, 2026",
+    "expected_sources": [
+      "NRG-POL-SALES-001"
+    ]
+  },
+  {
+    "id": "Q002",
+    "question": "What discount applied during the 2026 California laptop campaign?",
+    "expected_answer": "12%",
+    "expected_sources": [
+      "NRG-POL-SALES-001"
+    ]
+  },
+  {
+    "id": "Q003",
+    "question": "What is the standard laptop reorder point?",
+    "expected_answer": "100 sellable units",
+    "expected_sources": [
+      "NRG-POL-INV-003"
+    ]
+  },
+  {
+    "id": "Q004",
+    "question": "Can an opened non-defective laptop be returned after 20 days?",
+    "expected_answer": "No. The return window is 15 days.",
+    "expected_sources": [
+      "NRG-POL-CX-004"
+    ]
+  },
+  {
+    "id": "Q005",
+    "question": "Why did California laptop sales decline in April 2026?",
+    "expected_answer": "The promotion expired and inventory fell below the reorder point after a supplier delay.",
+    "expected_sources": [
+      "NRG-RPT-SALES-010",
+      "NRG-RPT-INV-011",
+      "NRG-POL-SALES-001",
+      "NRG-POL-INV-003"
+    ]
+  },
+  {
+    "id": "Q006",
+    "question": "Which current policy version governs the California laptop promotion?",
+    "expected_answer": "Version 2.0",
+    "expected_sources": [
+      "NRG-POL-SALES-001"
+    ]
+  },
+  {
+    "id": "Q007",
+    "question": "What should happen when laptop supplier delays exceed 14 days?",
+    "expected_answer": "An executive exception review is required.",
+    "expected_sources": [
+      "NRG-SOP-SUP-006"
+    ]
+  },
+  {
+    "id": "Q008",
+    "question": "What security controls are required for enterprise AI systems?",
+    "expected_answer": "Access controls, protection of restricted data, logging, citations, and human approval.",
+    "expected_sources": [
+      "NRG-POL-SEC-009"
+    ]
+  },
+  {
+    "id": "Q009",
+    "question": "What was the April 2026 unit-sales decline compared with March?",
+    "expected_answer": "Approximately 22%",
+    "expected_sources": [
+      "NRG-RPT-SALES-010"
+    ]
+  },
+  {
+    "id": "Q010",
+    "question": "Which product corresponds to NRG-LAP-1003?",
+    "expected_answer": "Nirvana Flex 13",
+    "expected_sources": [
+      "NRG-CAT-PROD-012"
+    ]
+  }
+]

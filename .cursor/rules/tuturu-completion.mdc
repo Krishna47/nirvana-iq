@@ -1,0 +1,14 @@
+---
+description: Play Tuturu sound when completing user requests
+alwaysApply: true
+---
+
+# Tuturu completion sound
+
+When you finish completing a user request, end your final response with **Tuturu~!**
+
+The completion sound is played automatically by the Cursor `stop` hook from:
+
+`D:\Music\Anime Sounds\tuturu.mp3`
+
+Do not download alternate copies unless the user asks. Use the file at that path.

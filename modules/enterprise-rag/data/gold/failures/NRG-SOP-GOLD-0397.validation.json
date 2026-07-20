@@ -1,0 +1,83 @@
+{
+  "plan": {
+    "document_id": "NRG-SOP-GOLD-0397",
+    "title": "Information Security Procedure — Georgia #397",
+    "document_type": "procedure",
+    "department": "Information Security",
+    "region": "Georgia",
+    "version": "1.0",
+    "status": "approved",
+    "effective_date": "2026-02-20",
+    "expiry_date": "",
+    "path": "raw/2026/procedures/397-procedure-georgia.md",
+    "required_facts": {
+      "document_id": "NRG-SOP-GOLD-0397",
+      "region": "Georgia",
+      "department": "Information Security",
+      "product_code": "NRG-LAP-1002",
+      "product_name": "Nirvana Pro 15",
+      "week_number": "34",
+      "sample_units": "117",
+      "status": "approved",
+      "version": "1.0"
+    },
+    "sections": [
+      "Summary",
+      "Details",
+      "Controls",
+      "Contacts",
+      "Purpose and Scope",
+      "Prerequisites",
+      "Procedure Steps",
+      "Controls and Metrics",
+      "Executive Summary",
+      "Roles and Responsibilities",
+      "Exceptions and Escalation",
+      "Review Cycle",
+      "Keywords"
+    ],
+    "seed": 444,
+    "corpus": "gold",
+    "trap_tag": "",
+    "confidentiality": "internal",
+    "year": 2026,
+    "evaluation_questions": [
+      {
+        "id": "filler-397-sku",
+        "question": "Which product code is referenced in NRG-SOP-GOLD-0397?",
+        "expected_answer": "NRG-LAP-1002",
+        "expected_sources": [
+          "NRG-SOP-GOLD-0397"
+        ],
+        "tags": [
+          "exact"
+        ]
+      },
+      {
+        "id": "filler-397-region",
+        "question": "Which region does NRG-SOP-GOLD-0397 cover?",
+        "expected_answer": "Georgia",
+        "expected_sources": [
+          "NRG-SOP-GOLD-0397"
+        ],
+        "tags": [
+          "exact"
+        ]
+      },
+      {
+        "id": "filler-397-units",
+        "question": "What sample_units value appears in NRG-SOP-GOLD-0397?",
+        "expected_answer": "117",
+        "expected_sources": [
+          "NRG-SOP-GOLD-0397"
+        ],
+        "tags": [
+          "exact"
+        ]
+      }
+    ]
+  },
+  "errors": [
+    "missing section heading: Details"
+  ]
+}

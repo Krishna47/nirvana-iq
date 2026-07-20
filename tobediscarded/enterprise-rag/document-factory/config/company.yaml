@@ -1,0 +1,105 @@
+company_name: Nirvana Retail Group
+headquarters:
+  city: Charlotte
+  state: North Carolina
+  country: United States
+
+regions:
+  - California
+  - Texas
+  - New York
+  - Florida
+  - North Carolina
+
+departments:
+  - Sales
+  - Supply Chain
+  - Procurement
+  - Finance
+  - HR
+  - Information Security
+  - Data Engineering
+  - Cloud Operations
+  - Customer Experience
+  - Legal
+  - Merchandising
+  - Marketing
+  - Store Operations
+  - Compliance
+
+products:
+  - code: NRG-LAP-1001
+    name: Nirvana Air 14
+    category: Laptop
+    supplier: Apex Computing
+  - code: NRG-LAP-1002
+    name: Nirvana Pro 15
+    category: Laptop
+    supplier: Apex Computing
+  - code: NRG-LAP-1003
+    name: Nirvana Flex 13
+    category: Laptop
+    supplier: Horizon Devices
+  - code: NRG-LAP-1004
+    name: Nirvana Gamer X
+    category: Laptop
+    supplier: Vector Systems
+  - code: NRG-HOM-2001
+    name: Nirvana Smart Oven
+    category: Home
+    supplier: BluePeak Components
+  - code: NRG-HOM-2002
+    name: Nirvana Air Purifier
+    category: Home
+    supplier: BluePeak Components
+  - code: NRG-MOB-3001
+    name: Nirvana One Phone
+    category: Mobile
+    supplier: Horizon Devices
+  - code: NRG-TV-4001
+    name: Nirvana Vision 55
+    category: Television
+    supplier: Vector Systems
+
+suppliers:
+  - Apex Computing
+  - Horizon Devices
+  - Vector Systems
+  - Summit Logistics
+  - BluePeak Components
+
+systems:
+  - Retail Data Platform
+  - Order Management System
+  - Inventory Service
+  - Customer Portal
+  - Pricing Engine
+  - Promotion Service
+
+confidentiality_levels:
+  - public
+  - internal
+  - confidential
+  - restricted
+
+statuses:
+  - draft
+  - approved
+  - expired
+  - archived
+
+owners_by_department:
+  Sales: Director of Sales
+  Supply Chain: VP Supply Chain
+  Procurement: Director of Procurement
+  Finance: VP Finance
+  HR: Chief People Officer
+  Information Security: CISO
+  Data Engineering: Head of Data Engineering
+  Cloud Operations: Director of Cloud Operations
+  Customer Experience: Director of Customer Experience
+  Legal: General Counsel
+  Merchandising: Chief Merchandising Officer
+  Marketing: VP Marketing
+  Store Operations: VP Store Operations
+  Compliance: Chief Compliance Officer

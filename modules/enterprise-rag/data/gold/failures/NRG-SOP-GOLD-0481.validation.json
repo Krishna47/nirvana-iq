@@ -1,0 +1,83 @@
+{
+  "plan": {
+    "document_id": "NRG-SOP-GOLD-0481",
+    "title": "Information Security Procedure — Texas #481",
+    "document_type": "procedure",
+    "department": "Information Security",
+    "region": "Texas",
+    "version": "1.0",
+    "status": "approved",
+    "effective_date": "2026-02-23",
+    "expiry_date": "",
+    "path": "raw/2026/procedures/481-procedure-texas.md",
+    "required_facts": {
+      "document_id": "NRG-SOP-GOLD-0481",
+      "region": "Texas",
+      "department": "Information Security",
+      "product_code": "NRG-HOM-2001",
+      "product_name": "Nirvana Smart Oven",
+      "week_number": "14",
+      "sample_units": "81",
+      "status": "approved",
+      "version": "1.0"
+    },
+    "sections": [
+      "Summary",
+      "Details",
+      "Controls",
+      "Contacts",
+      "Purpose and Scope",
+      "Prerequisites",
+      "Procedure Steps",
+      "Controls and Metrics",
+      "Executive Summary",
+      "Roles and Responsibilities",
+      "Exceptions and Escalation",
+      "Review Cycle",
+      "Keywords"
+    ],
+    "seed": 528,
+    "corpus": "gold",
+    "trap_tag": "",
+    "confidentiality": "internal",
+    "year": 2026,
+    "evaluation_questions": [
+      {
+        "id": "filler-481-sku",
+        "question": "Which product code is referenced in NRG-SOP-GOLD-0481?",
+        "expected_answer": "NRG-HOM-2001",
+        "expected_sources": [
+          "NRG-SOP-GOLD-0481"
+        ],
+        "tags": [
+          "exact"
+        ]
+      },
+      {
+        "id": "filler-481-region",
+        "question": "Which region does NRG-SOP-GOLD-0481 cover?",
+        "expected_answer": "Texas",
+        "expected_sources": [
+          "NRG-SOP-GOLD-0481"
+        ],
+        "tags": [
+          "exact"
+        ]
+      },
+      {
+        "id": "filler-481-units",
+        "question": "What sample_units value appears in NRG-SOP-GOLD-0481?",
+        "expected_answer": "81",
+        "expected_sources": [
+          "NRG-SOP-GOLD-0481"
+        ],
+        "tags": [
+          "exact"
+        ]
+      }
+    ]
+  },
+  "errors": [
+    "missing section heading: Details"
+  ]
+}

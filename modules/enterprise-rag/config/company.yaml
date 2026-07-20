@@ -1,0 +1,234 @@
+company_name: Nirvana Retail Group
+headquarters:
+  city: Charlotte
+  state: North Carolina
+  country: United States
+
+regions:
+  - California
+  - Texas
+  - New York
+  - Florida
+  - North Carolina
+  - Illinois
+  - Washington
+  - Georgia
+  - Arizona
+  - Colorado
+
+departments:
+  - Sales
+  - Supply Chain
+  - Procurement
+  - Finance
+  - HR
+  - Information Security
+  - Data Engineering
+  - Cloud Operations
+  - Customer Experience
+  - Legal
+  - Merchandising
+  - Marketing
+  - Store Operations
+  - Compliance
+
+products:
+  - code: NRG-LAP-1001
+    name: Nirvana Air 14
+    category: Laptop
+    list_price_usd: 999
+    supplier: Apex Computing
+  - code: NRG-LAP-1002
+    name: Nirvana Pro 15
+    category: Laptop
+    list_price_usd: 1499
+    supplier: Apex Computing
+  - code: NRG-LAP-1003
+    name: Nirvana Flex 13
+    category: Laptop
+    list_price_usd: 1199
+    supplier: Horizon Devices
+  - code: NRG-LAP-1004
+    name: Nirvana Gamer X
+    category: Laptop
+    list_price_usd: 1899
+    supplier: Vector Systems
+  - code: NRG-HOM-2001
+    name: Nirvana Smart Oven
+    category: Home
+    list_price_usd: 449
+    supplier: BluePeak Components
+  - code: NRG-HOM-2002
+    name: Nirvana Air Purifier
+    category: Home
+    list_price_usd: 299
+    supplier: BluePeak Components
+  - code: NRG-MOB-3001
+    name: Nirvana One Phone
+    category: Mobile
+    list_price_usd: 799
+    supplier: Horizon Devices
+  - code: NRG-TV-4001
+    name: Nirvana Vision 55
+    category: TV
+    list_price_usd: 699
+    supplier: Vector Systems
+  - code: NRG-ACC-2001
+    name: Nirvana Dock Pro
+    category: Accessory
+    list_price_usd: 249
+    supplier: Apex Computing
+
+suppliers:
+  - Apex Computing
+  - Horizon Devices
+  - Vector Systems
+  - Summit Logistics
+  - BluePeak Components
+
+systems:
+  - Retail Data Platform
+  - Order Management System
+  - Inventory Service
+  - Customer Portal
+  - Pricing Engine
+  - Promotion Service
+
+# Enough store IDs for scale cartesian expansion (50 stores × 50 weeks × 4 types = 10k).
+stores:
+  - "0412"
+  - "0413"
+  - "0414"
+  - "0415"
+  - "0416"
+  - "0417"
+  - "0418"
+  - "0419"
+  - "0420"
+  - "0421"
+  - "0501"
+  - "0502"
+  - "0503"
+  - "0504"
+  - "0505"
+  - "0506"
+  - "0507"
+  - "0508"
+  - "0509"
+  - "0510"
+  - "0601"
+  - "0602"
+  - "0603"
+  - "0604"
+  - "0605"
+  - "0606"
+  - "0607"
+  - "0608"
+  - "0609"
+  - "0610"
+  - "0701"
+  - "0702"
+  - "0703"
+  - "0704"
+  - "0705"
+  - "0706"
+  - "0707"
+  - "0708"
+  - "0709"
+  - "0710"
+  - "0801"
+  - "0802"
+  - "0803"
+  - "0804"
+  - "0805"
+  - "0806"
+  - "0807"
+  - "0808"
+  - "0809"
+  - "0810"
+
+# Locked trap facts for RAG evals (LLM must not invent alternatives).
+traps:
+  california_promo:
+    document_id: NRG-POL-SALES-001
+    title: California Laptop Promotion Policy
+    department: Sales
+    region: California
+    current:
+      version: "2.0"
+      status: approved
+      effective_date: "2026-01-01"
+      expiry_date: "2026-03-31"
+      discount_percent: "12%"
+      category: COMPUTING-LAPTOPS
+    expired:
+      version: "1.0"
+      status: expired
+      effective_date: "2025-01-01"
+      expiry_date: "2025-03-31"
+      discount_percent: "10%"
+      category: COMPUTING-LAPTOPS
+  inventory:
+    document_id: NRG-POL-INV-003
+    title: Inventory Replenishment Policy
+    department: Supply Chain
+    region: United States
+    version: "3.1"
+    status: approved
+    effective_date: "2026-01-15"
+    reorder_point: "100 sellable units"
+    laptop_sku_example: NRG-LAP-1001
+  returns:
+    document_id: NRG-POL-CX-004
+    title: Electronics Return and Refund Policy
+    department: Customer Experience
+    region: United States
+    version: "2.0"
+    status: approved
+    effective_date: "2025-11-01"
+    return_window_days: "15 days"
+  security:
+    document_id: NRG-POL-SEC-009
+    title: Information Security Policy
+    department: Information Security
+    region: United States
+    version: "4.0"
+    status: approved
+    effective_date: "2026-01-01"
+    mfa_required: "true"
+  supplier_delay:
+    document_id: NRG-SOP-SUP-006
+    title: Supplier Delay Standard Operating Procedure
+    department: Supply Chain
+    region: United States
+    version: "1.2"
+    status: approved
+    effective_date: "2025-09-01"
+    escalate_after_hours: "24"
+  sales_report_q1:
+    document_id: NRG-RPT-SALES-010
+    title: Q1 2026 California Laptop Sales Report
+    department: Sales
+    region: California
+    version: "1.0"
+    status: approved
+    effective_date: "2026-04-10"
+    april_decline_reason: "promotion expired and inventory fell below reorder point"
+  inventory_risk:
+    document_id: NRG-RPT-INV-011
+    title: Inventory Risk Report April 2026
+    department: Supply Chain
+    region: California
+    version: "1.0"
+    status: approved
+    effective_date: "2026-04-12"
+    units_below_reorder: "NRG-LAP-1001"
+  catalog:
+    document_id: NRG-CAT-PROD-012
+    title: Laptop Product Catalog
+    department: Merchandising
+    region: United States
+    version: "2026.1"
+    status: approved
+    effective_date: "2026-01-01"
+    flagship_sku: NRG-LAP-1002

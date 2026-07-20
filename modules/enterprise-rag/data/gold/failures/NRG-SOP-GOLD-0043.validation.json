@@ -1,0 +1,83 @@
+{
+  "plan": {
+    "document_id": "NRG-SOP-GOLD-0043",
+    "title": "Supply Chain Procedure — Florida #43",
+    "document_type": "procedure",
+    "department": "Supply Chain",
+    "region": "Florida",
+    "version": "1.0",
+    "status": "approved",
+    "effective_date": "2026-02-17",
+    "expiry_date": "",
+    "path": "raw/2026/procedures/043-procedure-florida.md",
+    "required_facts": {
+      "document_id": "NRG-SOP-GOLD-0043",
+      "region": "Florida",
+      "department": "Supply Chain",
+      "product_code": "NRG-TV-4001",
+      "product_name": "Nirvana Vision 55",
+      "week_number": "44",
+      "sample_units": "83",
+      "status": "approved",
+      "version": "1.0"
+    },
+    "sections": [
+      "Summary",
+      "Details",
+      "Controls",
+      "Contacts",
+      "Purpose and Scope",
+      "Prerequisites",
+      "Procedure Steps",
+      "Controls and Metrics",
+      "Executive Summary",
+      "Roles and Responsibilities",
+      "Exceptions and Escalation",
+      "Review Cycle",
+      "Keywords"
+    ],
+    "seed": 90,
+    "corpus": "gold",
+    "trap_tag": "",
+    "confidentiality": "internal",
+    "year": 2026,
+    "evaluation_questions": [
+      {
+        "id": "filler-43-sku",
+        "question": "Which product code is referenced in NRG-SOP-GOLD-0043?",
+        "expected_answer": "NRG-TV-4001",
+        "expected_sources": [
+          "NRG-SOP-GOLD-0043"
+        ],
+        "tags": [
+          "exact"
+        ]
+      },
+      {
+        "id": "filler-43-region",
+        "question": "Which region does NRG-SOP-GOLD-0043 cover?",
+        "expected_answer": "Florida",
+        "expected_sources": [
+          "NRG-SOP-GOLD-0043"
+        ],
+        "tags": [
+          "exact"
+        ]
+      },
+      {
+        "id": "filler-43-units",
+        "question": "What sample_units value appears in NRG-SOP-GOLD-0043?",
+        "expected_answer": "83",
+        "expected_sources": [
+          "NRG-SOP-GOLD-0043"
+        ],
+        "tags": [
+          "exact"
+        ]
+      }
+    ]
+  },
+  "errors": [
+    "missing section heading: Details"
+  ]
+}
