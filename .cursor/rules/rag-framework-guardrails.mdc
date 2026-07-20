@@ -1,0 +1,35 @@
+---
+description: RAG framework adoption guardrails — when LangChain/LangGraph/LlamaIndex are allowed
+alwaysApply: true
+---
+
+# RAG framework guardrails
+
+When working on Nirvana IQ enterprise-rag (pipelines, API, UI, deps):
+
+## Default stack
+
+- UI: React (Evolution Lab + Compare)
+- API: FastAPI
+- Vector DB: Qdrant
+- Models: OpenAI (embed + chat)
+- v1–v4: plain Python only — no LangChain, LangGraph, or LlamaIndex
+
+## When frameworks are allowed
+
+| Versions | Allowed |
+|----------|---------|
+| v1–v4 | Plain Python + Qdrant + OpenAI + FastAPI only |
+| v5–v7 | Optional LlamaIndex for retrieval / indexes / metadata |
+| v8+ | LangGraph for agentic retrieve → check → retry |
+| Any | LangChain only as thin glue — never the foundation |
+
+## Hard rules
+
+- Do not add LangChain / LangGraph / LlamaIndex dependencies or imports to v1–v4 unless the user explicitly overrides this guardrail in the current message.
+- Do not rewrite an older pipeline version just to adopt a framework.
+- Keep Qdrant as the vector store; frameworks wrap it, they do not replace it.
+- React must call FastAPI only; do not put framework clients in the frontend.
+- Prefer scorecard deltas over pulling in frameworks early.
+
+If the user asks to use all three frameworks on early versions, push back once with this table, then proceed only if they explicitly override.

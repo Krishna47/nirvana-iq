@@ -36,3 +36,19 @@ modules/enterprise-rag/
 9. v9 multimodal
 10. v10 self-RAG
 11. Promote a chosen stack into `final-production/`
+
+## Framework guardrails
+
+Do **not** add LangChain / LangGraph / LlamaIndex to v1–v4 by default.
+
+| Versions | Stack |
+|----------|--------|
+| v1–v4 | Plain Python + Qdrant + OpenAI + FastAPI |
+| v5–v7 | Optional LlamaIndex (retrieval / indexes / metadata) |
+| v8+ | LangGraph for agentic retrieve → check → retry |
+| LangChain | Thin glue only if needed; not the foundation |
+
+- Never rewrite an older version just to introduce a framework.
+- React → FastAPI only; frameworks stay inside pipeline code.
+- Qdrant remains the vector DB for all versions.
+- Enforced in `.cursor/skills/nirvana-iq-portfolio/SKILL.md` and `.cursor/rules/rag-framework-guardrails.mdc`.

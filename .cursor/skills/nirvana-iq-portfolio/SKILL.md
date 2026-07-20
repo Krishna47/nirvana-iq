@@ -67,6 +67,27 @@ Preferred order:
 
 Highlight the expired California promo policy (`status: expired` vs current) as the interview story for v7 metadata.
 
+## Framework guardrails (LangChain / LangGraph / LlamaIndex)
+
+Do **not** add these to v1–v4 by default. Prefer measured pipeline deltas over framework adoption.
+
+| Versions | Stack |
+|----------|--------|
+| v1–v4 | Plain Python + Qdrant + OpenAI + FastAPI |
+| v5–v7 | Optional LlamaIndex (retrieval / indexes / metadata) |
+| v8+ | LangGraph for agentic retrieve → check → retry |
+| LangChain | Only as thin glue if needed; not the foundation |
+
+Rules:
+
+- Never rewrite an older version just to introduce a framework.
+- React talks only to FastAPI; frameworks stay inside pipeline code.
+- Qdrant remains the vector DB regardless of LangChain / LlamaIndex / LangGraph.
+- If asked to add all three frameworks on early versions, follow this table unless the user explicitly overrides.
+- UI target: React Evolution Lab (version bar + ask + sources/chunks/metrics) and Compare view (same question × versions).
+
+Product stack (locked unless user overrides): React UI, FastAPI, Qdrant, OpenAI embeddings + chat.
+
 ## Per-module deliverables
 
 Each module must include:

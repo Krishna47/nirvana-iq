@@ -51,3 +51,9 @@ Basic retrieval can surface the expired doc; metadata filters (v7) are the enter
 - Hybrid + rerank: higher latency/cost, better precision
 - Metadata filters: more product logic, fewer wrong operational answers
 - Agentic / self-RAG: multi-hop wins, harder to eval and operate
+
+## Framework guardrails
+
+v1–v4: plain Python + Qdrant + OpenAI + FastAPI.  
+v5–v7: optional LlamaIndex. v8+: LangGraph for agentic loops. LangChain = thin glue only.  
+See `modules/enterprise-rag/docs/rag-ladder.md` and `.cursor/rules/rag-framework-guardrails.mdc`.
