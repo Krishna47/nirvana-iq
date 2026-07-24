@@ -15,6 +15,8 @@ if str(MODULE_ROOT) not in sys.path:
 from pipelines.registry import get_pipeline, list_versions  # noqa: E402
 from shared.contracts import run_pipeline  # noqa: E402
 from shared.corpus import load_questions  # noqa: E402
+from shared.indexing import index_gold  # noqa: E402
+from shared.settings import load_env  # noqa: E402
 
 
 def cmd_list(_: argparse.Namespace) -> None:
@@ -23,6 +25,7 @@ def cmd_list(_: argparse.Namespace) -> None:
 
 
 def cmd_ask(args: argparse.Namespace) -> None:
+    load_env()
     pipeline = get_pipeline(args.version)
     result = run_pipeline(pipeline, args.question)
     if args.json:
@@ -36,10 +39,23 @@ def cmd_ask(args: argparse.Namespace) -> None:
     print(result.answer)
 
 
+def cmd_index(args: argparse.Namespace) -> None:
+    load_env()
+    summary = index_gold(
+        args.version,
+        recreate=args.recreate,
+        limit_docs=args.limit_docs,
+    )
+    print(json.dumps(summary, indent=2))
+
+
 def cmd_eval(args: argparse.Namespace) -> None:
     """Smoke eval: citation overlap with expected_sources (not full answer scoring)."""
+    load_env()
     pipeline = get_pipeline(args.version)
     questions = load_questions()
+    if args.limit is not None:
+        questions = questions[: args.limit]
     hits = 0
     total = 0
     rows: list[dict] = []
@@ -84,8 +100,15 @@ def build_parser() -> argparse.ArgumentParser:
     ask_p.add_argument("--json", action="store_true")
     ask_p.set_defaults(func=cmd_ask)
 
+    index_p = sub.add_parser("index", help="Embed gold corpus into Qdrant Cloud")
+    index_p.add_argument("--version", default="v1_basic_rag")
+    index_p.add_argument("--recreate", action="store_true", help="Drop and recreate collection")
+    index_p.add_argument("--limit-docs", type=int, default=None, help="Index only first N docs (smoke)")
+    index_p.set_defaults(func=cmd_index)
+
     eval_p = sub.add_parser("eval", help="Run citation smoke eval on questions.json")
     eval_p.add_argument("--version", default="v1_basic_rag")
+    eval_p.add_argument("--limit", type=int, default=None, help="Eval only first N questions")
     eval_p.set_defaults(func=cmd_eval)
 
     return parser

@@ -14,3 +14,7 @@ Citation hit rate = share of questions where retrieved citations intersect `expe
 ## Scorecard
 
 Cross-version results: [scorecard.md](scorecard.md)
+
+## Demo cases (UI paste)
+
+Interview failure demos by version: [demo-cases/](demo-cases/)

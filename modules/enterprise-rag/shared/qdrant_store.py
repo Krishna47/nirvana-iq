@@ -1,0 +1,76 @@
+"""Qdrant Cloud client helpers."""
+
+from __future__ import annotations
+
+import hashlib
+import uuid
+from typing import Any
+
+from qdrant_client import QdrantClient
+from qdrant_client.http import models as qm
+
+from .openai_client import EMBED_DIM
+from .settings import collection_name, settings
+
+
+def get_qdrant() -> QdrantClient:
+    cfg = settings()
+    return QdrantClient(url=cfg["qdrant_url"], api_key=cfg["qdrant_api_key"], timeout=120)
+
+
+def ensure_collection(version: str, *, recreate: bool = False) -> str:
+    client = get_qdrant()
+    name = collection_name(version)
+    exists = client.collection_exists(name)
+    if exists and recreate:
+        client.delete_collection(name)
+        exists = False
+    if not exists:
+        client.create_collection(
+            collection_name=name,
+            vectors_config=qm.VectorParams(size=EMBED_DIM, distance=qm.Distance.COSINE),
+        )
+    return name
+
+
+def point_id(document_id: str, path: str, chunk_index: int) -> str:
+    raw = f"{document_id}|{path}|{chunk_index}"
+    digest = hashlib.sha256(raw.encode("utf-8")).hexdigest()
+    return str(uuid.UUID(digest[:32]))
+
+
+def upsert_points(
+    version: str,
+    *,
+    vectors: list[list[float]],
+    payloads: list[dict[str, Any]],
+    ids: list[str],
+) -> None:
+    if not vectors:
+        return
+    if not (len(vectors) == len(payloads) == len(ids)):
+        raise ValueError("vectors, payloads, and ids must be the same length")
+    client = get_qdrant()
+    name = collection_name(version)
+    points = [
+        qm.PointStruct(id=pid, vector=vector, payload=payload)
+        for pid, vector, payload in zip(ids, vectors, payloads, strict=True)
+    ]
+    client.upsert(collection_name=name, points=points, wait=True)
+
+
+def search(
+    version: str,
+    *,
+    query_vector: list[float],
+    top_k: int = 4,
+) -> list[qm.ScoredPoint]:
+    client = get_qdrant()
+    name = collection_name(version)
+    response = client.query_points(
+        collection_name=name,
+        query=query_vector,
+        limit=top_k,
+        with_payload=True,
+    )
+    return list(response.points)

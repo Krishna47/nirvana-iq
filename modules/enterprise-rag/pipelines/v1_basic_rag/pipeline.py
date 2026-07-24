@@ -1,6 +1,6 @@
 """v1 — Basic RAG baseline.
 
-Fixed-size character chunks + dense retrieval placeholder + LLM answer stub.
+Fixed-size character chunks + dense Qdrant retrieval + OpenAI generation.
 """
 
 from __future__ import annotations
@@ -9,69 +9,58 @@ import time
 from dataclasses import dataclass
 
 from shared.contracts import PipelineResult, RetrievedChunk
-from shared.corpus import load_document_text, load_manifest
+from shared.openai_client import chat_answer, embed_query
+from shared.qdrant_store import search
 
 
 VERSION = "v1_basic_rag"
-CHUNK_SIZE = 800
-CHUNK_OVERLAP = 0
 TOP_K = 4
-
-
-def _chunk_text(text: str, size: int = CHUNK_SIZE, overlap: int = CHUNK_OVERLAP) -> list[str]:
-    if size <= 0:
-        raise ValueError("chunk size must be positive")
-    step = max(size - overlap, 1)
-    return [text[i : i + size] for i in range(0, len(text), step)]
-
-
-def _keyword_score(question: str, chunk: str) -> float:
-    """Temporary stand-in until embeddings are wired."""
-    q_terms = {t.lower() for t in question.split() if len(t) > 2}
-    if not q_terms:
-        return 0.0
-    c_lower = chunk.lower()
-    hits = sum(1 for t in q_terms if t in c_lower)
-    return hits / len(q_terms)
 
 
 @dataclass
 class BasicRagPipeline:
     version: str = VERSION
+    top_k: int = TOP_K
 
     def answer(self, question: str) -> PipelineResult:
         started = time.perf_counter()
-        scored: list[RetrievedChunk] = []
+        query_vector = embed_query(question)
+        hits = search(self.version, query_vector=query_vector, top_k=self.top_k)
 
-        for doc in load_manifest():
-            text = load_document_text(doc["path"])
-            for chunk in _chunk_text(text):
-                score = _keyword_score(question, chunk)
-                if score <= 0:
-                    continue
-                scored.append(
-                    RetrievedChunk(
-                        document_id=doc["document_id"],
-                        path=doc["path"],
-                        text=chunk,
-                        score=score,
-                        metadata={
-                            "status": doc.get("status"),
-                            "version": doc.get("version"),
-                            "effective_date": doc.get("effective_date"),
-                        },
-                    )
+        top: list[RetrievedChunk] = []
+        for hit in hits:
+            payload = hit.payload or {}
+            top.append(
+                RetrievedChunk(
+                    document_id=str(payload.get("document_id") or ""),
+                    path=str(payload.get("path") or ""),
+                    text=str(payload.get("text") or ""),
+                    score=float(hit.score or 0.0),
+                    metadata={
+                        "status": payload.get("status"),
+                        "version": payload.get("doc_version"),
+                        "effective_date": payload.get("effective_date"),
+                        "expiry_date": payload.get("expiry_date"),
+                        "region": payload.get("region"),
+                        "chunk_index": payload.get("chunk_index"),
+                    },
                 )
+            )
 
-        scored.sort(key=lambda c: c.score, reverse=True)
-        top = scored[:TOP_K]
-        citations = list(dict.fromkeys(c.document_id for c in top))
-        context = "\n\n---\n\n".join(c.text for c in top) if top else ""
-
+        citations = list(dict.fromkeys(c.document_id for c in top if c.document_id))
+        context_blocks = []
+        for chunk in top:
+            context_blocks.append(
+                f"document_id: {chunk.document_id}\n"
+                f"path: {chunk.path}\n"
+                f"status: {chunk.metadata.get('status')}\n"
+                f"{chunk.text}"
+            )
+        context = "\n\n---\n\n".join(context_blocks)
         answer = (
-            f"[v1 stub] Top context for: {question}\n\n{context[:1200]}"
+            chat_answer(question=question, context=context, version=self.version)
             if context
-            else f"[v1 stub] No chunks retrieved for: {question}"
+            else "No relevant documents were retrieved from the gold corpus."
         )
 
         latency_ms = (time.perf_counter() - started) * 1000
@@ -82,7 +71,7 @@ class BasicRagPipeline:
             citations=citations,
             retrieved_chunks=top,
             latency_ms=latency_ms,
-            notes="Basic RAG: fixed chunks; keyword score placeholder for dense retrieval",
+            notes="Basic RAG: fixed 800-char chunks, Qdrant dense retrieve, OpenAI generate",
         )
 
 

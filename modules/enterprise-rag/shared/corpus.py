@@ -62,3 +62,56 @@ def resolve_doc_path(relative_path: str) -> Path:
 
 def load_document_text(relative_path: str) -> str:
     return resolve_doc_path(relative_path).read_text(encoding="utf-8")
+
+
+def find_documents_by_id(
+    document_id: str,
+    *,
+    status: str | None = None,
+    version: str | None = None,
+    document_type: str | None = None,
+    include_text: bool = True,
+) -> list[dict[str, Any]]:
+    """Return manifest rows matching document_id (may be multiple versions)."""
+    needle = document_id.strip()
+    if not needle:
+        return []
+
+    matches: list[dict[str, Any]] = []
+    for doc in load_manifest():
+        if str(doc.get("document_id") or "") != needle:
+            continue
+        if status is not None and str(doc.get("status") or "") != status:
+            continue
+        if version is not None and str(doc.get("version") or "") != version:
+            continue
+        if document_type is not None and str(doc.get("document_type") or "") != document_type:
+            continue
+
+        row = {
+            "document_id": doc.get("document_id"),
+            "title": doc.get("title"),
+            "document_type": doc.get("document_type"),
+            "department": doc.get("department"),
+            "region": doc.get("region"),
+            "version": doc.get("version"),
+            "status": doc.get("status"),
+            "effective_date": doc.get("effective_date"),
+            "expiry_date": doc.get("expiry_date"),
+            "path": doc.get("path"),
+            "trap_tag": doc.get("trap_tag"),
+            "confidentiality": doc.get("confidentiality"),
+        }
+        if include_text:
+            path = doc.get("path")
+            if not path:
+                row["text"] = ""
+                row["error"] = "manifest row missing path"
+            else:
+                try:
+                    row["text"] = load_document_text(str(path))
+                except FileNotFoundError:
+                    row["text"] = ""
+                    row["error"] = f"file not found: {path}"
+        matches.append(row)
+    return matches

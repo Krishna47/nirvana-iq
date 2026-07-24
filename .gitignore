@@ -29,6 +29,7 @@ modules/enterprise-rag/data/scale/failures/
 modules/enterprise-rag/data/plans/scale.jsonl
 modules/enterprise-rag/document-factory/.venv/
 modules/enterprise-rag/document-factory/.env
+modules/enterprise-rag/api/.env
 
 # Parked for later deletion (keep until you intentionally remove)
 # tobediscarded/

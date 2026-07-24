@@ -45,10 +45,26 @@ Winner stack → [`final-production/`](final-production/).
 
 ```bash
 # from repo root
+pip install -r modules/enterprise-rag/api/requirements.txt
+# ensure modules/enterprise-rag/api/.env has OpenAI + Qdrant Cloud keys
+
+python modules/enterprise-rag/cli.py index --version v1_basic_rag --recreate
 python modules/enterprise-rag/cli.py list
 python modules/enterprise-rag/cli.py ask --version v1_basic_rag --question "When did the California laptop promotion end?"
-python modules/enterprise-rag/cli.py eval --version v1_basic_rag
+python modules/enterprise-rag/cli.py eval --version v1_basic_rag --limit 20
+
+uvicorn api.main:app --app-dir modules/enterprise-rag --reload --port 8000
 ```
+
+UI (separate terminal):
+
+```bash
+cd modules/enterprise-rag/web
+npm install
+npm run dev
+```
+
+Open http://127.0.0.1:5173 (proxies `/api` → FastAPI).
 
 ## Layout
 
