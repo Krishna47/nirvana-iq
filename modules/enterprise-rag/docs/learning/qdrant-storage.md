@@ -65,12 +65,22 @@ Distance metric: **Cosine**. Vector size: **1536**.
 
 - The chat model’s answer (generated on the fly)  
 - Separate “document” rows for the whole file (we store **chunks**)  
-- A second copy of embeddings for hybrid/BM25 (that’s a later design)
+- For **v1/v2**: a second BM25 index (v3 adds named sparse `bm25` + dense `dense` with RRF)
 
 Original full files still live on disk under `data/gold/raw/…` and are also exposed by `GET /documents/{document_id}` for the Documents UI.
+
+### v3 hybrid collections
+
+`nrg_gold_v3_hybrid_search` uses **named** vectors:
+
+- `dense` — OpenAI embedding (cosine, 1536)
+- `bm25` — FastEmbed `Qdrant/bm25` sparse (IDF modifier)
+
+Ask path prefetches both channels and fuses with **RRF**. v1/v2 keep a single unnamed dense vector.
 
 ### Interview talking points
 
 - “Vector DB holds dual representation: dense vector for recall, payload text for generation.”
 - “Idempotent point ids let us re-index without random duplicates.”
 - “Payload-rich design unlocks metadata filtering without re-embedding.”
+- “v3 adds sparse BM25 for SKU/ID exact match, fused with dense via RRF.”

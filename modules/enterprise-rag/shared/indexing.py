@@ -7,7 +7,13 @@ from typing import Any, Iterator
 
 from .corpus import load_document_text, load_manifest
 from .openai_client import embed_texts
-from .qdrant_store import ensure_collection, point_id, upsert_points
+from .qdrant_store import (
+    ensure_collection,
+    is_hybrid_version,
+    point_id,
+    upsert_hybrid_points,
+    upsert_points,
+)
 
 DEFAULT_CHUNK_SIZE = 800
 DEFAULT_CHUNK_OVERLAP = 0
@@ -22,6 +28,7 @@ _HEADING_RE = re.compile(r"^(#{1,3})\s+.+", re.MULTILINE)
 # Version → (strategy, chunk_size, chunk_overlap)
 _VERSION_CHUNKING: dict[str, tuple[str, int, int]] = {
     "v2_better_chunking": ("section", SECTION_CHUNK_SIZE, SECTION_CHUNK_OVERLAP),
+    "v3_hybrid_search": ("section", SECTION_CHUNK_SIZE, SECTION_CHUNK_OVERLAP),
 }
 
 
@@ -133,6 +140,7 @@ def index_gold(
     overlap = default_overlap if chunk_overlap is None else chunk_overlap
 
     collection = ensure_collection(version, recreate=recreate)
+    hybrid = is_hybrid_version(version)
     pending_texts: list[str] = []
     pending_payloads: list[dict[str, Any]] = []
     pending_ids: list[str] = []
@@ -143,7 +151,16 @@ def index_gold(
         if not pending_texts:
             return
         vectors = embed_texts(pending_texts, batch_size=EMBED_BATCH)
-        upsert_points(version, vectors=vectors, payloads=pending_payloads, ids=pending_ids)
+        if hybrid:
+            upsert_hybrid_points(
+                version,
+                dense_vectors=vectors,
+                texts=pending_texts,
+                payloads=pending_payloads,
+                ids=pending_ids,
+            )
+        else:
+            upsert_points(version, vectors=vectors, payloads=pending_payloads, ids=pending_ids)
         total += len(pending_texts)
         pending_texts, pending_payloads, pending_ids = [], [], []
 
@@ -181,6 +198,7 @@ def index_gold(
         "chunks": total,
         "version": version,
         "strategy": strategy,
+        "hybrid": hybrid,
         "chunk_size": size,
         "chunk_overlap": overlap,
     }

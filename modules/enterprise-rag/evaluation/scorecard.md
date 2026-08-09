@@ -4,11 +4,11 @@ Same gold corpus. Same curated `questions.json`. Different pipelines.
 
 | Metric | v1 | v2 | v3 | v4 | v5 | v6 | v7 | v8 | v9 | v10 |
 |--------|----|----|----|----|----|----|----|----|----|-----|
-| Citation hit rate | TBD | 1.00 (n=20 smoke) | — | — | — | — | — | — | — | — |
-| Answer graded score | stub | stub | — | — | — | — | — | — | — | — |
-| Expired-doc mistakes | TBD | still open | — | — | — | — | **target: low** | — | — | — |
-| p50 latency (ms) | TBD | ~2830 (n=20) | — | — | — | — | — | — | — | — |
-| Notes | fixed 800/0 chunks | section H1-H3 + overlap 120; fixes mid-section cuts | stub | stub | stub | stub | metadata | agentic | multimodal | self-rag |
+| Citation hit rate | TBD | 1.00 (n=20 smoke) | 1.00 (n=20 smoke) | — | — | — | — | — | — | — |
+| Answer graded score | stub | stub | stub | — | — | — | — | — | — | — |
+| Expired-doc mistakes | TBD | still open | still open | — | — | — | **target: low** | — | — | — |
+| p50 latency (ms) | TBD | ~2830 (n=20) | ~2607 (n=20) | — | — | — | — | — | — | — |
+| Notes | fixed 800/0 chunks | section H1-H3 + overlap 120; fixes mid-section cuts | dense + BM25 RRF; SKU/ID exact match | stub | stub | stub | metadata | agentic | multimodal | self-rag |
 
 Version ids: `v1_basic_rag` … `v10_self_rag`.
 
@@ -23,6 +23,7 @@ Version ids: `v1_basic_rag` … `v10_self_rag`.
 ```bash
 python modules/enterprise-rag/cli.py eval --version v1_basic_rag
 python modules/enterprise-rag/cli.py eval --version v2_better_chunking
+python modules/enterprise-rag/cli.py eval --version v3_hybrid_search
 ```
 
 ## v1 → v2 delta
@@ -30,3 +31,9 @@ python modules/enterprise-rag/cli.py eval --version v2_better_chunking
 - **What failed in v1:** fixed 800-char windows with 0 overlap cut mid-sentence / mid-section; boundary facts (e.g. return windows) fragmented.
 - **What changed:** strip frontmatter, split on ATX H1–H3, prefix chunks with heading, sub-chunk oversized sections with 120-char overlap.
 - **Tradeoff:** more chunks / higher index cost; ask path (dense top-4 + generate) unchanged. Expired-policy ranking still open until v7.
+
+## v2 → v3 delta
+
+- **What failed in v2:** dense-only retrieval misses or buries literal SKUs/IDs (`NRG-LAP-1001`, `NRG-LAP-1002`).
+- **What changed:** Qdrant collection with named `dense` + sparse `bm25` (IDF); prefetch both and fuse with RRF; keep v2 section chunking.
+- **Tradeoff:** FastEmbed BM25 at index/query time and dual vectors; expired-policy ranking still open until v7.

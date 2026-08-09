@@ -1,5 +1,5 @@
-﻿"""v3 — Hybrid search (BM25 + dense) package."""
+﻿"""v3 — Hybrid search package."""
 
-from .pipeline import VERSION, Pipeline, build_pipeline
+from .pipeline import VERSION, HybridSearchPipeline, build_pipeline
 
-__all__ = ["VERSION", "Pipeline", "build_pipeline"]
+__all__ = ["VERSION", "HybridSearchPipeline", "build_pipeline"]

@@ -38,7 +38,7 @@ export const VERSIONS: VersionMeta[] = [
     short: 'V3',
     title: 'Hybrid Search',
     blurb: 'BM25 + dense fusion.',
-    runnable: false,
+    runnable: true,
   },
   {
     id: 'v4_reranking',
