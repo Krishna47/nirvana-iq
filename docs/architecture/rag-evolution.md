@@ -13,8 +13,8 @@ Module-local ladder: [`modules/enterprise-rag/docs/rag-ladder.md`](../../modules
 
 | Version | Idea | Status |
 |---------|------|--------|
-| v1_basic_rag | Basic RAG (embed + retrieve + generate) | Runnable stub |
-| v2_better_chunking | Section-aware chunks + overlap | Stub |
+| v1_basic_rag | Basic RAG (embed + retrieve + generate) | Runnable |
+| v2_better_chunking | Section-aware chunks + overlap | Runnable |
 | v3_hybrid_search | BM25 + dense fusion | Stub |
 | v4_reranking | Rerank top-N → top-K | Stub |
 | v5_query_rewrite | Query rewrite / HyDE-style | Stub |

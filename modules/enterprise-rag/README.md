@@ -28,8 +28,8 @@ Active pipeline corpus: [`data/gold/`](data/gold/). Ladder: [`docs/rag-ladder.md
 
 | Version | Focus | Status |
 |---------|--------|--------|
-| [v1_basic_rag](pipelines/v1_basic_rag/) | Basic RAG | Runnable stub |
-| [v2_better_chunking](pipelines/v2_better_chunking/) | Section-aware chunks | Stub |
+| [v1_basic_rag](pipelines/v1_basic_rag/) | Basic RAG | Runnable |
+| [v2_better_chunking](pipelines/v2_better_chunking/) | Section-aware chunks | Runnable |
 | [v3_hybrid_search](pipelines/v3_hybrid_search/) | BM25 + dense | Stub |
 | [v4_reranking](pipelines/v4_reranking/) | Rerank top-k | Stub |
 | [v5_query_rewrite](pipelines/v5_query_rewrite/) | Query rewrite | Stub |
@@ -91,6 +91,5 @@ modules/enterprise-rag/
 
 ## Next steps
 
-1. Implement real v1_basic_rag (embed + index + LLM)
-2. Curate eval questions; fill [evaluation/scorecard.md](evaluation/scorecard.md)
-3. Climb the ladder against gold failures
+1. Fill [evaluation/scorecard.md](evaluation/scorecard.md) for v1/v2 after full evals
+2. Climb the ladder: v3 hybrid search against gold failures

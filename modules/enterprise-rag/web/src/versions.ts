@@ -31,7 +31,7 @@ export const VERSIONS: VersionMeta[] = [
     short: 'V2',
     title: 'Better Chunking',
     blurb: 'Section-aware chunks with overlap.',
-    runnable: false,
+    runnable: true,
   },
   {
     id: 'v3_hybrid_search',
