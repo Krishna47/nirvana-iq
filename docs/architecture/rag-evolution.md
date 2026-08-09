@@ -16,7 +16,7 @@ Module-local ladder: [`modules/enterprise-rag/docs/rag-ladder.md`](../../modules
 | v1_basic_rag | Basic RAG (embed + retrieve + generate) | Runnable |
 | v2_better_chunking | Section-aware chunks + overlap | Runnable |
 | v3_hybrid_search | BM25 + dense fusion | Runnable |
-| v4_reranking | Rerank top-N → top-K | Stub |
+| v4_reranking | Rerank top-N → top-K | Runnable |
 | v5_query_rewrite | Query rewrite / HyDE-style | Stub |
 | v6_multi_query | Multi-query expansion + fusion | Stub |
 | v7_metadata | Status / date / region filters | Stub |

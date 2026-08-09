@@ -45,7 +45,7 @@ export const VERSIONS: VersionMeta[] = [
     short: 'V4',
     title: 'Reranking',
     blurb: 'Retrieve top-N, rerank to top-K.',
-    runnable: false,
+    runnable: true,
   },
   {
     id: 'v5_query_rewrite',

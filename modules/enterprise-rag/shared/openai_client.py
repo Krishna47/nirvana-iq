@@ -2,12 +2,17 @@
 
 from __future__ import annotations
 
+import json
+import re
+
 from openai import OpenAI
 
 from .settings import settings
 
 # text-embedding-3-small
 EMBED_DIM = 1536
+_RERANK_SNIPPET_CHARS = 500
+_JSON_ARRAY_RE = re.compile(r"\[[\s\d,]+\]")
 
 
 def get_openai() -> OpenAI:
@@ -52,3 +57,83 @@ def chat_answer(*, question: str, context: str, version: str) -> str:
         temperature=0.1,
     )
     return (response.choices[0].message.content or "").strip()
+
+
+def _parse_rank_indices(raw: str, *, n: int) -> list[int] | None:
+    text = (raw or "").strip()
+    if not text:
+        return None
+    candidates = [text]
+    match = _JSON_ARRAY_RE.search(text)
+    if match:
+        candidates.append(match.group(0))
+    for candidate in candidates:
+        try:
+            parsed = json.loads(candidate)
+        except json.JSONDecodeError:
+            continue
+        if not isinstance(parsed, list):
+            continue
+        indices: list[int] = []
+        seen: set[int] = set()
+        for item in parsed:
+            if not isinstance(item, int) or isinstance(item, bool):
+                continue
+            if item < 0 or item >= n or item in seen:
+                continue
+            seen.add(item)
+            indices.append(item)
+        if indices:
+            return indices
+    return None
+
+
+def rerank_chunks(*, question: str, texts: list[str], top_k: int) -> list[int]:
+    """Listwise LLM rerank: return indices of texts ordered best→worst, truncated to top_k."""
+    n = len(texts)
+    if n == 0 or top_k <= 0:
+        return []
+    if n == 1:
+        return [0]
+
+    default_order = list(range(n))
+    snippets = []
+    for i, text in enumerate(texts):
+        body = (text or "").strip().replace("\n", " ")
+        if len(body) > _RERANK_SNIPPET_CHARS:
+            body = body[:_RERANK_SNIPPET_CHARS] + "…"
+        snippets.append(f"[{i}] {body}")
+
+    client = get_openai()
+    model = settings()["openai_chat_model"]
+    system = (
+        "You rerank retrieved document chunks for a RAG system. "
+        "Rank by relevance to the question (best first). "
+        "Return ONLY a JSON array of integer indices covering each chunk exactly once, "
+        "e.g. [2,0,1]. No prose."
+    )
+    user = (
+        f"Question:\n{question}\n\n"
+        f"Chunks ({n} total):\n" + "\n".join(snippets)
+    )
+    try:
+        response = client.chat.completions.create(
+            model=model,
+            messages=[
+                {"role": "system", "content": system},
+                {"role": "user", "content": user},
+            ],
+            temperature=0,
+        )
+        raw = (response.choices[0].message.content or "").strip()
+    except Exception:
+        return default_order[:top_k]
+
+    ranked = _parse_rank_indices(raw, n=n)
+    if ranked is None:
+        return default_order[:top_k]
+
+    for idx in default_order:
+        if idx not in ranked:
+            ranked.append(idx)
+    return ranked[:top_k]

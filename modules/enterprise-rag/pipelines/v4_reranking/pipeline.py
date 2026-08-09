@@ -1,33 +1,92 @@
-﻿"""v4 — Reranking
+﻿"""v4 — Reranking.
 
-Retrieve top-N then cross-encoder / LLM rerank to top-K.
+Hybrid retrieve top-N from v3 collection, LLM listwise rerank to top-K, then generate.
 """
 
 from __future__ import annotations
 
+import time
 from dataclasses import dataclass
 
-from shared.contracts import PipelineResult
+from shared.contracts import PipelineResult, RetrievedChunk
+from shared.openai_client import chat_answer, embed_query, rerank_chunks
+from shared.qdrant_store import hybrid_search
 
 
 VERSION = "v4_reranking"
+RETRIEVE_VERSION = "v3_hybrid_search"
+CANDIDATE_N = 20
+TOP_K = 4
 
 
 @dataclass
-class Pipeline:
+class RerankingPipeline:
     version: str = VERSION
+    retrieve_version: str = RETRIEVE_VERSION
+    candidate_n: int = CANDIDATE_N
+    top_k: int = TOP_K
 
     def answer(self, question: str) -> PipelineResult:
+        started = time.perf_counter()
+        query_vector = embed_query(question)
+        hits = hybrid_search(
+            self.retrieve_version,
+            query_text=question,
+            query_vector=query_vector,
+            top_k=self.candidate_n,
+        )
+
+        texts = [str((hit.payload or {}).get("text") or "") for hit in hits]
+        order = rerank_chunks(question=question, texts=texts, top_k=self.top_k)
+        ranked_hits = [hits[i] for i in order if 0 <= i < len(hits)]
+
+        top: list[RetrievedChunk] = []
+        for hit in ranked_hits:
+            payload = hit.payload or {}
+            top.append(
+                RetrievedChunk(
+                    document_id=str(payload.get("document_id") or ""),
+                    path=str(payload.get("path") or ""),
+                    text=str(payload.get("text") or ""),
+                    score=float(hit.score or 0.0),
+                    metadata={
+                        "status": payload.get("status"),
+                        "version": payload.get("doc_version"),
+                        "effective_date": payload.get("effective_date"),
+                        "expiry_date": payload.get("expiry_date"),
+                        "region": payload.get("region"),
+                        "chunk_index": payload.get("chunk_index"),
+                    },
+                )
+            )
+
+        citations = list(dict.fromkeys(c.document_id for c in top if c.document_id))
+        context_blocks = []
+        for chunk in top:
+            context_blocks.append(
+                f"document_id: {chunk.document_id}\n"
+                f"path: {chunk.path}\n"
+                f"status: {chunk.metadata.get('status')}\n"
+                f"{chunk.text}"
+            )
+        context = "\n\n---\n\n".join(context_blocks)
+        answer = (
+            chat_answer(question=question, context=context, version=self.version)
+            if context
+            else "No relevant documents were retrieved from the gold corpus."
+        )
+
+        latency_ms = (time.perf_counter() - started) * 1000
         return PipelineResult(
             version=self.version,
             question=question,
-            answer=f"[{VERSION} stub] Not implemented yet. Retrieve top-N then cross-encoder / LLM rerank to top-K.",
-            citations=[],
-            retrieved_chunks=[],
-            latency_ms=0.0,
-            notes="Stub",
+            answer=answer,
+            citations=citations,
+            retrieved_chunks=top,
+            latency_ms=latency_ms,
+            notes="Hybrid N=20 + LLM listwise rerank to K=4; shares v3 collection",
         )
 
 
-def build_pipeline() -> Pipeline:
-    return Pipeline()
+def build_pipeline() -> RerankingPipeline:
+    return RerankingPipeline()

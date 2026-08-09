@@ -4,11 +4,11 @@ Same gold corpus. Same curated `questions.json`. Different pipelines.
 
 | Metric | v1 | v2 | v3 | v4 | v5 | v6 | v7 | v8 | v9 | v10 |
 |--------|----|----|----|----|----|----|----|----|----|-----|
-| Citation hit rate | TBD | 1.00 (n=20 smoke) | 1.00 (n=20 smoke) | — | — | — | — | — | — | — |
-| Answer graded score | stub | stub | stub | — | — | — | — | — | — | — |
-| Expired-doc mistakes | TBD | still open | still open | — | — | — | **target: low** | — | — | — |
-| p50 latency (ms) | TBD | ~2830 (n=20) | ~2607 (n=20) | — | — | — | — | — | — | — |
-| Notes | fixed 800/0 chunks | section H1-H3 + overlap 120; fixes mid-section cuts | dense + BM25 RRF; SKU/ID exact match | stub | stub | stub | metadata | agentic | multimodal | self-rag |
+| Citation hit rate | TBD | 1.00 (n=20 smoke) | 1.00 (n=20 smoke) | 1.00 (n=20 smoke) | — | — | — | — | — | — |
+| Answer graded score | stub | stub | stub | stub | — | — | — | — | — | — |
+| Expired-doc mistakes | TBD | still open | still open | still open | — | — | **target: low** | — | — | — |
+| p50 latency (ms) | TBD | ~2830 (n=20) | ~2607 (n=20) | ~4180 (n=20) | — | — | — | — | — | — |
+| Notes | fixed 800/0 chunks | section H1-H3 + overlap 120; fixes mid-section cuts | dense + BM25 RRF; SKU/ID exact match | hybrid N=20 + LLM rerank to K=4 | stub | stub | metadata | agentic | multimodal | self-rag |
 
 Version ids: `v1_basic_rag` … `v10_self_rag`.
 
@@ -24,6 +24,7 @@ Version ids: `v1_basic_rag` … `v10_self_rag`.
 python modules/enterprise-rag/cli.py eval --version v1_basic_rag
 python modules/enterprise-rag/cli.py eval --version v2_better_chunking
 python modules/enterprise-rag/cli.py eval --version v3_hybrid_search
+python modules/enterprise-rag/cli.py eval --version v4_reranking
 ```
 
 ## v1 → v2 delta
@@ -37,3 +38,9 @@ python modules/enterprise-rag/cli.py eval --version v3_hybrid_search
 - **What failed in v2:** dense-only retrieval misses or buries literal SKUs/IDs (`NRG-LAP-1001`, `NRG-LAP-1002`).
 - **What changed:** Qdrant collection with named `dense` + sparse `bm25` (IDF); prefetch both and fuse with RRF; keep v2 section chunking.
 - **Tradeoff:** FastEmbed BM25 at index/query time and dual vectors; expired-policy ranking still open until v7.
+
+## v3 → v4 delta
+
+- **What failed in v3:** hybrid recall can still put near-duplicate / wrong-policy chunks above the best answer (e.g. return-after-20-days ranking).
+- **What changed:** retrieve hybrid N=20 from the shared v3 collection, OpenAI listwise LLM rerank to K=4, then generate. No new index.
+- **Tradeoff:** extra chat call (latency/cost); expired-policy ranking still open until v7.
