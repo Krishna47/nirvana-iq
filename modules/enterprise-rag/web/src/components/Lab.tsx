@@ -175,6 +175,39 @@ export function Lab() {
             </div>
           )}
 
+          {version === 'v6_multi_query' && (
+            <div className="rewrite-panel">
+              <h3>Expanded queries</h3>
+              <p className="rewrite-label">
+                LlamaIndex multi-query expand; each query hybrid-searched then fused with RRF
+              </p>
+              <dl className="rewrite-compare">
+                <div>
+                  <dt>User question</dt>
+                  <dd>{chat.result.question}</dd>
+                </div>
+                <div>
+                  <dt>Expanded queries</dt>
+                  <dd>
+                    <ol className="expanded-query-list">
+                      {(chat.result.search_queries?.length
+                        ? chat.result.search_queries
+                        : (chat.result.search_query || chat.result.question)
+                            .split(' | ')
+                            .map((s) => s.trim())
+                            .filter(Boolean)
+                      ).map((q, i) => (
+                        <li key={`${i}-${q}`} className="rewrite-output">
+                          {q}
+                        </li>
+                      ))}
+                    </ol>
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          )}
+
           <div className="detail-tabs" role="tablist">
             {(['sources', 'chunks', 'metrics'] as Tab[]).map((t) => (
               <button

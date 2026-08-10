@@ -20,6 +20,7 @@ export type AskResult = {
   latency_ms: number
   notes: string
   search_query?: string
+  search_queries?: string[]
 }
 
 export type CompareRow = {

@@ -58,8 +58,8 @@ export const VERSIONS: VersionMeta[] = [
     id: 'v6_multi_query',
     short: 'V6',
     title: 'Multi-Query',
-    blurb: 'Expand queries and fuse results.',
-    runnable: false,
+    blurb: 'Multi-query expand + RRF fuse, hybrid retrieve.',
+    runnable: true,
   },
   {
     id: 'v7_metadata',
