@@ -1,5 +1,7 @@
 ﻿"""v8 — Agentic RAG package."""
 
-from .pipeline import VERSION, Pipeline, build_pipeline
+from .pipeline import VERSION, AgenticRagPipeline, build_pipeline
 
-__all__ = ["VERSION", "Pipeline", "build_pipeline"]
+Pipeline = AgenticRagPipeline
+
+__all__ = ["VERSION", "Pipeline", "AgenticRagPipeline", "build_pipeline"]

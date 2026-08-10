@@ -22,6 +22,7 @@ export type AskResult = {
   search_query?: string
   search_queries?: string[]
   applied_filters?: Record<string, unknown>
+  agent_steps?: Record<string, unknown>[]
 }
 
 export type CompareRow = {

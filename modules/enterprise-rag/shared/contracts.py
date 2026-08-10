@@ -31,6 +31,7 @@ class PipelineResult:
     search_query: str = ""
     search_queries: list[str] = field(default_factory=list)
     applied_filters: dict[str, Any] = field(default_factory=dict)
+    agent_steps: list[dict[str, Any]] = field(default_factory=list)
 
     def to_dict(self) -> dict[str, Any]:
         return asdict(self)

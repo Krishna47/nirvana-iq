@@ -4,11 +4,11 @@ Same gold corpus. Same curated `questions.json`. Different pipelines.
 
 | Metric | v1 | v2 | v3 | v4 | v5 | v6 | v7 | v8 | v9 | v10 |
 |--------|----|----|----|----|----|----|----|----|----|-----|
-| Citation hit rate | TBD | 1.00 (n=20 smoke) | 1.00 (n=20 smoke) | 1.00 (n=20 smoke) | 1.00 (n=20 smoke) | 1.00 (n=20 smoke) | 1.00 (n=20 smoke) | — | — | — |
-| Answer graded score | stub | stub | stub | stub | stub | stub | stub | — | — | — |
-| Expired-doc mistakes | TBD | still open | still open | still open | still open | still open | low (exclude expired by default) | — | — | — |
-| p50 latency (ms) | TBD | ~2830 (n=20) | ~2607 (n=20) | ~4180 (n=20) | ~3584 (n=20) | ~6360 (n=20) | ~3631 (n=20) | — | — | — |
-| Notes | fixed 800/0 chunks | section H1-H3 + overlap 120; fixes mid-section cuts | dense + BM25 RRF; SKU/ID exact match | hybrid N=20 + LLM rerank to K=4 | LlamaIndex rewrite → hybrid top-4 on v3 | LlamaIndex multi-query + client RRF on v3 | hybrid on v3 + payload filters | agentic | multimodal | self-rag |
+| Citation hit rate | TBD | 1.00 (n=20 smoke) | 1.00 (n=20 smoke) | 1.00 (n=20 smoke) | 1.00 (n=20 smoke) | 1.00 (n=20 smoke) | 1.00 (n=20 smoke) | 1.00 (n=20 smoke) | — | — |
+| Answer graded score | stub | stub | stub | stub | stub | stub | stub | stub | — | — |
+| Expired-doc mistakes | TBD | still open | still open | still open | still open | still open | low (exclude expired by default) | low (v7 filters on each round) | — | — |
+| p50 latency (ms) | TBD | ~2830 (n=20) | ~2607 (n=20) | ~4180 (n=20) | ~3584 (n=20) | ~6360 (n=20) | ~3631 (n=20) | ~5355 (n=20) | — | — |
+| Notes | fixed 800/0 chunks | section H1-H3 + overlap 120; fixes mid-section cuts | dense + BM25 RRF; SKU/ID exact match | hybrid N=20 + LLM rerank to K=4 | LlamaIndex rewrite → hybrid top-4 on v3 | LlamaIndex multi-query + client RRF on v3 | hybrid on v3 + payload filters | LangGraph retrieve→check→retry on v3+v7 filters | multimodal | self-rag |
 
 Version ids: `v1_basic_rag` … `v10_self_rag`.
 
@@ -28,6 +28,7 @@ python modules/enterprise-rag/cli.py eval --version v4_reranking
 python modules/enterprise-rag/cli.py eval --version v5_query_rewrite
 python modules/enterprise-rag/cli.py eval --version v6_multi_query
 python modules/enterprise-rag/cli.py eval --version v7_metadata
+python modules/enterprise-rag/cli.py eval --version v8_agentic_rag
 ```
 
 ## v1 → v2 delta
@@ -65,3 +66,9 @@ python modules/enterprise-rag/cli.py eval --version v7_metadata
 - **What failed in v6:** multi-query still ranks `status=expired` California promo chunks alongside approved ones; embeddings ignore lifecycle metadata.
 - **What changed:** hybrid top-4 on the shared v3 collection with Qdrant payload filters — default exclude `status=expired`, optional region/year; allow expired when the question has expired/retired intent. No new index; no rewrite/multi-query stack.
 - **Tradeoff:** more retrieve-path product logic; fewer wrong operational answers from stale policies. Intent heuristics can miss edge cases (v8).
+
+## v7 → v8 delta
+
+- **What failed in v7:** one-shot filtered retrieve can still miss a second cause on multi-hop questions (promo vs inventory for sales decline).
+- **What changed:** LangGraph loop — retrieve → LLM sufficiency check → optional re-retrieve (max 2 rounds) → generate; each retrieve uses v3 hybrid + v7 filters; merge/dedupe to top-6.
+- **Tradeoff:** extra check LLM call (+ optional second retrieve) raises latency/cost; better multi-hop coverage. Answer self-critique left to v10.

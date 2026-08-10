@@ -246,6 +246,52 @@ export function Lab() {
             </div>
           )}
 
+          {version === 'v8_agentic_rag' && (
+            <div className="rewrite-panel">
+              <h3>Agent steps</h3>
+              <p className="rewrite-label">
+                LangGraph retrieve → sufficiency check → optional re-retrieve (max 2 rounds)
+              </p>
+              <ol className="expanded-query-list">
+                {(chat.result.agent_steps?.length ? chat.result.agent_steps : []).map((step, i) => {
+                  const type = String(step.type ?? 'step')
+                  const round = step.round != null ? String(step.round) : '?'
+                  if (type === 'retrieve') {
+                    return (
+                      <li key={i} className="rewrite-output">
+                        Round {round} retrieve: {String(step.search_query ?? '')} (
+                        {String(step.n_hits ?? 0)} hits)
+                      </li>
+                    )
+                  }
+                  if (type === 'check') {
+                    return (
+                      <li key={i} className="rewrite-output">
+                        Check: {step.sufficient ? 'sufficient' : 'retry'} —{' '}
+                        {String(step.reason ?? '')}
+                        {!step.sufficient && step.followup_query
+                          ? ` → ${String(step.followup_query)}`
+                          : ''}
+                      </li>
+                    )
+                  }
+                  if (type === 'generate') {
+                    return (
+                      <li key={i} className="rewrite-output">
+                        Generate with {String(step.n_chunks ?? 0)} chunks
+                      </li>
+                    )
+                  }
+                  return (
+                    <li key={i} className="rewrite-output">
+                      {JSON.stringify(step)}
+                    </li>
+                  )
+                })}
+              </ol>
+            </div>
+          )}
+
           <div className="detail-tabs" role="tablist">
             {(['sources', 'chunks', 'metrics'] as Tab[]).map((t) => (
               <button

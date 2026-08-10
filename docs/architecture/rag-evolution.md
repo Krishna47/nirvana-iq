@@ -20,7 +20,7 @@ Module-local ladder: [`modules/enterprise-rag/docs/rag-ladder.md`](../../modules
 | v5_query_rewrite | LlamaIndex query rewrite → hybrid retrieve | Runnable |
 | v6_multi_query | LlamaIndex multi-query expand + RRF fuse | Runnable |
 | v7_metadata | Status / date / region filters on v3 hybrid | Runnable |
-| v8_agentic_rag | Retrieve → check → re-retrieve | Stub |
+| v8_agentic_rag | LangGraph retrieve → check → re-retrieve | Runnable |
 | v9_multimodal | Image / table-aware retrieval | Stub |
 | v10_self_rag | Critique / self-correct | Stub |
 | final-production | Frozen best stack | Empty |
@@ -58,5 +58,6 @@ v1–v4: plain Python + Qdrant + OpenAI + FastAPI.
 v5: LlamaIndex for query rewrite only; Qdrant hybrid retrieve unchanged.  
 v6: LlamaIndex multi-query expand + client RRF; Qdrant hybrid per query.  
 v7: Qdrant payload filters (status/region/year) on shared v3 hybrid; no LlamaIndex required.  
+v8: LangGraph retrieve→check→re-retrieve on v3 hybrid + v7 filters (max 2 rounds).  
 v5–v7: optional LlamaIndex. v8+: LangGraph for agentic loops. LangChain = thin glue only.  
 See `modules/enterprise-rag/docs/rag-ladder.md` and `.cursor/rules/rag-framework-guardrails.mdc`.

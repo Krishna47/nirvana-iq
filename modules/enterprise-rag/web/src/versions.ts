@@ -73,7 +73,7 @@ export const VERSIONS: VersionMeta[] = [
     short: 'V8',
     title: 'Agentic RAG',
     blurb: 'Retrieve → check → re-retrieve.',
-    runnable: false,
+    runnable: true,
   },
   {
     id: 'v9_multimodal',
