@@ -156,6 +156,25 @@ export function Lab() {
         <div className="result">
           <h2>Latest turn details</h2>
 
+          {version === 'v5_query_rewrite' && (
+            <div className="rewrite-panel">
+              <h3>Rewritten query</h3>
+              <p className="rewrite-label">LlamaIndex rewrite used for hybrid retrieve</p>
+              <dl className="rewrite-compare">
+                <div>
+                  <dt>User question</dt>
+                  <dd>{chat.result.question}</dd>
+                </div>
+                <div>
+                  <dt>Rewritten query</dt>
+                  <dd className="rewrite-output">
+                    {chat.result.search_query || chat.result.question}
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          )}
+
           <div className="detail-tabs" role="tablist">
             {(['sources', 'chunks', 'metrics'] as Tab[]).map((t) => (
               <button

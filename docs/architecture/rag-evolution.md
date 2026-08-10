@@ -17,7 +17,7 @@ Module-local ladder: [`modules/enterprise-rag/docs/rag-ladder.md`](../../modules
 | v2_better_chunking | Section-aware chunks + overlap | Runnable |
 | v3_hybrid_search | BM25 + dense fusion | Runnable |
 | v4_reranking | Rerank top-N → top-K | Runnable |
-| v5_query_rewrite | Query rewrite / HyDE-style | Stub |
+| v5_query_rewrite | LlamaIndex query rewrite → hybrid retrieve | Runnable |
 | v6_multi_query | Multi-query expansion + fusion | Stub |
 | v7_metadata | Status / date / region filters | Stub |
 | v8_agentic_rag | Retrieve → check → re-retrieve | Stub |
@@ -55,5 +55,6 @@ Basic retrieval can surface the expired doc; metadata filters (v7) are the enter
 ## Framework guardrails
 
 v1–v4: plain Python + Qdrant + OpenAI + FastAPI.  
+v5: LlamaIndex for query rewrite only; Qdrant hybrid retrieve unchanged.  
 v5–v7: optional LlamaIndex. v8+: LangGraph for agentic loops. LangChain = thin glue only.  
 See `modules/enterprise-rag/docs/rag-ladder.md` and `.cursor/rules/rag-framework-guardrails.mdc`.

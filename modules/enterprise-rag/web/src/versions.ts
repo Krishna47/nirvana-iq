@@ -51,8 +51,8 @@ export const VERSIONS: VersionMeta[] = [
     id: 'v5_query_rewrite',
     short: 'V5',
     title: 'Query Rewrite',
-    blurb: 'Rewrite / HyDE-style reformulation.',
-    runnable: false,
+    blurb: 'LlamaIndex rewrite, then hybrid retrieve.',
+    runnable: true,
   },
   {
     id: 'v6_multi_query',

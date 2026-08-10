@@ -32,7 +32,7 @@ Active pipeline corpus: [`data/gold/`](data/gold/). Ladder: [`docs/rag-ladder.md
 | [v2_better_chunking](pipelines/v2_better_chunking/) | Section-aware chunks | Runnable |
 | [v3_hybrid_search](pipelines/v3_hybrid_search/) | BM25 + dense | Runnable |
 | [v4_reranking](pipelines/v4_reranking/) | Rerank top-k | Runnable |
-| [v5_query_rewrite](pipelines/v5_query_rewrite/) | Query rewrite | Stub |
+| [v5_query_rewrite](pipelines/v5_query_rewrite/) | LlamaIndex rewrite + hybrid | Runnable |
 | [v6_multi_query](pipelines/v6_multi_query/) | Multi-query fusion | Stub |
 | [v7_metadata](pipelines/v7_metadata/) | Status / date / region filters | Stub |
 | [v8_agentic_rag](pipelines/v8_agentic_rag/) | Retrieve → check → re-retrieve | Stub |
@@ -103,5 +103,5 @@ modules/enterprise-rag/
 
 ## Next steps
 
-1. Fill [evaluation/scorecard.md](evaluation/scorecard.md) for v1–v4 after full evals
-2. Climb the ladder: v5 query rewrite against gold failures
+1. Fill [evaluation/scorecard.md](evaluation/scorecard.md) for v1–v5 after full evals
+2. Climb the ladder: v6 multi-query against remaining gold failures

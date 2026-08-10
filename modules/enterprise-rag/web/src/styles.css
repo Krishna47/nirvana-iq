@@ -319,6 +319,52 @@ pre {
   margin-top: 0.25rem;
 }
 
+.rewrite-panel {
+  margin: 0 0 1.25rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.rewrite-panel h3 {
+  margin: 0 0 0.25rem;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+}
+
+.rewrite-label {
+  margin: 0 0 0.75rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.rewrite-compare {
+  display: grid;
+  gap: 0.85rem;
+  margin: 0;
+}
+
+.rewrite-compare dt {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.25rem;
+}
+
+.rewrite-compare dd {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.rewrite-compare .rewrite-output {
+  font-weight: 560;
+  color: var(--accent-deep);
+}
+
 .error {
   margin: 1rem 0 0;
   color: var(--error);

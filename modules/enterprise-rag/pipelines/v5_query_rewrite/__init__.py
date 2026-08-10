@@ -1,5 +1,7 @@
 ﻿"""v5 — Query rewrite package."""
 
-from .pipeline import VERSION, Pipeline, build_pipeline
+from .pipeline import VERSION, QueryRewritePipeline, build_pipeline
 
-__all__ = ["VERSION", "Pipeline", "build_pipeline"]
+Pipeline = QueryRewritePipeline
+
+__all__ = ["VERSION", "Pipeline", "QueryRewritePipeline", "build_pipeline"]
