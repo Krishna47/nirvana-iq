@@ -24,6 +24,7 @@ def draft_gold_questions() -> Path:
     cat = traps["catalog"]
     sop = traps["supplier_delay"]
     sec = traps["security"]
+    exec_dir = traps["executive_leadership"]
 
     curated = [
         {
@@ -101,11 +102,18 @@ def draft_gold_questions() -> Path:
             "expected_sources": [cat["document_id"]],
             "tags": ["catalog", "exact"],
         },
+        {
+            "id": "Q011",
+            "question": "Who is the CEO of Nirvana Retail Group?",
+            "expected_answer": exec_dir["ceo_name"],
+            "expected_sources": [exec_dir["document_id"]],
+            "tags": ["exact", "leadership"],
+        },
     ]
 
     # Append per-plan grounded questions (dedupe by question text)
     seen = {q["question"] for q in curated}
-    idx = 11
+    idx = 12
     for plan in plans:
         if plan.document_id not in by_id:
             continue

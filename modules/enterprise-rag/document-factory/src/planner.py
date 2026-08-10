@@ -528,6 +528,62 @@ def _gold_trap_plans(company: dict[str, Any], gen: dict[str, Any], seed: int) ->
         )
     )
 
+    exec_dir = traps["executive_leadership"]
+    year = _year_from_date(exec_dir["effective_date"])
+    plans.append(
+        DocumentPlan(
+            document_id=exec_dir["document_id"],
+            title=exec_dir["title"],
+            document_type="manual",
+            department=exec_dir["department"],
+            region=exec_dir["region"],
+            version=exec_dir["version"],
+            status=exec_dir["status"],
+            effective_date=exec_dir["effective_date"],
+            expiry_date="",
+            path=_raw_path(gen, "manual", year, "13-executive-leadership-directory.md"),
+            required_facts={
+                "document_id": exec_dir["document_id"],
+                "ceo_name": exec_dir["ceo_name"],
+                "ceo_title": exec_dir["ceo_title"],
+                "version": exec_dir["version"],
+                "status": exec_dir["status"],
+            },
+            sections=_merge_sections(
+                gen,
+                "manual",
+                ["Purpose", "Chief Executive Officer", "Headquarters", "Exceptions"],
+            ),
+            seed=seed,
+            corpus="gold",
+            trap_tag="leadership",
+            year=year,
+            evaluation_questions=[
+                EvaluationQuestion(
+                    id="ceo-name",
+                    question="Who is the CEO of Nirvana Retail Group?",
+                    expected_answer=exec_dir["ceo_name"],
+                    expected_sources=[exec_dir["document_id"]],
+                    tags=["exact", "leadership"],
+                ),
+                EvaluationQuestion(
+                    id="ceo-title",
+                    question="What title does Krishna Turlapati hold at Nirvana Retail Group?",
+                    expected_answer=exec_dir["ceo_title"],
+                    expected_sources=[exec_dir["document_id"]],
+                    tags=["exact", "leadership"],
+                ),
+                EvaluationQuestion(
+                    id="ceo-doc-status",
+                    question="What is the status of the executive leadership directory?",
+                    expected_answer=exec_dir["status"],
+                    expected_sources=[exec_dir["document_id"]],
+                    tags=["policy"],
+                ),
+            ],
+        )
+    )
+
     return plans
 
 

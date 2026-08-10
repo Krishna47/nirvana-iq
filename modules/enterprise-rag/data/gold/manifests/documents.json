@@ -238,8 +238,34 @@
     }
   },
   {
+    "document_id": "NRG-MAN-HR-013",
+    "title": "Executive Leadership Directory",
+    "document_type": "manual",
+    "department": "HR",
+    "region": "United States",
+    "version": "1.0",
+    "status": "approved",
+    "effective_date": "2026-01-01",
+    "expiry_date": "",
+    "path": "raw/2026/manuals/13-executive-leadership-directory.md",
+    "sha256": "f502e69a3e0995c244d461897e93c2c65c55c706014fe2e3db072d6a211a59c4",
+    "trap_tag": "leadership",
+    "confidentiality": "internal",
+    "metadata": {
+      "corpus": "gold",
+      "required_facts": {
+        "document_id": "NRG-MAN-HR-013",
+        "ceo_name": "Krishna Turlapati",
+        "ceo_title": "Chief Executive Officer",
+        "version": "1.0",
+        "status": "approved"
+      },
+      "year": 2026
+    }
+  },
+  {
     "document_id": "NRG-SOP-GOLD-0001",
-    "title": "Supply Chain Procedure \u2014 Texas #1",
+    "title": "Supply Chain Procedure — Texas #1",
     "document_type": "procedure",
     "department": "Supply Chain",
     "region": "Texas",
@@ -269,7 +295,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0002",
-    "title": "Procurement Report \u2014 New York #2",
+    "title": "Procurement Report — New York #2",
     "document_type": "report",
     "department": "Procurement",
     "region": "New York",
@@ -299,7 +325,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0003",
-    "title": "Finance Runbook \u2014 Florida #3",
+    "title": "Finance Runbook — Florida #3",
     "document_type": "runbook",
     "department": "Finance",
     "region": "Florida",
@@ -329,7 +355,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0004",
-    "title": "HR Manual \u2014 North Carolina #4",
+    "title": "HR Manual — North Carolina #4",
     "document_type": "manual",
     "department": "HR",
     "region": "North Carolina",
@@ -359,7 +385,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0005",
-    "title": "Information Security Store Announcement \u2014 Illinois #5",
+    "title": "Information Security Store Announcement — Illinois #5",
     "document_type": "store_announcement",
     "department": "Information Security",
     "region": "Illinois",
@@ -389,7 +415,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0006",
-    "title": "Data Engineering Policy \u2014 Washington #6",
+    "title": "Data Engineering Policy — Washington #6",
     "document_type": "policy",
     "department": "Data Engineering",
     "region": "Washington",
@@ -419,7 +445,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0007",
-    "title": "Cloud Operations Procedure \u2014 Georgia #7",
+    "title": "Cloud Operations Procedure — Georgia #7",
     "document_type": "procedure",
     "department": "Cloud Operations",
     "region": "Georgia",
@@ -449,7 +475,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0008",
-    "title": "Customer Experience Report \u2014 Arizona #8",
+    "title": "Customer Experience Report — Arizona #8",
     "document_type": "report",
     "department": "Customer Experience",
     "region": "Arizona",
@@ -479,7 +505,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0009",
-    "title": "Legal Runbook \u2014 Colorado #9",
+    "title": "Legal Runbook — Colorado #9",
     "document_type": "runbook",
     "department": "Legal",
     "region": "Colorado",
@@ -509,7 +535,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0010",
-    "title": "Merchandising Manual \u2014 California #10",
+    "title": "Merchandising Manual — California #10",
     "document_type": "manual",
     "department": "Merchandising",
     "region": "California",
@@ -539,7 +565,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0011",
-    "title": "Marketing Store Announcement \u2014 Texas #11",
+    "title": "Marketing Store Announcement — Texas #11",
     "document_type": "store_announcement",
     "department": "Marketing",
     "region": "Texas",
@@ -569,7 +595,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0012",
-    "title": "Store Operations Policy \u2014 New York #12",
+    "title": "Store Operations Policy — New York #12",
     "document_type": "policy",
     "department": "Store Operations",
     "region": "New York",
@@ -599,7 +625,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0013",
-    "title": "Compliance Procedure \u2014 Florida #13",
+    "title": "Compliance Procedure — Florida #13",
     "document_type": "procedure",
     "department": "Compliance",
     "region": "Florida",
@@ -629,7 +655,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0014",
-    "title": "Sales Report \u2014 North Carolina #14",
+    "title": "Sales Report — North Carolina #14",
     "document_type": "report",
     "department": "Sales",
     "region": "North Carolina",
@@ -659,7 +685,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0015",
-    "title": "Supply Chain Runbook \u2014 Illinois #15",
+    "title": "Supply Chain Runbook — Illinois #15",
     "document_type": "runbook",
     "department": "Supply Chain",
     "region": "Illinois",
@@ -689,7 +715,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0016",
-    "title": "Procurement Manual \u2014 Washington #16",
+    "title": "Procurement Manual — Washington #16",
     "document_type": "manual",
     "department": "Procurement",
     "region": "Washington",
@@ -719,7 +745,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0017",
-    "title": "Finance Store Announcement \u2014 Georgia #17",
+    "title": "Finance Store Announcement — Georgia #17",
     "document_type": "store_announcement",
     "department": "Finance",
     "region": "Georgia",
@@ -749,7 +775,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0018",
-    "title": "HR Policy \u2014 Arizona #18",
+    "title": "HR Policy — Arizona #18",
     "document_type": "policy",
     "department": "HR",
     "region": "Arizona",
@@ -779,7 +805,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0019",
-    "title": "Information Security Procedure \u2014 Colorado #19",
+    "title": "Information Security Procedure — Colorado #19",
     "document_type": "procedure",
     "department": "Information Security",
     "region": "Colorado",
@@ -809,7 +835,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0020",
-    "title": "Data Engineering Report \u2014 California #20",
+    "title": "Data Engineering Report — California #20",
     "document_type": "report",
     "department": "Data Engineering",
     "region": "California",
@@ -839,7 +865,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0021",
-    "title": "Cloud Operations Runbook \u2014 Texas #21",
+    "title": "Cloud Operations Runbook — Texas #21",
     "document_type": "runbook",
     "department": "Cloud Operations",
     "region": "Texas",
@@ -869,7 +895,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0022",
-    "title": "Customer Experience Manual \u2014 New York #22",
+    "title": "Customer Experience Manual — New York #22",
     "document_type": "manual",
     "department": "Customer Experience",
     "region": "New York",
@@ -899,7 +925,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0023",
-    "title": "Legal Store Announcement \u2014 Florida #23",
+    "title": "Legal Store Announcement — Florida #23",
     "document_type": "store_announcement",
     "department": "Legal",
     "region": "Florida",
@@ -929,7 +955,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0024",
-    "title": "Merchandising Policy \u2014 North Carolina #24",
+    "title": "Merchandising Policy — North Carolina #24",
     "document_type": "policy",
     "department": "Merchandising",
     "region": "North Carolina",
@@ -959,7 +985,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0025",
-    "title": "Marketing Procedure \u2014 Illinois #25",
+    "title": "Marketing Procedure — Illinois #25",
     "document_type": "procedure",
     "department": "Marketing",
     "region": "Illinois",
@@ -989,7 +1015,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0026",
-    "title": "Store Operations Report \u2014 Washington #26",
+    "title": "Store Operations Report — Washington #26",
     "document_type": "report",
     "department": "Store Operations",
     "region": "Washington",
@@ -1019,7 +1045,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0027",
-    "title": "Compliance Runbook \u2014 Georgia #27",
+    "title": "Compliance Runbook — Georgia #27",
     "document_type": "runbook",
     "department": "Compliance",
     "region": "Georgia",
@@ -1049,7 +1075,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0028",
-    "title": "Sales Manual \u2014 Arizona #28",
+    "title": "Sales Manual — Arizona #28",
     "document_type": "manual",
     "department": "Sales",
     "region": "Arizona",
@@ -1079,7 +1105,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0029",
-    "title": "Supply Chain Store Announcement \u2014 Colorado #29",
+    "title": "Supply Chain Store Announcement — Colorado #29",
     "document_type": "store_announcement",
     "department": "Supply Chain",
     "region": "Colorado",
@@ -1109,7 +1135,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0030",
-    "title": "Procurement Policy \u2014 California #30",
+    "title": "Procurement Policy — California #30",
     "document_type": "policy",
     "department": "Procurement",
     "region": "California",
@@ -1139,7 +1165,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0031",
-    "title": "Finance Procedure \u2014 Texas #31",
+    "title": "Finance Procedure — Texas #31",
     "document_type": "procedure",
     "department": "Finance",
     "region": "Texas",
@@ -1169,7 +1195,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0032",
-    "title": "HR Report \u2014 New York #32",
+    "title": "HR Report — New York #32",
     "document_type": "report",
     "department": "HR",
     "region": "New York",
@@ -1199,7 +1225,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0033",
-    "title": "Information Security Runbook \u2014 Florida #33",
+    "title": "Information Security Runbook — Florida #33",
     "document_type": "runbook",
     "department": "Information Security",
     "region": "Florida",
@@ -1229,7 +1255,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0034",
-    "title": "Data Engineering Manual \u2014 North Carolina #34",
+    "title": "Data Engineering Manual — North Carolina #34",
     "document_type": "manual",
     "department": "Data Engineering",
     "region": "North Carolina",
@@ -1259,7 +1285,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0035",
-    "title": "Cloud Operations Store Announcement \u2014 Illinois #35",
+    "title": "Cloud Operations Store Announcement — Illinois #35",
     "document_type": "store_announcement",
     "department": "Cloud Operations",
     "region": "Illinois",
@@ -1289,7 +1315,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0036",
-    "title": "Customer Experience Policy \u2014 Washington #36",
+    "title": "Customer Experience Policy — Washington #36",
     "document_type": "policy",
     "department": "Customer Experience",
     "region": "Washington",
@@ -1319,7 +1345,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0037",
-    "title": "Legal Procedure \u2014 Georgia #37",
+    "title": "Legal Procedure — Georgia #37",
     "document_type": "procedure",
     "department": "Legal",
     "region": "Georgia",
@@ -1349,7 +1375,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0038",
-    "title": "Merchandising Report \u2014 Arizona #38",
+    "title": "Merchandising Report — Arizona #38",
     "document_type": "report",
     "department": "Merchandising",
     "region": "Arizona",
@@ -1379,7 +1405,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0039",
-    "title": "Marketing Runbook \u2014 Colorado #39",
+    "title": "Marketing Runbook — Colorado #39",
     "document_type": "runbook",
     "department": "Marketing",
     "region": "Colorado",
@@ -1409,7 +1435,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0040",
-    "title": "Store Operations Manual \u2014 California #40",
+    "title": "Store Operations Manual — California #40",
     "document_type": "manual",
     "department": "Store Operations",
     "region": "California",
@@ -1439,7 +1465,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0041",
-    "title": "Compliance Store Announcement \u2014 Texas #41",
+    "title": "Compliance Store Announcement — Texas #41",
     "document_type": "store_announcement",
     "department": "Compliance",
     "region": "Texas",
@@ -1469,7 +1495,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0042",
-    "title": "Sales Policy \u2014 New York #42",
+    "title": "Sales Policy — New York #42",
     "document_type": "policy",
     "department": "Sales",
     "region": "New York",
@@ -1499,7 +1525,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0043",
-    "title": "Supply Chain Procedure \u2014 Florida #43",
+    "title": "Supply Chain Procedure — Florida #43",
     "document_type": "procedure",
     "department": "Supply Chain",
     "region": "Florida",
@@ -1529,7 +1555,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0044",
-    "title": "Procurement Report \u2014 North Carolina #44",
+    "title": "Procurement Report — North Carolina #44",
     "document_type": "report",
     "department": "Procurement",
     "region": "North Carolina",
@@ -1559,7 +1585,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0045",
-    "title": "Finance Runbook \u2014 Illinois #45",
+    "title": "Finance Runbook — Illinois #45",
     "document_type": "runbook",
     "department": "Finance",
     "region": "Illinois",
@@ -1589,7 +1615,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0046",
-    "title": "HR Manual \u2014 Washington #46",
+    "title": "HR Manual — Washington #46",
     "document_type": "manual",
     "department": "HR",
     "region": "Washington",
@@ -1619,7 +1645,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0047",
-    "title": "Information Security Store Announcement \u2014 Georgia #47",
+    "title": "Information Security Store Announcement — Georgia #47",
     "document_type": "store_announcement",
     "department": "Information Security",
     "region": "Georgia",
@@ -1649,7 +1675,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0048",
-    "title": "Data Engineering Policy \u2014 Arizona #48",
+    "title": "Data Engineering Policy — Arizona #48",
     "document_type": "policy",
     "department": "Data Engineering",
     "region": "Arizona",
@@ -1679,7 +1705,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0049",
-    "title": "Cloud Operations Procedure \u2014 Colorado #49",
+    "title": "Cloud Operations Procedure — Colorado #49",
     "document_type": "procedure",
     "department": "Cloud Operations",
     "region": "Colorado",
@@ -1709,7 +1735,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0050",
-    "title": "Customer Experience Report \u2014 California #50",
+    "title": "Customer Experience Report — California #50",
     "document_type": "report",
     "department": "Customer Experience",
     "region": "California",
@@ -1739,7 +1765,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0051",
-    "title": "Legal Runbook \u2014 Texas #51",
+    "title": "Legal Runbook — Texas #51",
     "document_type": "runbook",
     "department": "Legal",
     "region": "Texas",
@@ -1769,7 +1795,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0052",
-    "title": "Merchandising Manual \u2014 New York #52",
+    "title": "Merchandising Manual — New York #52",
     "document_type": "manual",
     "department": "Merchandising",
     "region": "New York",
@@ -1799,7 +1825,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0053",
-    "title": "Marketing Store Announcement \u2014 Florida #53",
+    "title": "Marketing Store Announcement — Florida #53",
     "document_type": "store_announcement",
     "department": "Marketing",
     "region": "Florida",
@@ -1829,7 +1855,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0054",
-    "title": "Store Operations Policy \u2014 North Carolina #54",
+    "title": "Store Operations Policy — North Carolina #54",
     "document_type": "policy",
     "department": "Store Operations",
     "region": "North Carolina",
@@ -1859,7 +1885,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0055",
-    "title": "Compliance Procedure \u2014 Illinois #55",
+    "title": "Compliance Procedure — Illinois #55",
     "document_type": "procedure",
     "department": "Compliance",
     "region": "Illinois",
@@ -1889,7 +1915,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0056",
-    "title": "Sales Report \u2014 Washington #56",
+    "title": "Sales Report — Washington #56",
     "document_type": "report",
     "department": "Sales",
     "region": "Washington",
@@ -1919,7 +1945,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0057",
-    "title": "Supply Chain Runbook \u2014 Georgia #57",
+    "title": "Supply Chain Runbook — Georgia #57",
     "document_type": "runbook",
     "department": "Supply Chain",
     "region": "Georgia",
@@ -1949,7 +1975,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0058",
-    "title": "Procurement Manual \u2014 Arizona #58",
+    "title": "Procurement Manual — Arizona #58",
     "document_type": "manual",
     "department": "Procurement",
     "region": "Arizona",
@@ -1979,7 +2005,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0059",
-    "title": "Finance Store Announcement \u2014 Colorado #59",
+    "title": "Finance Store Announcement — Colorado #59",
     "document_type": "store_announcement",
     "department": "Finance",
     "region": "Colorado",
@@ -2009,7 +2035,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0060",
-    "title": "HR Policy \u2014 California #60",
+    "title": "HR Policy — California #60",
     "document_type": "policy",
     "department": "HR",
     "region": "California",
@@ -2039,7 +2065,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0061",
-    "title": "Information Security Procedure \u2014 Texas #61",
+    "title": "Information Security Procedure — Texas #61",
     "document_type": "procedure",
     "department": "Information Security",
     "region": "Texas",
@@ -2069,7 +2095,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0062",
-    "title": "Data Engineering Report \u2014 New York #62",
+    "title": "Data Engineering Report — New York #62",
     "document_type": "report",
     "department": "Data Engineering",
     "region": "New York",
@@ -2099,7 +2125,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0063",
-    "title": "Cloud Operations Runbook \u2014 Florida #63",
+    "title": "Cloud Operations Runbook — Florida #63",
     "document_type": "runbook",
     "department": "Cloud Operations",
     "region": "Florida",
@@ -2129,7 +2155,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0064",
-    "title": "Customer Experience Manual \u2014 North Carolina #64",
+    "title": "Customer Experience Manual — North Carolina #64",
     "document_type": "manual",
     "department": "Customer Experience",
     "region": "North Carolina",
@@ -2159,7 +2185,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0065",
-    "title": "Legal Store Announcement \u2014 Illinois #65",
+    "title": "Legal Store Announcement — Illinois #65",
     "document_type": "store_announcement",
     "department": "Legal",
     "region": "Illinois",
@@ -2189,7 +2215,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0066",
-    "title": "Merchandising Policy \u2014 Washington #66",
+    "title": "Merchandising Policy — Washington #66",
     "document_type": "policy",
     "department": "Merchandising",
     "region": "Washington",
@@ -2219,7 +2245,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0067",
-    "title": "Marketing Procedure \u2014 Georgia #67",
+    "title": "Marketing Procedure — Georgia #67",
     "document_type": "procedure",
     "department": "Marketing",
     "region": "Georgia",
@@ -2249,7 +2275,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0068",
-    "title": "Store Operations Report \u2014 Arizona #68",
+    "title": "Store Operations Report — Arizona #68",
     "document_type": "report",
     "department": "Store Operations",
     "region": "Arizona",
@@ -2279,7 +2305,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0069",
-    "title": "Compliance Runbook \u2014 Colorado #69",
+    "title": "Compliance Runbook — Colorado #69",
     "document_type": "runbook",
     "department": "Compliance",
     "region": "Colorado",
@@ -2309,7 +2335,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0070",
-    "title": "Sales Manual \u2014 California #70",
+    "title": "Sales Manual — California #70",
     "document_type": "manual",
     "department": "Sales",
     "region": "California",
@@ -2339,7 +2365,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0071",
-    "title": "Supply Chain Store Announcement \u2014 Texas #71",
+    "title": "Supply Chain Store Announcement — Texas #71",
     "document_type": "store_announcement",
     "department": "Supply Chain",
     "region": "Texas",
@@ -2369,7 +2395,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0072",
-    "title": "Procurement Policy \u2014 New York #72",
+    "title": "Procurement Policy — New York #72",
     "document_type": "policy",
     "department": "Procurement",
     "region": "New York",
@@ -2399,7 +2425,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0073",
-    "title": "Finance Procedure \u2014 Florida #73",
+    "title": "Finance Procedure — Florida #73",
     "document_type": "procedure",
     "department": "Finance",
     "region": "Florida",
@@ -2429,7 +2455,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0074",
-    "title": "HR Report \u2014 North Carolina #74",
+    "title": "HR Report — North Carolina #74",
     "document_type": "report",
     "department": "HR",
     "region": "North Carolina",
@@ -2459,7 +2485,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0075",
-    "title": "Information Security Runbook \u2014 Illinois #75",
+    "title": "Information Security Runbook — Illinois #75",
     "document_type": "runbook",
     "department": "Information Security",
     "region": "Illinois",
@@ -2489,7 +2515,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0076",
-    "title": "Data Engineering Manual \u2014 Washington #76",
+    "title": "Data Engineering Manual — Washington #76",
     "document_type": "manual",
     "department": "Data Engineering",
     "region": "Washington",
@@ -2519,7 +2545,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0077",
-    "title": "Cloud Operations Store Announcement \u2014 Georgia #77",
+    "title": "Cloud Operations Store Announcement — Georgia #77",
     "document_type": "store_announcement",
     "department": "Cloud Operations",
     "region": "Georgia",
@@ -2549,7 +2575,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0078",
-    "title": "Customer Experience Policy \u2014 Arizona #78",
+    "title": "Customer Experience Policy — Arizona #78",
     "document_type": "policy",
     "department": "Customer Experience",
     "region": "Arizona",
@@ -2579,7 +2605,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0079",
-    "title": "Legal Procedure \u2014 Colorado #79",
+    "title": "Legal Procedure — Colorado #79",
     "document_type": "procedure",
     "department": "Legal",
     "region": "Colorado",
@@ -2609,7 +2635,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0080",
-    "title": "Merchandising Report \u2014 California #80",
+    "title": "Merchandising Report — California #80",
     "document_type": "report",
     "department": "Merchandising",
     "region": "California",
@@ -2639,7 +2665,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0081",
-    "title": "Marketing Runbook \u2014 Texas #81",
+    "title": "Marketing Runbook — Texas #81",
     "document_type": "runbook",
     "department": "Marketing",
     "region": "Texas",
@@ -2669,7 +2695,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0082",
-    "title": "Store Operations Manual \u2014 New York #82",
+    "title": "Store Operations Manual — New York #82",
     "document_type": "manual",
     "department": "Store Operations",
     "region": "New York",
@@ -2699,7 +2725,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0083",
-    "title": "Compliance Store Announcement \u2014 Florida #83",
+    "title": "Compliance Store Announcement — Florida #83",
     "document_type": "store_announcement",
     "department": "Compliance",
     "region": "Florida",
@@ -2729,7 +2755,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0084",
-    "title": "Sales Policy \u2014 North Carolina #84",
+    "title": "Sales Policy — North Carolina #84",
     "document_type": "policy",
     "department": "Sales",
     "region": "North Carolina",
@@ -2759,7 +2785,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0085",
-    "title": "Supply Chain Procedure \u2014 Illinois #85",
+    "title": "Supply Chain Procedure — Illinois #85",
     "document_type": "procedure",
     "department": "Supply Chain",
     "region": "Illinois",
@@ -2789,7 +2815,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0086",
-    "title": "Procurement Report \u2014 Washington #86",
+    "title": "Procurement Report — Washington #86",
     "document_type": "report",
     "department": "Procurement",
     "region": "Washington",
@@ -2819,7 +2845,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0087",
-    "title": "Finance Runbook \u2014 Georgia #87",
+    "title": "Finance Runbook — Georgia #87",
     "document_type": "runbook",
     "department": "Finance",
     "region": "Georgia",
@@ -2849,7 +2875,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0088",
-    "title": "HR Manual \u2014 Arizona #88",
+    "title": "HR Manual — Arizona #88",
     "document_type": "manual",
     "department": "HR",
     "region": "Arizona",
@@ -2879,7 +2905,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0089",
-    "title": "Information Security Store Announcement \u2014 Colorado #89",
+    "title": "Information Security Store Announcement — Colorado #89",
     "document_type": "store_announcement",
     "department": "Information Security",
     "region": "Colorado",
@@ -2909,7 +2935,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0090",
-    "title": "Data Engineering Policy \u2014 California #90",
+    "title": "Data Engineering Policy — California #90",
     "document_type": "policy",
     "department": "Data Engineering",
     "region": "California",
@@ -2939,7 +2965,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0091",
-    "title": "Cloud Operations Procedure \u2014 Texas #91",
+    "title": "Cloud Operations Procedure — Texas #91",
     "document_type": "procedure",
     "department": "Cloud Operations",
     "region": "Texas",
@@ -2969,7 +2995,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0092",
-    "title": "Customer Experience Report \u2014 New York #92",
+    "title": "Customer Experience Report — New York #92",
     "document_type": "report",
     "department": "Customer Experience",
     "region": "New York",
@@ -2999,7 +3025,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0093",
-    "title": "Legal Runbook \u2014 Florida #93",
+    "title": "Legal Runbook — Florida #93",
     "document_type": "runbook",
     "department": "Legal",
     "region": "Florida",
@@ -3029,7 +3055,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0094",
-    "title": "Merchandising Manual \u2014 North Carolina #94",
+    "title": "Merchandising Manual — North Carolina #94",
     "document_type": "manual",
     "department": "Merchandising",
     "region": "North Carolina",
@@ -3059,7 +3085,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0095",
-    "title": "Marketing Store Announcement \u2014 Illinois #95",
+    "title": "Marketing Store Announcement — Illinois #95",
     "document_type": "store_announcement",
     "department": "Marketing",
     "region": "Illinois",
@@ -3089,7 +3115,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0096",
-    "title": "Store Operations Policy \u2014 Washington #96",
+    "title": "Store Operations Policy — Washington #96",
     "document_type": "policy",
     "department": "Store Operations",
     "region": "Washington",
@@ -3119,7 +3145,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0097",
-    "title": "Compliance Procedure \u2014 Georgia #97",
+    "title": "Compliance Procedure — Georgia #97",
     "document_type": "procedure",
     "department": "Compliance",
     "region": "Georgia",
@@ -3149,7 +3175,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0098",
-    "title": "Sales Report \u2014 Arizona #98",
+    "title": "Sales Report — Arizona #98",
     "document_type": "report",
     "department": "Sales",
     "region": "Arizona",
@@ -3179,7 +3205,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0099",
-    "title": "Supply Chain Runbook \u2014 Colorado #99",
+    "title": "Supply Chain Runbook — Colorado #99",
     "document_type": "runbook",
     "department": "Supply Chain",
     "region": "Colorado",
@@ -3209,7 +3235,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0100",
-    "title": "Procurement Manual \u2014 California #100",
+    "title": "Procurement Manual — California #100",
     "document_type": "manual",
     "department": "Procurement",
     "region": "California",
@@ -3239,7 +3265,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0101",
-    "title": "Finance Store Announcement \u2014 Texas #101",
+    "title": "Finance Store Announcement — Texas #101",
     "document_type": "store_announcement",
     "department": "Finance",
     "region": "Texas",
@@ -3269,7 +3295,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0102",
-    "title": "HR Policy \u2014 New York #102",
+    "title": "HR Policy — New York #102",
     "document_type": "policy",
     "department": "HR",
     "region": "New York",
@@ -3299,7 +3325,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0103",
-    "title": "Information Security Procedure \u2014 Florida #103",
+    "title": "Information Security Procedure — Florida #103",
     "document_type": "procedure",
     "department": "Information Security",
     "region": "Florida",
@@ -3329,7 +3355,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0104",
-    "title": "Data Engineering Report \u2014 North Carolina #104",
+    "title": "Data Engineering Report — North Carolina #104",
     "document_type": "report",
     "department": "Data Engineering",
     "region": "North Carolina",
@@ -3359,7 +3385,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0105",
-    "title": "Cloud Operations Runbook \u2014 Illinois #105",
+    "title": "Cloud Operations Runbook — Illinois #105",
     "document_type": "runbook",
     "department": "Cloud Operations",
     "region": "Illinois",
@@ -3389,7 +3415,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0106",
-    "title": "Customer Experience Manual \u2014 Washington #106",
+    "title": "Customer Experience Manual — Washington #106",
     "document_type": "manual",
     "department": "Customer Experience",
     "region": "Washington",
@@ -3419,7 +3445,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0107",
-    "title": "Legal Store Announcement \u2014 Georgia #107",
+    "title": "Legal Store Announcement — Georgia #107",
     "document_type": "store_announcement",
     "department": "Legal",
     "region": "Georgia",
@@ -3449,7 +3475,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0108",
-    "title": "Merchandising Policy \u2014 Arizona #108",
+    "title": "Merchandising Policy — Arizona #108",
     "document_type": "policy",
     "department": "Merchandising",
     "region": "Arizona",
@@ -3479,7 +3505,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0109",
-    "title": "Marketing Procedure \u2014 Colorado #109",
+    "title": "Marketing Procedure — Colorado #109",
     "document_type": "procedure",
     "department": "Marketing",
     "region": "Colorado",
@@ -3509,7 +3535,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0110",
-    "title": "Store Operations Report \u2014 California #110",
+    "title": "Store Operations Report — California #110",
     "document_type": "report",
     "department": "Store Operations",
     "region": "California",
@@ -3539,7 +3565,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0111",
-    "title": "Compliance Runbook \u2014 Texas #111",
+    "title": "Compliance Runbook — Texas #111",
     "document_type": "runbook",
     "department": "Compliance",
     "region": "Texas",
@@ -3569,7 +3595,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0112",
-    "title": "Sales Manual \u2014 New York #112",
+    "title": "Sales Manual — New York #112",
     "document_type": "manual",
     "department": "Sales",
     "region": "New York",
@@ -3599,7 +3625,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0113",
-    "title": "Supply Chain Store Announcement \u2014 Florida #113",
+    "title": "Supply Chain Store Announcement — Florida #113",
     "document_type": "store_announcement",
     "department": "Supply Chain",
     "region": "Florida",
@@ -3629,7 +3655,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0114",
-    "title": "Procurement Policy \u2014 North Carolina #114",
+    "title": "Procurement Policy — North Carolina #114",
     "document_type": "policy",
     "department": "Procurement",
     "region": "North Carolina",
@@ -3659,7 +3685,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0115",
-    "title": "Finance Procedure \u2014 Illinois #115",
+    "title": "Finance Procedure — Illinois #115",
     "document_type": "procedure",
     "department": "Finance",
     "region": "Illinois",
@@ -3689,7 +3715,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0116",
-    "title": "HR Report \u2014 Washington #116",
+    "title": "HR Report — Washington #116",
     "document_type": "report",
     "department": "HR",
     "region": "Washington",
@@ -3719,7 +3745,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0117",
-    "title": "Information Security Runbook \u2014 Georgia #117",
+    "title": "Information Security Runbook — Georgia #117",
     "document_type": "runbook",
     "department": "Information Security",
     "region": "Georgia",
@@ -3749,7 +3775,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0118",
-    "title": "Data Engineering Manual \u2014 Arizona #118",
+    "title": "Data Engineering Manual — Arizona #118",
     "document_type": "manual",
     "department": "Data Engineering",
     "region": "Arizona",
@@ -3779,7 +3805,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0119",
-    "title": "Cloud Operations Store Announcement \u2014 Colorado #119",
+    "title": "Cloud Operations Store Announcement — Colorado #119",
     "document_type": "store_announcement",
     "department": "Cloud Operations",
     "region": "Colorado",
@@ -3809,7 +3835,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0120",
-    "title": "Customer Experience Policy \u2014 California #120",
+    "title": "Customer Experience Policy — California #120",
     "document_type": "policy",
     "department": "Customer Experience",
     "region": "California",
@@ -3839,7 +3865,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0121",
-    "title": "Legal Procedure \u2014 Texas #121",
+    "title": "Legal Procedure — Texas #121",
     "document_type": "procedure",
     "department": "Legal",
     "region": "Texas",
@@ -3869,7 +3895,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0122",
-    "title": "Merchandising Report \u2014 New York #122",
+    "title": "Merchandising Report — New York #122",
     "document_type": "report",
     "department": "Merchandising",
     "region": "New York",
@@ -3899,7 +3925,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0123",
-    "title": "Marketing Runbook \u2014 Florida #123",
+    "title": "Marketing Runbook — Florida #123",
     "document_type": "runbook",
     "department": "Marketing",
     "region": "Florida",
@@ -3929,7 +3955,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0124",
-    "title": "Store Operations Manual \u2014 North Carolina #124",
+    "title": "Store Operations Manual — North Carolina #124",
     "document_type": "manual",
     "department": "Store Operations",
     "region": "North Carolina",
@@ -3959,7 +3985,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0125",
-    "title": "Compliance Store Announcement \u2014 Illinois #125",
+    "title": "Compliance Store Announcement — Illinois #125",
     "document_type": "store_announcement",
     "department": "Compliance",
     "region": "Illinois",
@@ -3989,7 +4015,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0126",
-    "title": "Sales Policy \u2014 Washington #126",
+    "title": "Sales Policy — Washington #126",
     "document_type": "policy",
     "department": "Sales",
     "region": "Washington",
@@ -4019,7 +4045,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0127",
-    "title": "Supply Chain Procedure \u2014 Georgia #127",
+    "title": "Supply Chain Procedure — Georgia #127",
     "document_type": "procedure",
     "department": "Supply Chain",
     "region": "Georgia",
@@ -4049,7 +4075,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0128",
-    "title": "Procurement Report \u2014 Arizona #128",
+    "title": "Procurement Report — Arizona #128",
     "document_type": "report",
     "department": "Procurement",
     "region": "Arizona",
@@ -4079,7 +4105,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0129",
-    "title": "Finance Runbook \u2014 Colorado #129",
+    "title": "Finance Runbook — Colorado #129",
     "document_type": "runbook",
     "department": "Finance",
     "region": "Colorado",
@@ -4109,7 +4135,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0130",
-    "title": "HR Manual \u2014 California #130",
+    "title": "HR Manual — California #130",
     "document_type": "manual",
     "department": "HR",
     "region": "California",
@@ -4139,7 +4165,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0131",
-    "title": "Information Security Store Announcement \u2014 Texas #131",
+    "title": "Information Security Store Announcement — Texas #131",
     "document_type": "store_announcement",
     "department": "Information Security",
     "region": "Texas",
@@ -4169,7 +4195,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0132",
-    "title": "Data Engineering Policy \u2014 New York #132",
+    "title": "Data Engineering Policy — New York #132",
     "document_type": "policy",
     "department": "Data Engineering",
     "region": "New York",
@@ -4199,7 +4225,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0133",
-    "title": "Cloud Operations Procedure \u2014 Florida #133",
+    "title": "Cloud Operations Procedure — Florida #133",
     "document_type": "procedure",
     "department": "Cloud Operations",
     "region": "Florida",
@@ -4229,7 +4255,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0134",
-    "title": "Customer Experience Report \u2014 North Carolina #134",
+    "title": "Customer Experience Report — North Carolina #134",
     "document_type": "report",
     "department": "Customer Experience",
     "region": "North Carolina",
@@ -4259,7 +4285,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0135",
-    "title": "Legal Runbook \u2014 Illinois #135",
+    "title": "Legal Runbook — Illinois #135",
     "document_type": "runbook",
     "department": "Legal",
     "region": "Illinois",
@@ -4289,7 +4315,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0136",
-    "title": "Merchandising Manual \u2014 Washington #136",
+    "title": "Merchandising Manual — Washington #136",
     "document_type": "manual",
     "department": "Merchandising",
     "region": "Washington",
@@ -4319,7 +4345,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0137",
-    "title": "Marketing Store Announcement \u2014 Georgia #137",
+    "title": "Marketing Store Announcement — Georgia #137",
     "document_type": "store_announcement",
     "department": "Marketing",
     "region": "Georgia",
@@ -4349,7 +4375,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0138",
-    "title": "Store Operations Policy \u2014 Arizona #138",
+    "title": "Store Operations Policy — Arizona #138",
     "document_type": "policy",
     "department": "Store Operations",
     "region": "Arizona",
@@ -4379,7 +4405,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0139",
-    "title": "Compliance Procedure \u2014 Colorado #139",
+    "title": "Compliance Procedure — Colorado #139",
     "document_type": "procedure",
     "department": "Compliance",
     "region": "Colorado",
@@ -4409,7 +4435,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0140",
-    "title": "Sales Report \u2014 California #140",
+    "title": "Sales Report — California #140",
     "document_type": "report",
     "department": "Sales",
     "region": "California",
@@ -4439,7 +4465,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0141",
-    "title": "Supply Chain Runbook \u2014 Texas #141",
+    "title": "Supply Chain Runbook — Texas #141",
     "document_type": "runbook",
     "department": "Supply Chain",
     "region": "Texas",
@@ -4469,7 +4495,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0142",
-    "title": "Procurement Manual \u2014 New York #142",
+    "title": "Procurement Manual — New York #142",
     "document_type": "manual",
     "department": "Procurement",
     "region": "New York",
@@ -4499,7 +4525,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0143",
-    "title": "Finance Store Announcement \u2014 Florida #143",
+    "title": "Finance Store Announcement — Florida #143",
     "document_type": "store_announcement",
     "department": "Finance",
     "region": "Florida",
@@ -4529,7 +4555,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0144",
-    "title": "HR Policy \u2014 North Carolina #144",
+    "title": "HR Policy — North Carolina #144",
     "document_type": "policy",
     "department": "HR",
     "region": "North Carolina",
@@ -4559,7 +4585,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0145",
-    "title": "Information Security Procedure \u2014 Illinois #145",
+    "title": "Information Security Procedure — Illinois #145",
     "document_type": "procedure",
     "department": "Information Security",
     "region": "Illinois",
@@ -4589,7 +4615,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0146",
-    "title": "Data Engineering Report \u2014 Washington #146",
+    "title": "Data Engineering Report — Washington #146",
     "document_type": "report",
     "department": "Data Engineering",
     "region": "Washington",
@@ -4619,7 +4645,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0147",
-    "title": "Cloud Operations Runbook \u2014 Georgia #147",
+    "title": "Cloud Operations Runbook — Georgia #147",
     "document_type": "runbook",
     "department": "Cloud Operations",
     "region": "Georgia",
@@ -4649,7 +4675,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0148",
-    "title": "Customer Experience Manual \u2014 Arizona #148",
+    "title": "Customer Experience Manual — Arizona #148",
     "document_type": "manual",
     "department": "Customer Experience",
     "region": "Arizona",
@@ -4679,7 +4705,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0149",
-    "title": "Legal Store Announcement \u2014 Colorado #149",
+    "title": "Legal Store Announcement — Colorado #149",
     "document_type": "store_announcement",
     "department": "Legal",
     "region": "Colorado",
@@ -4709,7 +4735,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0150",
-    "title": "Merchandising Policy \u2014 California #150",
+    "title": "Merchandising Policy — California #150",
     "document_type": "policy",
     "department": "Merchandising",
     "region": "California",
@@ -4739,7 +4765,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0151",
-    "title": "Marketing Procedure \u2014 Texas #151",
+    "title": "Marketing Procedure — Texas #151",
     "document_type": "procedure",
     "department": "Marketing",
     "region": "Texas",
@@ -4769,7 +4795,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0152",
-    "title": "Store Operations Report \u2014 New York #152",
+    "title": "Store Operations Report — New York #152",
     "document_type": "report",
     "department": "Store Operations",
     "region": "New York",
@@ -4799,7 +4825,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0153",
-    "title": "Compliance Runbook \u2014 Florida #153",
+    "title": "Compliance Runbook — Florida #153",
     "document_type": "runbook",
     "department": "Compliance",
     "region": "Florida",
@@ -4829,7 +4855,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0154",
-    "title": "Sales Manual \u2014 North Carolina #154",
+    "title": "Sales Manual — North Carolina #154",
     "document_type": "manual",
     "department": "Sales",
     "region": "North Carolina",
@@ -4859,7 +4885,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0155",
-    "title": "Supply Chain Store Announcement \u2014 Illinois #155",
+    "title": "Supply Chain Store Announcement — Illinois #155",
     "document_type": "store_announcement",
     "department": "Supply Chain",
     "region": "Illinois",
@@ -4889,7 +4915,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0156",
-    "title": "Procurement Policy \u2014 Washington #156",
+    "title": "Procurement Policy — Washington #156",
     "document_type": "policy",
     "department": "Procurement",
     "region": "Washington",
@@ -4919,7 +4945,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0157",
-    "title": "Finance Procedure \u2014 Georgia #157",
+    "title": "Finance Procedure — Georgia #157",
     "document_type": "procedure",
     "department": "Finance",
     "region": "Georgia",
@@ -4949,7 +4975,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0158",
-    "title": "HR Report \u2014 Arizona #158",
+    "title": "HR Report — Arizona #158",
     "document_type": "report",
     "department": "HR",
     "region": "Arizona",
@@ -4979,7 +5005,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0159",
-    "title": "Information Security Runbook \u2014 Colorado #159",
+    "title": "Information Security Runbook — Colorado #159",
     "document_type": "runbook",
     "department": "Information Security",
     "region": "Colorado",
@@ -5009,7 +5035,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0160",
-    "title": "Data Engineering Manual \u2014 California #160",
+    "title": "Data Engineering Manual — California #160",
     "document_type": "manual",
     "department": "Data Engineering",
     "region": "California",
@@ -5039,7 +5065,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0161",
-    "title": "Cloud Operations Store Announcement \u2014 Texas #161",
+    "title": "Cloud Operations Store Announcement — Texas #161",
     "document_type": "store_announcement",
     "department": "Cloud Operations",
     "region": "Texas",
@@ -5069,7 +5095,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0162",
-    "title": "Customer Experience Policy \u2014 New York #162",
+    "title": "Customer Experience Policy — New York #162",
     "document_type": "policy",
     "department": "Customer Experience",
     "region": "New York",
@@ -5099,7 +5125,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0163",
-    "title": "Legal Procedure \u2014 Florida #163",
+    "title": "Legal Procedure — Florida #163",
     "document_type": "procedure",
     "department": "Legal",
     "region": "Florida",
@@ -5129,7 +5155,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0164",
-    "title": "Merchandising Report \u2014 North Carolina #164",
+    "title": "Merchandising Report — North Carolina #164",
     "document_type": "report",
     "department": "Merchandising",
     "region": "North Carolina",
@@ -5159,7 +5185,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0165",
-    "title": "Marketing Runbook \u2014 Illinois #165",
+    "title": "Marketing Runbook — Illinois #165",
     "document_type": "runbook",
     "department": "Marketing",
     "region": "Illinois",
@@ -5189,7 +5215,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0166",
-    "title": "Store Operations Manual \u2014 Washington #166",
+    "title": "Store Operations Manual — Washington #166",
     "document_type": "manual",
     "department": "Store Operations",
     "region": "Washington",
@@ -5219,7 +5245,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0167",
-    "title": "Compliance Store Announcement \u2014 Georgia #167",
+    "title": "Compliance Store Announcement — Georgia #167",
     "document_type": "store_announcement",
     "department": "Compliance",
     "region": "Georgia",
@@ -5249,7 +5275,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0168",
-    "title": "Sales Policy \u2014 Arizona #168",
+    "title": "Sales Policy — Arizona #168",
     "document_type": "policy",
     "department": "Sales",
     "region": "Arizona",
@@ -5279,7 +5305,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0169",
-    "title": "Supply Chain Procedure \u2014 Colorado #169",
+    "title": "Supply Chain Procedure — Colorado #169",
     "document_type": "procedure",
     "department": "Supply Chain",
     "region": "Colorado",
@@ -5309,7 +5335,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0170",
-    "title": "Procurement Report \u2014 California #170",
+    "title": "Procurement Report — California #170",
     "document_type": "report",
     "department": "Procurement",
     "region": "California",
@@ -5339,7 +5365,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0171",
-    "title": "Finance Runbook \u2014 Texas #171",
+    "title": "Finance Runbook — Texas #171",
     "document_type": "runbook",
     "department": "Finance",
     "region": "Texas",
@@ -5369,7 +5395,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0172",
-    "title": "HR Manual \u2014 New York #172",
+    "title": "HR Manual — New York #172",
     "document_type": "manual",
     "department": "HR",
     "region": "New York",
@@ -5399,7 +5425,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0173",
-    "title": "Information Security Store Announcement \u2014 Florida #173",
+    "title": "Information Security Store Announcement — Florida #173",
     "document_type": "store_announcement",
     "department": "Information Security",
     "region": "Florida",
@@ -5429,7 +5455,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0174",
-    "title": "Data Engineering Policy \u2014 North Carolina #174",
+    "title": "Data Engineering Policy — North Carolina #174",
     "document_type": "policy",
     "department": "Data Engineering",
     "region": "North Carolina",
@@ -5459,7 +5485,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0175",
-    "title": "Cloud Operations Procedure \u2014 Illinois #175",
+    "title": "Cloud Operations Procedure — Illinois #175",
     "document_type": "procedure",
     "department": "Cloud Operations",
     "region": "Illinois",
@@ -5489,7 +5515,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0176",
-    "title": "Customer Experience Report \u2014 Washington #176",
+    "title": "Customer Experience Report — Washington #176",
     "document_type": "report",
     "department": "Customer Experience",
     "region": "Washington",
@@ -5519,7 +5545,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0177",
-    "title": "Legal Runbook \u2014 Georgia #177",
+    "title": "Legal Runbook — Georgia #177",
     "document_type": "runbook",
     "department": "Legal",
     "region": "Georgia",
@@ -5549,7 +5575,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0178",
-    "title": "Merchandising Manual \u2014 Arizona #178",
+    "title": "Merchandising Manual — Arizona #178",
     "document_type": "manual",
     "department": "Merchandising",
     "region": "Arizona",
@@ -5579,7 +5605,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0179",
-    "title": "Marketing Store Announcement \u2014 Colorado #179",
+    "title": "Marketing Store Announcement — Colorado #179",
     "document_type": "store_announcement",
     "department": "Marketing",
     "region": "Colorado",
@@ -5609,7 +5635,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0180",
-    "title": "Store Operations Policy \u2014 California #180",
+    "title": "Store Operations Policy — California #180",
     "document_type": "policy",
     "department": "Store Operations",
     "region": "California",
@@ -5639,7 +5665,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0181",
-    "title": "Compliance Procedure \u2014 Texas #181",
+    "title": "Compliance Procedure — Texas #181",
     "document_type": "procedure",
     "department": "Compliance",
     "region": "Texas",
@@ -5669,7 +5695,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0182",
-    "title": "Sales Report \u2014 New York #182",
+    "title": "Sales Report — New York #182",
     "document_type": "report",
     "department": "Sales",
     "region": "New York",
@@ -5699,7 +5725,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0183",
-    "title": "Supply Chain Runbook \u2014 Florida #183",
+    "title": "Supply Chain Runbook — Florida #183",
     "document_type": "runbook",
     "department": "Supply Chain",
     "region": "Florida",
@@ -5729,7 +5755,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0184",
-    "title": "Procurement Manual \u2014 North Carolina #184",
+    "title": "Procurement Manual — North Carolina #184",
     "document_type": "manual",
     "department": "Procurement",
     "region": "North Carolina",
@@ -5759,7 +5785,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0185",
-    "title": "Finance Store Announcement \u2014 Illinois #185",
+    "title": "Finance Store Announcement — Illinois #185",
     "document_type": "store_announcement",
     "department": "Finance",
     "region": "Illinois",
@@ -5789,7 +5815,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0186",
-    "title": "HR Policy \u2014 Washington #186",
+    "title": "HR Policy — Washington #186",
     "document_type": "policy",
     "department": "HR",
     "region": "Washington",
@@ -5819,7 +5845,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0187",
-    "title": "Information Security Procedure \u2014 Georgia #187",
+    "title": "Information Security Procedure — Georgia #187",
     "document_type": "procedure",
     "department": "Information Security",
     "region": "Georgia",
@@ -5849,7 +5875,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0188",
-    "title": "Data Engineering Report \u2014 Arizona #188",
+    "title": "Data Engineering Report — Arizona #188",
     "document_type": "report",
     "department": "Data Engineering",
     "region": "Arizona",
@@ -5879,7 +5905,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0189",
-    "title": "Cloud Operations Runbook \u2014 Colorado #189",
+    "title": "Cloud Operations Runbook — Colorado #189",
     "document_type": "runbook",
     "department": "Cloud Operations",
     "region": "Colorado",
@@ -5909,7 +5935,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0190",
-    "title": "Customer Experience Manual \u2014 California #190",
+    "title": "Customer Experience Manual — California #190",
     "document_type": "manual",
     "department": "Customer Experience",
     "region": "California",
@@ -5939,7 +5965,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0191",
-    "title": "Legal Store Announcement \u2014 Texas #191",
+    "title": "Legal Store Announcement — Texas #191",
     "document_type": "store_announcement",
     "department": "Legal",
     "region": "Texas",
@@ -5969,7 +5995,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0192",
-    "title": "Merchandising Policy \u2014 New York #192",
+    "title": "Merchandising Policy — New York #192",
     "document_type": "policy",
     "department": "Merchandising",
     "region": "New York",
@@ -5999,7 +6025,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0193",
-    "title": "Marketing Procedure \u2014 Florida #193",
+    "title": "Marketing Procedure — Florida #193",
     "document_type": "procedure",
     "department": "Marketing",
     "region": "Florida",
@@ -6029,7 +6055,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0194",
-    "title": "Store Operations Report \u2014 North Carolina #194",
+    "title": "Store Operations Report — North Carolina #194",
     "document_type": "report",
     "department": "Store Operations",
     "region": "North Carolina",
@@ -6059,7 +6085,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0195",
-    "title": "Compliance Runbook \u2014 Illinois #195",
+    "title": "Compliance Runbook — Illinois #195",
     "document_type": "runbook",
     "department": "Compliance",
     "region": "Illinois",
@@ -6089,7 +6115,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0196",
-    "title": "Sales Manual \u2014 Washington #196",
+    "title": "Sales Manual — Washington #196",
     "document_type": "manual",
     "department": "Sales",
     "region": "Washington",
@@ -6119,7 +6145,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0197",
-    "title": "Supply Chain Store Announcement \u2014 Georgia #197",
+    "title": "Supply Chain Store Announcement — Georgia #197",
     "document_type": "store_announcement",
     "department": "Supply Chain",
     "region": "Georgia",
@@ -6149,7 +6175,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0198",
-    "title": "Procurement Policy \u2014 Arizona #198",
+    "title": "Procurement Policy — Arizona #198",
     "document_type": "policy",
     "department": "Procurement",
     "region": "Arizona",
@@ -6179,7 +6205,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0199",
-    "title": "Finance Procedure \u2014 Colorado #199",
+    "title": "Finance Procedure — Colorado #199",
     "document_type": "procedure",
     "department": "Finance",
     "region": "Colorado",
@@ -6209,7 +6235,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0200",
-    "title": "HR Report \u2014 California #200",
+    "title": "HR Report — California #200",
     "document_type": "report",
     "department": "HR",
     "region": "California",
@@ -6239,7 +6265,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0201",
-    "title": "Information Security Runbook \u2014 Texas #201",
+    "title": "Information Security Runbook — Texas #201",
     "document_type": "runbook",
     "department": "Information Security",
     "region": "Texas",
@@ -6269,7 +6295,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0202",
-    "title": "Data Engineering Manual \u2014 New York #202",
+    "title": "Data Engineering Manual — New York #202",
     "document_type": "manual",
     "department": "Data Engineering",
     "region": "New York",
@@ -6299,7 +6325,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0203",
-    "title": "Cloud Operations Store Announcement \u2014 Florida #203",
+    "title": "Cloud Operations Store Announcement — Florida #203",
     "document_type": "store_announcement",
     "department": "Cloud Operations",
     "region": "Florida",
@@ -6329,7 +6355,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0204",
-    "title": "Customer Experience Policy \u2014 North Carolina #204",
+    "title": "Customer Experience Policy — North Carolina #204",
     "document_type": "policy",
     "department": "Customer Experience",
     "region": "North Carolina",
@@ -6359,7 +6385,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0205",
-    "title": "Legal Procedure \u2014 Illinois #205",
+    "title": "Legal Procedure — Illinois #205",
     "document_type": "procedure",
     "department": "Legal",
     "region": "Illinois",
@@ -6389,7 +6415,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0206",
-    "title": "Merchandising Report \u2014 Washington #206",
+    "title": "Merchandising Report — Washington #206",
     "document_type": "report",
     "department": "Merchandising",
     "region": "Washington",
@@ -6419,7 +6445,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0207",
-    "title": "Marketing Runbook \u2014 Georgia #207",
+    "title": "Marketing Runbook — Georgia #207",
     "document_type": "runbook",
     "department": "Marketing",
     "region": "Georgia",
@@ -6449,7 +6475,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0208",
-    "title": "Store Operations Manual \u2014 Arizona #208",
+    "title": "Store Operations Manual — Arizona #208",
     "document_type": "manual",
     "department": "Store Operations",
     "region": "Arizona",
@@ -6479,7 +6505,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0209",
-    "title": "Compliance Store Announcement \u2014 Colorado #209",
+    "title": "Compliance Store Announcement — Colorado #209",
     "document_type": "store_announcement",
     "department": "Compliance",
     "region": "Colorado",
@@ -6509,7 +6535,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0210",
-    "title": "Sales Policy \u2014 California #210",
+    "title": "Sales Policy — California #210",
     "document_type": "policy",
     "department": "Sales",
     "region": "California",
@@ -6539,7 +6565,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0211",
-    "title": "Supply Chain Procedure \u2014 Texas #211",
+    "title": "Supply Chain Procedure — Texas #211",
     "document_type": "procedure",
     "department": "Supply Chain",
     "region": "Texas",
@@ -6569,7 +6595,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0212",
-    "title": "Procurement Report \u2014 New York #212",
+    "title": "Procurement Report — New York #212",
     "document_type": "report",
     "department": "Procurement",
     "region": "New York",
@@ -6599,7 +6625,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0213",
-    "title": "Finance Runbook \u2014 Florida #213",
+    "title": "Finance Runbook — Florida #213",
     "document_type": "runbook",
     "department": "Finance",
     "region": "Florida",
@@ -6629,7 +6655,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0214",
-    "title": "HR Manual \u2014 North Carolina #214",
+    "title": "HR Manual — North Carolina #214",
     "document_type": "manual",
     "department": "HR",
     "region": "North Carolina",
@@ -6659,7 +6685,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0215",
-    "title": "Information Security Store Announcement \u2014 Illinois #215",
+    "title": "Information Security Store Announcement — Illinois #215",
     "document_type": "store_announcement",
     "department": "Information Security",
     "region": "Illinois",
@@ -6689,7 +6715,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0216",
-    "title": "Data Engineering Policy \u2014 Washington #216",
+    "title": "Data Engineering Policy — Washington #216",
     "document_type": "policy",
     "department": "Data Engineering",
     "region": "Washington",
@@ -6719,7 +6745,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0217",
-    "title": "Cloud Operations Procedure \u2014 Georgia #217",
+    "title": "Cloud Operations Procedure — Georgia #217",
     "document_type": "procedure",
     "department": "Cloud Operations",
     "region": "Georgia",
@@ -6749,7 +6775,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0218",
-    "title": "Customer Experience Report \u2014 Arizona #218",
+    "title": "Customer Experience Report — Arizona #218",
     "document_type": "report",
     "department": "Customer Experience",
     "region": "Arizona",
@@ -6779,7 +6805,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0219",
-    "title": "Legal Runbook \u2014 Colorado #219",
+    "title": "Legal Runbook — Colorado #219",
     "document_type": "runbook",
     "department": "Legal",
     "region": "Colorado",
@@ -6809,7 +6835,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0220",
-    "title": "Merchandising Manual \u2014 California #220",
+    "title": "Merchandising Manual — California #220",
     "document_type": "manual",
     "department": "Merchandising",
     "region": "California",
@@ -6839,7 +6865,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0221",
-    "title": "Marketing Store Announcement \u2014 Texas #221",
+    "title": "Marketing Store Announcement — Texas #221",
     "document_type": "store_announcement",
     "department": "Marketing",
     "region": "Texas",
@@ -6869,7 +6895,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0222",
-    "title": "Store Operations Policy \u2014 New York #222",
+    "title": "Store Operations Policy — New York #222",
     "document_type": "policy",
     "department": "Store Operations",
     "region": "New York",
@@ -6899,7 +6925,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0223",
-    "title": "Compliance Procedure \u2014 Florida #223",
+    "title": "Compliance Procedure — Florida #223",
     "document_type": "procedure",
     "department": "Compliance",
     "region": "Florida",
@@ -6929,7 +6955,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0224",
-    "title": "Sales Report \u2014 North Carolina #224",
+    "title": "Sales Report — North Carolina #224",
     "document_type": "report",
     "department": "Sales",
     "region": "North Carolina",
@@ -6959,7 +6985,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0225",
-    "title": "Supply Chain Runbook \u2014 Illinois #225",
+    "title": "Supply Chain Runbook — Illinois #225",
     "document_type": "runbook",
     "department": "Supply Chain",
     "region": "Illinois",
@@ -6989,7 +7015,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0226",
-    "title": "Procurement Manual \u2014 Washington #226",
+    "title": "Procurement Manual — Washington #226",
     "document_type": "manual",
     "department": "Procurement",
     "region": "Washington",
@@ -7019,7 +7045,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0227",
-    "title": "Finance Store Announcement \u2014 Georgia #227",
+    "title": "Finance Store Announcement — Georgia #227",
     "document_type": "store_announcement",
     "department": "Finance",
     "region": "Georgia",
@@ -7049,7 +7075,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0228",
-    "title": "HR Policy \u2014 Arizona #228",
+    "title": "HR Policy — Arizona #228",
     "document_type": "policy",
     "department": "HR",
     "region": "Arizona",
@@ -7079,7 +7105,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0229",
-    "title": "Information Security Procedure \u2014 Colorado #229",
+    "title": "Information Security Procedure — Colorado #229",
     "document_type": "procedure",
     "department": "Information Security",
     "region": "Colorado",
@@ -7109,7 +7135,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0230",
-    "title": "Data Engineering Report \u2014 California #230",
+    "title": "Data Engineering Report — California #230",
     "document_type": "report",
     "department": "Data Engineering",
     "region": "California",
@@ -7139,7 +7165,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0231",
-    "title": "Cloud Operations Runbook \u2014 Texas #231",
+    "title": "Cloud Operations Runbook — Texas #231",
     "document_type": "runbook",
     "department": "Cloud Operations",
     "region": "Texas",
@@ -7169,7 +7195,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0232",
-    "title": "Customer Experience Manual \u2014 New York #232",
+    "title": "Customer Experience Manual — New York #232",
     "document_type": "manual",
     "department": "Customer Experience",
     "region": "New York",
@@ -7199,7 +7225,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0233",
-    "title": "Legal Store Announcement \u2014 Florida #233",
+    "title": "Legal Store Announcement — Florida #233",
     "document_type": "store_announcement",
     "department": "Legal",
     "region": "Florida",
@@ -7229,7 +7255,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0234",
-    "title": "Merchandising Policy \u2014 North Carolina #234",
+    "title": "Merchandising Policy — North Carolina #234",
     "document_type": "policy",
     "department": "Merchandising",
     "region": "North Carolina",
@@ -7259,7 +7285,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0235",
-    "title": "Marketing Procedure \u2014 Illinois #235",
+    "title": "Marketing Procedure — Illinois #235",
     "document_type": "procedure",
     "department": "Marketing",
     "region": "Illinois",
@@ -7289,7 +7315,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0236",
-    "title": "Store Operations Report \u2014 Washington #236",
+    "title": "Store Operations Report — Washington #236",
     "document_type": "report",
     "department": "Store Operations",
     "region": "Washington",
@@ -7319,7 +7345,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0237",
-    "title": "Compliance Runbook \u2014 Georgia #237",
+    "title": "Compliance Runbook — Georgia #237",
     "document_type": "runbook",
     "department": "Compliance",
     "region": "Georgia",
@@ -7349,7 +7375,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0238",
-    "title": "Sales Manual \u2014 Arizona #238",
+    "title": "Sales Manual — Arizona #238",
     "document_type": "manual",
     "department": "Sales",
     "region": "Arizona",
@@ -7379,7 +7405,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0239",
-    "title": "Supply Chain Store Announcement \u2014 Colorado #239",
+    "title": "Supply Chain Store Announcement — Colorado #239",
     "document_type": "store_announcement",
     "department": "Supply Chain",
     "region": "Colorado",
@@ -7409,7 +7435,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0240",
-    "title": "Procurement Policy \u2014 California #240",
+    "title": "Procurement Policy — California #240",
     "document_type": "policy",
     "department": "Procurement",
     "region": "California",
@@ -7439,7 +7465,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0241",
-    "title": "Finance Procedure \u2014 Texas #241",
+    "title": "Finance Procedure — Texas #241",
     "document_type": "procedure",
     "department": "Finance",
     "region": "Texas",
@@ -7469,7 +7495,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0242",
-    "title": "HR Report \u2014 New York #242",
+    "title": "HR Report — New York #242",
     "document_type": "report",
     "department": "HR",
     "region": "New York",
@@ -7499,7 +7525,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0243",
-    "title": "Information Security Runbook \u2014 Florida #243",
+    "title": "Information Security Runbook — Florida #243",
     "document_type": "runbook",
     "department": "Information Security",
     "region": "Florida",
@@ -7529,7 +7555,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0244",
-    "title": "Data Engineering Manual \u2014 North Carolina #244",
+    "title": "Data Engineering Manual — North Carolina #244",
     "document_type": "manual",
     "department": "Data Engineering",
     "region": "North Carolina",
@@ -7559,7 +7585,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0245",
-    "title": "Cloud Operations Store Announcement \u2014 Illinois #245",
+    "title": "Cloud Operations Store Announcement — Illinois #245",
     "document_type": "store_announcement",
     "department": "Cloud Operations",
     "region": "Illinois",
@@ -7589,7 +7615,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0246",
-    "title": "Customer Experience Policy \u2014 Washington #246",
+    "title": "Customer Experience Policy — Washington #246",
     "document_type": "policy",
     "department": "Customer Experience",
     "region": "Washington",
@@ -7619,7 +7645,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0247",
-    "title": "Legal Procedure \u2014 Georgia #247",
+    "title": "Legal Procedure — Georgia #247",
     "document_type": "procedure",
     "department": "Legal",
     "region": "Georgia",
@@ -7649,7 +7675,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0248",
-    "title": "Merchandising Report \u2014 Arizona #248",
+    "title": "Merchandising Report — Arizona #248",
     "document_type": "report",
     "department": "Merchandising",
     "region": "Arizona",
@@ -7679,7 +7705,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0249",
-    "title": "Marketing Runbook \u2014 Colorado #249",
+    "title": "Marketing Runbook — Colorado #249",
     "document_type": "runbook",
     "department": "Marketing",
     "region": "Colorado",
@@ -7709,7 +7735,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0250",
-    "title": "Store Operations Manual \u2014 California #250",
+    "title": "Store Operations Manual — California #250",
     "document_type": "manual",
     "department": "Store Operations",
     "region": "California",
@@ -7739,7 +7765,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0251",
-    "title": "Compliance Store Announcement \u2014 Texas #251",
+    "title": "Compliance Store Announcement — Texas #251",
     "document_type": "store_announcement",
     "department": "Compliance",
     "region": "Texas",
@@ -7769,7 +7795,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0252",
-    "title": "Sales Policy \u2014 New York #252",
+    "title": "Sales Policy — New York #252",
     "document_type": "policy",
     "department": "Sales",
     "region": "New York",
@@ -7799,7 +7825,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0253",
-    "title": "Supply Chain Procedure \u2014 Florida #253",
+    "title": "Supply Chain Procedure — Florida #253",
     "document_type": "procedure",
     "department": "Supply Chain",
     "region": "Florida",
@@ -7829,7 +7855,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0254",
-    "title": "Procurement Report \u2014 North Carolina #254",
+    "title": "Procurement Report — North Carolina #254",
     "document_type": "report",
     "department": "Procurement",
     "region": "North Carolina",
@@ -7859,7 +7885,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0255",
-    "title": "Finance Runbook \u2014 Illinois #255",
+    "title": "Finance Runbook — Illinois #255",
     "document_type": "runbook",
     "department": "Finance",
     "region": "Illinois",
@@ -7889,7 +7915,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0256",
-    "title": "HR Manual \u2014 Washington #256",
+    "title": "HR Manual — Washington #256",
     "document_type": "manual",
     "department": "HR",
     "region": "Washington",
@@ -7919,7 +7945,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0257",
-    "title": "Information Security Store Announcement \u2014 Georgia #257",
+    "title": "Information Security Store Announcement — Georgia #257",
     "document_type": "store_announcement",
     "department": "Information Security",
     "region": "Georgia",
@@ -7949,7 +7975,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0258",
-    "title": "Data Engineering Policy \u2014 Arizona #258",
+    "title": "Data Engineering Policy — Arizona #258",
     "document_type": "policy",
     "department": "Data Engineering",
     "region": "Arizona",
@@ -7979,7 +8005,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0259",
-    "title": "Cloud Operations Procedure \u2014 Colorado #259",
+    "title": "Cloud Operations Procedure — Colorado #259",
     "document_type": "procedure",
     "department": "Cloud Operations",
     "region": "Colorado",
@@ -8009,7 +8035,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0260",
-    "title": "Customer Experience Report \u2014 California #260",
+    "title": "Customer Experience Report — California #260",
     "document_type": "report",
     "department": "Customer Experience",
     "region": "California",
@@ -8039,7 +8065,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0261",
-    "title": "Legal Runbook \u2014 Texas #261",
+    "title": "Legal Runbook — Texas #261",
     "document_type": "runbook",
     "department": "Legal",
     "region": "Texas",
@@ -8069,7 +8095,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0262",
-    "title": "Merchandising Manual \u2014 New York #262",
+    "title": "Merchandising Manual — New York #262",
     "document_type": "manual",
     "department": "Merchandising",
     "region": "New York",
@@ -8099,7 +8125,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0263",
-    "title": "Marketing Store Announcement \u2014 Florida #263",
+    "title": "Marketing Store Announcement — Florida #263",
     "document_type": "store_announcement",
     "department": "Marketing",
     "region": "Florida",
@@ -8129,7 +8155,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0264",
-    "title": "Store Operations Policy \u2014 North Carolina #264",
+    "title": "Store Operations Policy — North Carolina #264",
     "document_type": "policy",
     "department": "Store Operations",
     "region": "North Carolina",
@@ -8159,7 +8185,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0265",
-    "title": "Compliance Procedure \u2014 Illinois #265",
+    "title": "Compliance Procedure — Illinois #265",
     "document_type": "procedure",
     "department": "Compliance",
     "region": "Illinois",
@@ -8189,7 +8215,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0266",
-    "title": "Sales Report \u2014 Washington #266",
+    "title": "Sales Report — Washington #266",
     "document_type": "report",
     "department": "Sales",
     "region": "Washington",
@@ -8219,7 +8245,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0267",
-    "title": "Supply Chain Runbook \u2014 Georgia #267",
+    "title": "Supply Chain Runbook — Georgia #267",
     "document_type": "runbook",
     "department": "Supply Chain",
     "region": "Georgia",
@@ -8249,7 +8275,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0268",
-    "title": "Procurement Manual \u2014 Arizona #268",
+    "title": "Procurement Manual — Arizona #268",
     "document_type": "manual",
     "department": "Procurement",
     "region": "Arizona",
@@ -8279,7 +8305,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0269",
-    "title": "Finance Store Announcement \u2014 Colorado #269",
+    "title": "Finance Store Announcement — Colorado #269",
     "document_type": "store_announcement",
     "department": "Finance",
     "region": "Colorado",
@@ -8309,7 +8335,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0270",
-    "title": "HR Policy \u2014 California #270",
+    "title": "HR Policy — California #270",
     "document_type": "policy",
     "department": "HR",
     "region": "California",
@@ -8339,7 +8365,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0271",
-    "title": "Information Security Procedure \u2014 Texas #271",
+    "title": "Information Security Procedure — Texas #271",
     "document_type": "procedure",
     "department": "Information Security",
     "region": "Texas",
@@ -8369,7 +8395,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0272",
-    "title": "Data Engineering Report \u2014 New York #272",
+    "title": "Data Engineering Report — New York #272",
     "document_type": "report",
     "department": "Data Engineering",
     "region": "New York",
@@ -8399,7 +8425,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0273",
-    "title": "Cloud Operations Runbook \u2014 Florida #273",
+    "title": "Cloud Operations Runbook — Florida #273",
     "document_type": "runbook",
     "department": "Cloud Operations",
     "region": "Florida",
@@ -8429,7 +8455,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0274",
-    "title": "Customer Experience Manual \u2014 North Carolina #274",
+    "title": "Customer Experience Manual — North Carolina #274",
     "document_type": "manual",
     "department": "Customer Experience",
     "region": "North Carolina",
@@ -8459,7 +8485,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0275",
-    "title": "Legal Store Announcement \u2014 Illinois #275",
+    "title": "Legal Store Announcement — Illinois #275",
     "document_type": "store_announcement",
     "department": "Legal",
     "region": "Illinois",
@@ -8489,7 +8515,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0276",
-    "title": "Merchandising Policy \u2014 Washington #276",
+    "title": "Merchandising Policy — Washington #276",
     "document_type": "policy",
     "department": "Merchandising",
     "region": "Washington",
@@ -8519,7 +8545,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0277",
-    "title": "Marketing Procedure \u2014 Georgia #277",
+    "title": "Marketing Procedure — Georgia #277",
     "document_type": "procedure",
     "department": "Marketing",
     "region": "Georgia",
@@ -8549,7 +8575,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0278",
-    "title": "Store Operations Report \u2014 Arizona #278",
+    "title": "Store Operations Report — Arizona #278",
     "document_type": "report",
     "department": "Store Operations",
     "region": "Arizona",
@@ -8579,7 +8605,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0279",
-    "title": "Compliance Runbook \u2014 Colorado #279",
+    "title": "Compliance Runbook — Colorado #279",
     "document_type": "runbook",
     "department": "Compliance",
     "region": "Colorado",
@@ -8609,7 +8635,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0280",
-    "title": "Sales Manual \u2014 California #280",
+    "title": "Sales Manual — California #280",
     "document_type": "manual",
     "department": "Sales",
     "region": "California",
@@ -8639,7 +8665,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0281",
-    "title": "Supply Chain Store Announcement \u2014 Texas #281",
+    "title": "Supply Chain Store Announcement — Texas #281",
     "document_type": "store_announcement",
     "department": "Supply Chain",
     "region": "Texas",
@@ -8669,7 +8695,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0282",
-    "title": "Procurement Policy \u2014 New York #282",
+    "title": "Procurement Policy — New York #282",
     "document_type": "policy",
     "department": "Procurement",
     "region": "New York",
@@ -8699,7 +8725,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0283",
-    "title": "Finance Procedure \u2014 Florida #283",
+    "title": "Finance Procedure — Florida #283",
     "document_type": "procedure",
     "department": "Finance",
     "region": "Florida",
@@ -8729,7 +8755,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0284",
-    "title": "HR Report \u2014 North Carolina #284",
+    "title": "HR Report — North Carolina #284",
     "document_type": "report",
     "department": "HR",
     "region": "North Carolina",
@@ -8759,7 +8785,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0285",
-    "title": "Information Security Runbook \u2014 Illinois #285",
+    "title": "Information Security Runbook — Illinois #285",
     "document_type": "runbook",
     "department": "Information Security",
     "region": "Illinois",
@@ -8789,7 +8815,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0286",
-    "title": "Data Engineering Manual \u2014 Washington #286",
+    "title": "Data Engineering Manual — Washington #286",
     "document_type": "manual",
     "department": "Data Engineering",
     "region": "Washington",
@@ -8819,7 +8845,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0287",
-    "title": "Cloud Operations Store Announcement \u2014 Georgia #287",
+    "title": "Cloud Operations Store Announcement — Georgia #287",
     "document_type": "store_announcement",
     "department": "Cloud Operations",
     "region": "Georgia",
@@ -8849,7 +8875,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0288",
-    "title": "Customer Experience Policy \u2014 Arizona #288",
+    "title": "Customer Experience Policy — Arizona #288",
     "document_type": "policy",
     "department": "Customer Experience",
     "region": "Arizona",
@@ -8879,7 +8905,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0289",
-    "title": "Legal Procedure \u2014 Colorado #289",
+    "title": "Legal Procedure — Colorado #289",
     "document_type": "procedure",
     "department": "Legal",
     "region": "Colorado",
@@ -8909,7 +8935,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0290",
-    "title": "Merchandising Report \u2014 California #290",
+    "title": "Merchandising Report — California #290",
     "document_type": "report",
     "department": "Merchandising",
     "region": "California",
@@ -8939,7 +8965,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0291",
-    "title": "Marketing Runbook \u2014 Texas #291",
+    "title": "Marketing Runbook — Texas #291",
     "document_type": "runbook",
     "department": "Marketing",
     "region": "Texas",
@@ -8969,7 +8995,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0292",
-    "title": "Store Operations Manual \u2014 New York #292",
+    "title": "Store Operations Manual — New York #292",
     "document_type": "manual",
     "department": "Store Operations",
     "region": "New York",
@@ -8999,7 +9025,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0293",
-    "title": "Compliance Store Announcement \u2014 Florida #293",
+    "title": "Compliance Store Announcement — Florida #293",
     "document_type": "store_announcement",
     "department": "Compliance",
     "region": "Florida",
@@ -9029,7 +9055,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0294",
-    "title": "Sales Policy \u2014 North Carolina #294",
+    "title": "Sales Policy — North Carolina #294",
     "document_type": "policy",
     "department": "Sales",
     "region": "North Carolina",
@@ -9059,7 +9085,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0295",
-    "title": "Supply Chain Procedure \u2014 Illinois #295",
+    "title": "Supply Chain Procedure — Illinois #295",
     "document_type": "procedure",
     "department": "Supply Chain",
     "region": "Illinois",
@@ -9089,7 +9115,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0296",
-    "title": "Procurement Report \u2014 Washington #296",
+    "title": "Procurement Report — Washington #296",
     "document_type": "report",
     "department": "Procurement",
     "region": "Washington",
@@ -9119,7 +9145,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0297",
-    "title": "Finance Runbook \u2014 Georgia #297",
+    "title": "Finance Runbook — Georgia #297",
     "document_type": "runbook",
     "department": "Finance",
     "region": "Georgia",
@@ -9149,7 +9175,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0298",
-    "title": "HR Manual \u2014 Arizona #298",
+    "title": "HR Manual — Arizona #298",
     "document_type": "manual",
     "department": "HR",
     "region": "Arizona",
@@ -9179,7 +9205,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0299",
-    "title": "Information Security Store Announcement \u2014 Colorado #299",
+    "title": "Information Security Store Announcement — Colorado #299",
     "document_type": "store_announcement",
     "department": "Information Security",
     "region": "Colorado",
@@ -9209,7 +9235,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0300",
-    "title": "Data Engineering Policy \u2014 California #300",
+    "title": "Data Engineering Policy — California #300",
     "document_type": "policy",
     "department": "Data Engineering",
     "region": "California",
@@ -9239,7 +9265,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0301",
-    "title": "Cloud Operations Procedure \u2014 Texas #301",
+    "title": "Cloud Operations Procedure — Texas #301",
     "document_type": "procedure",
     "department": "Cloud Operations",
     "region": "Texas",
@@ -9269,7 +9295,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0302",
-    "title": "Customer Experience Report \u2014 New York #302",
+    "title": "Customer Experience Report — New York #302",
     "document_type": "report",
     "department": "Customer Experience",
     "region": "New York",
@@ -9299,7 +9325,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0303",
-    "title": "Legal Runbook \u2014 Florida #303",
+    "title": "Legal Runbook — Florida #303",
     "document_type": "runbook",
     "department": "Legal",
     "region": "Florida",
@@ -9329,7 +9355,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0304",
-    "title": "Merchandising Manual \u2014 North Carolina #304",
+    "title": "Merchandising Manual — North Carolina #304",
     "document_type": "manual",
     "department": "Merchandising",
     "region": "North Carolina",
@@ -9359,7 +9385,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0305",
-    "title": "Marketing Store Announcement \u2014 Illinois #305",
+    "title": "Marketing Store Announcement — Illinois #305",
     "document_type": "store_announcement",
     "department": "Marketing",
     "region": "Illinois",
@@ -9389,7 +9415,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0306",
-    "title": "Store Operations Policy \u2014 Washington #306",
+    "title": "Store Operations Policy — Washington #306",
     "document_type": "policy",
     "department": "Store Operations",
     "region": "Washington",
@@ -9419,7 +9445,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0307",
-    "title": "Compliance Procedure \u2014 Georgia #307",
+    "title": "Compliance Procedure — Georgia #307",
     "document_type": "procedure",
     "department": "Compliance",
     "region": "Georgia",
@@ -9449,7 +9475,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0308",
-    "title": "Sales Report \u2014 Arizona #308",
+    "title": "Sales Report — Arizona #308",
     "document_type": "report",
     "department": "Sales",
     "region": "Arizona",
@@ -9479,7 +9505,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0309",
-    "title": "Supply Chain Runbook \u2014 Colorado #309",
+    "title": "Supply Chain Runbook — Colorado #309",
     "document_type": "runbook",
     "department": "Supply Chain",
     "region": "Colorado",
@@ -9509,7 +9535,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0310",
-    "title": "Procurement Manual \u2014 California #310",
+    "title": "Procurement Manual — California #310",
     "document_type": "manual",
     "department": "Procurement",
     "region": "California",
@@ -9539,7 +9565,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0311",
-    "title": "Finance Store Announcement \u2014 Texas #311",
+    "title": "Finance Store Announcement — Texas #311",
     "document_type": "store_announcement",
     "department": "Finance",
     "region": "Texas",
@@ -9569,7 +9595,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0312",
-    "title": "HR Policy \u2014 New York #312",
+    "title": "HR Policy — New York #312",
     "document_type": "policy",
     "department": "HR",
     "region": "New York",
@@ -9599,7 +9625,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0313",
-    "title": "Information Security Procedure \u2014 Florida #313",
+    "title": "Information Security Procedure — Florida #313",
     "document_type": "procedure",
     "department": "Information Security",
     "region": "Florida",
@@ -9629,7 +9655,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0314",
-    "title": "Data Engineering Report \u2014 North Carolina #314",
+    "title": "Data Engineering Report — North Carolina #314",
     "document_type": "report",
     "department": "Data Engineering",
     "region": "North Carolina",
@@ -9659,7 +9685,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0315",
-    "title": "Cloud Operations Runbook \u2014 Illinois #315",
+    "title": "Cloud Operations Runbook — Illinois #315",
     "document_type": "runbook",
     "department": "Cloud Operations",
     "region": "Illinois",
@@ -9689,7 +9715,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0316",
-    "title": "Customer Experience Manual \u2014 Washington #316",
+    "title": "Customer Experience Manual — Washington #316",
     "document_type": "manual",
     "department": "Customer Experience",
     "region": "Washington",
@@ -9719,7 +9745,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0317",
-    "title": "Legal Store Announcement \u2014 Georgia #317",
+    "title": "Legal Store Announcement — Georgia #317",
     "document_type": "store_announcement",
     "department": "Legal",
     "region": "Georgia",
@@ -9749,7 +9775,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0318",
-    "title": "Merchandising Policy \u2014 Arizona #318",
+    "title": "Merchandising Policy — Arizona #318",
     "document_type": "policy",
     "department": "Merchandising",
     "region": "Arizona",
@@ -9779,7 +9805,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0319",
-    "title": "Marketing Procedure \u2014 Colorado #319",
+    "title": "Marketing Procedure — Colorado #319",
     "document_type": "procedure",
     "department": "Marketing",
     "region": "Colorado",
@@ -9809,7 +9835,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0320",
-    "title": "Store Operations Report \u2014 California #320",
+    "title": "Store Operations Report — California #320",
     "document_type": "report",
     "department": "Store Operations",
     "region": "California",
@@ -9839,7 +9865,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0321",
-    "title": "Compliance Runbook \u2014 Texas #321",
+    "title": "Compliance Runbook — Texas #321",
     "document_type": "runbook",
     "department": "Compliance",
     "region": "Texas",
@@ -9869,7 +9895,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0322",
-    "title": "Sales Manual \u2014 New York #322",
+    "title": "Sales Manual — New York #322",
     "document_type": "manual",
     "department": "Sales",
     "region": "New York",
@@ -9899,7 +9925,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0323",
-    "title": "Supply Chain Store Announcement \u2014 Florida #323",
+    "title": "Supply Chain Store Announcement — Florida #323",
     "document_type": "store_announcement",
     "department": "Supply Chain",
     "region": "Florida",
@@ -9929,7 +9955,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0324",
-    "title": "Procurement Policy \u2014 North Carolina #324",
+    "title": "Procurement Policy — North Carolina #324",
     "document_type": "policy",
     "department": "Procurement",
     "region": "North Carolina",
@@ -9959,7 +9985,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0325",
-    "title": "Finance Procedure \u2014 Illinois #325",
+    "title": "Finance Procedure — Illinois #325",
     "document_type": "procedure",
     "department": "Finance",
     "region": "Illinois",
@@ -9989,7 +10015,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0326",
-    "title": "HR Report \u2014 Washington #326",
+    "title": "HR Report — Washington #326",
     "document_type": "report",
     "department": "HR",
     "region": "Washington",
@@ -10019,7 +10045,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0327",
-    "title": "Information Security Runbook \u2014 Georgia #327",
+    "title": "Information Security Runbook — Georgia #327",
     "document_type": "runbook",
     "department": "Information Security",
     "region": "Georgia",
@@ -10049,7 +10075,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0328",
-    "title": "Data Engineering Manual \u2014 Arizona #328",
+    "title": "Data Engineering Manual — Arizona #328",
     "document_type": "manual",
     "department": "Data Engineering",
     "region": "Arizona",
@@ -10079,7 +10105,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0329",
-    "title": "Cloud Operations Store Announcement \u2014 Colorado #329",
+    "title": "Cloud Operations Store Announcement — Colorado #329",
     "document_type": "store_announcement",
     "department": "Cloud Operations",
     "region": "Colorado",
@@ -10109,7 +10135,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0330",
-    "title": "Customer Experience Policy \u2014 California #330",
+    "title": "Customer Experience Policy — California #330",
     "document_type": "policy",
     "department": "Customer Experience",
     "region": "California",
@@ -10139,7 +10165,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0331",
-    "title": "Legal Procedure \u2014 Texas #331",
+    "title": "Legal Procedure — Texas #331",
     "document_type": "procedure",
     "department": "Legal",
     "region": "Texas",
@@ -10169,7 +10195,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0332",
-    "title": "Merchandising Report \u2014 New York #332",
+    "title": "Merchandising Report — New York #332",
     "document_type": "report",
     "department": "Merchandising",
     "region": "New York",
@@ -10199,7 +10225,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0333",
-    "title": "Marketing Runbook \u2014 Florida #333",
+    "title": "Marketing Runbook — Florida #333",
     "document_type": "runbook",
     "department": "Marketing",
     "region": "Florida",
@@ -10229,7 +10255,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0334",
-    "title": "Store Operations Manual \u2014 North Carolina #334",
+    "title": "Store Operations Manual — North Carolina #334",
     "document_type": "manual",
     "department": "Store Operations",
     "region": "North Carolina",
@@ -10259,7 +10285,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0335",
-    "title": "Compliance Store Announcement \u2014 Illinois #335",
+    "title": "Compliance Store Announcement — Illinois #335",
     "document_type": "store_announcement",
     "department": "Compliance",
     "region": "Illinois",
@@ -10289,7 +10315,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0336",
-    "title": "Sales Policy \u2014 Washington #336",
+    "title": "Sales Policy — Washington #336",
     "document_type": "policy",
     "department": "Sales",
     "region": "Washington",
@@ -10319,7 +10345,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0337",
-    "title": "Supply Chain Procedure \u2014 Georgia #337",
+    "title": "Supply Chain Procedure — Georgia #337",
     "document_type": "procedure",
     "department": "Supply Chain",
     "region": "Georgia",
@@ -10349,7 +10375,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0338",
-    "title": "Procurement Report \u2014 Arizona #338",
+    "title": "Procurement Report — Arizona #338",
     "document_type": "report",
     "department": "Procurement",
     "region": "Arizona",
@@ -10379,7 +10405,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0339",
-    "title": "Finance Runbook \u2014 Colorado #339",
+    "title": "Finance Runbook — Colorado #339",
     "document_type": "runbook",
     "department": "Finance",
     "region": "Colorado",
@@ -10409,7 +10435,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0340",
-    "title": "HR Manual \u2014 California #340",
+    "title": "HR Manual — California #340",
     "document_type": "manual",
     "department": "HR",
     "region": "California",
@@ -10439,7 +10465,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0341",
-    "title": "Information Security Store Announcement \u2014 Texas #341",
+    "title": "Information Security Store Announcement — Texas #341",
     "document_type": "store_announcement",
     "department": "Information Security",
     "region": "Texas",
@@ -10469,7 +10495,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0342",
-    "title": "Data Engineering Policy \u2014 New York #342",
+    "title": "Data Engineering Policy — New York #342",
     "document_type": "policy",
     "department": "Data Engineering",
     "region": "New York",
@@ -10499,7 +10525,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0343",
-    "title": "Cloud Operations Procedure \u2014 Florida #343",
+    "title": "Cloud Operations Procedure — Florida #343",
     "document_type": "procedure",
     "department": "Cloud Operations",
     "region": "Florida",
@@ -10529,7 +10555,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0344",
-    "title": "Customer Experience Report \u2014 North Carolina #344",
+    "title": "Customer Experience Report — North Carolina #344",
     "document_type": "report",
     "department": "Customer Experience",
     "region": "North Carolina",
@@ -10559,7 +10585,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0345",
-    "title": "Legal Runbook \u2014 Illinois #345",
+    "title": "Legal Runbook — Illinois #345",
     "document_type": "runbook",
     "department": "Legal",
     "region": "Illinois",
@@ -10589,7 +10615,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0346",
-    "title": "Merchandising Manual \u2014 Washington #346",
+    "title": "Merchandising Manual — Washington #346",
     "document_type": "manual",
     "department": "Merchandising",
     "region": "Washington",
@@ -10619,7 +10645,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0347",
-    "title": "Marketing Store Announcement \u2014 Georgia #347",
+    "title": "Marketing Store Announcement — Georgia #347",
     "document_type": "store_announcement",
     "department": "Marketing",
     "region": "Georgia",
@@ -10649,7 +10675,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0348",
-    "title": "Store Operations Policy \u2014 Arizona #348",
+    "title": "Store Operations Policy — Arizona #348",
     "document_type": "policy",
     "department": "Store Operations",
     "region": "Arizona",
@@ -10679,7 +10705,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0349",
-    "title": "Compliance Procedure \u2014 Colorado #349",
+    "title": "Compliance Procedure — Colorado #349",
     "document_type": "procedure",
     "department": "Compliance",
     "region": "Colorado",
@@ -10709,7 +10735,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0350",
-    "title": "Sales Report \u2014 California #350",
+    "title": "Sales Report — California #350",
     "document_type": "report",
     "department": "Sales",
     "region": "California",
@@ -10739,7 +10765,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0351",
-    "title": "Supply Chain Runbook \u2014 Texas #351",
+    "title": "Supply Chain Runbook — Texas #351",
     "document_type": "runbook",
     "department": "Supply Chain",
     "region": "Texas",
@@ -10769,7 +10795,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0352",
-    "title": "Procurement Manual \u2014 New York #352",
+    "title": "Procurement Manual — New York #352",
     "document_type": "manual",
     "department": "Procurement",
     "region": "New York",
@@ -10799,7 +10825,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0353",
-    "title": "Finance Store Announcement \u2014 Florida #353",
+    "title": "Finance Store Announcement — Florida #353",
     "document_type": "store_announcement",
     "department": "Finance",
     "region": "Florida",
@@ -10829,7 +10855,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0354",
-    "title": "HR Policy \u2014 North Carolina #354",
+    "title": "HR Policy — North Carolina #354",
     "document_type": "policy",
     "department": "HR",
     "region": "North Carolina",
@@ -10859,7 +10885,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0355",
-    "title": "Information Security Procedure \u2014 Illinois #355",
+    "title": "Information Security Procedure — Illinois #355",
     "document_type": "procedure",
     "department": "Information Security",
     "region": "Illinois",
@@ -10889,7 +10915,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0356",
-    "title": "Data Engineering Report \u2014 Washington #356",
+    "title": "Data Engineering Report — Washington #356",
     "document_type": "report",
     "department": "Data Engineering",
     "region": "Washington",
@@ -10919,7 +10945,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0357",
-    "title": "Cloud Operations Runbook \u2014 Georgia #357",
+    "title": "Cloud Operations Runbook — Georgia #357",
     "document_type": "runbook",
     "department": "Cloud Operations",
     "region": "Georgia",
@@ -10949,7 +10975,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0358",
-    "title": "Customer Experience Manual \u2014 Arizona #358",
+    "title": "Customer Experience Manual — Arizona #358",
     "document_type": "manual",
     "department": "Customer Experience",
     "region": "Arizona",
@@ -10979,7 +11005,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0359",
-    "title": "Legal Store Announcement \u2014 Colorado #359",
+    "title": "Legal Store Announcement — Colorado #359",
     "document_type": "store_announcement",
     "department": "Legal",
     "region": "Colorado",
@@ -11009,7 +11035,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0360",
-    "title": "Merchandising Policy \u2014 California #360",
+    "title": "Merchandising Policy — California #360",
     "document_type": "policy",
     "department": "Merchandising",
     "region": "California",
@@ -11039,7 +11065,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0361",
-    "title": "Marketing Procedure \u2014 Texas #361",
+    "title": "Marketing Procedure — Texas #361",
     "document_type": "procedure",
     "department": "Marketing",
     "region": "Texas",
@@ -11069,7 +11095,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0362",
-    "title": "Store Operations Report \u2014 New York #362",
+    "title": "Store Operations Report — New York #362",
     "document_type": "report",
     "department": "Store Operations",
     "region": "New York",
@@ -11099,7 +11125,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0363",
-    "title": "Compliance Runbook \u2014 Florida #363",
+    "title": "Compliance Runbook — Florida #363",
     "document_type": "runbook",
     "department": "Compliance",
     "region": "Florida",
@@ -11129,7 +11155,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0364",
-    "title": "Sales Manual \u2014 North Carolina #364",
+    "title": "Sales Manual — North Carolina #364",
     "document_type": "manual",
     "department": "Sales",
     "region": "North Carolina",
@@ -11159,7 +11185,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0365",
-    "title": "Supply Chain Store Announcement \u2014 Illinois #365",
+    "title": "Supply Chain Store Announcement — Illinois #365",
     "document_type": "store_announcement",
     "department": "Supply Chain",
     "region": "Illinois",
@@ -11189,7 +11215,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0366",
-    "title": "Procurement Policy \u2014 Washington #366",
+    "title": "Procurement Policy — Washington #366",
     "document_type": "policy",
     "department": "Procurement",
     "region": "Washington",
@@ -11219,7 +11245,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0367",
-    "title": "Finance Procedure \u2014 Georgia #367",
+    "title": "Finance Procedure — Georgia #367",
     "document_type": "procedure",
     "department": "Finance",
     "region": "Georgia",
@@ -11249,7 +11275,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0368",
-    "title": "HR Report \u2014 Arizona #368",
+    "title": "HR Report — Arizona #368",
     "document_type": "report",
     "department": "HR",
     "region": "Arizona",
@@ -11279,7 +11305,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0369",
-    "title": "Information Security Runbook \u2014 Colorado #369",
+    "title": "Information Security Runbook — Colorado #369",
     "document_type": "runbook",
     "department": "Information Security",
     "region": "Colorado",
@@ -11309,7 +11335,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0370",
-    "title": "Data Engineering Manual \u2014 California #370",
+    "title": "Data Engineering Manual — California #370",
     "document_type": "manual",
     "department": "Data Engineering",
     "region": "California",
@@ -11339,7 +11365,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0371",
-    "title": "Cloud Operations Store Announcement \u2014 Texas #371",
+    "title": "Cloud Operations Store Announcement — Texas #371",
     "document_type": "store_announcement",
     "department": "Cloud Operations",
     "region": "Texas",
@@ -11369,7 +11395,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0372",
-    "title": "Customer Experience Policy \u2014 New York #372",
+    "title": "Customer Experience Policy — New York #372",
     "document_type": "policy",
     "department": "Customer Experience",
     "region": "New York",
@@ -11399,7 +11425,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0373",
-    "title": "Legal Procedure \u2014 Florida #373",
+    "title": "Legal Procedure — Florida #373",
     "document_type": "procedure",
     "department": "Legal",
     "region": "Florida",
@@ -11429,7 +11455,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0374",
-    "title": "Merchandising Report \u2014 North Carolina #374",
+    "title": "Merchandising Report — North Carolina #374",
     "document_type": "report",
     "department": "Merchandising",
     "region": "North Carolina",
@@ -11459,7 +11485,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0375",
-    "title": "Marketing Runbook \u2014 Illinois #375",
+    "title": "Marketing Runbook — Illinois #375",
     "document_type": "runbook",
     "department": "Marketing",
     "region": "Illinois",
@@ -11489,7 +11515,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0376",
-    "title": "Store Operations Manual \u2014 Washington #376",
+    "title": "Store Operations Manual — Washington #376",
     "document_type": "manual",
     "department": "Store Operations",
     "region": "Washington",
@@ -11519,7 +11545,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0377",
-    "title": "Compliance Store Announcement \u2014 Georgia #377",
+    "title": "Compliance Store Announcement — Georgia #377",
     "document_type": "store_announcement",
     "department": "Compliance",
     "region": "Georgia",
@@ -11549,7 +11575,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0378",
-    "title": "Sales Policy \u2014 Arizona #378",
+    "title": "Sales Policy — Arizona #378",
     "document_type": "policy",
     "department": "Sales",
     "region": "Arizona",
@@ -11579,7 +11605,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0379",
-    "title": "Supply Chain Procedure \u2014 Colorado #379",
+    "title": "Supply Chain Procedure — Colorado #379",
     "document_type": "procedure",
     "department": "Supply Chain",
     "region": "Colorado",
@@ -11609,7 +11635,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0380",
-    "title": "Procurement Report \u2014 California #380",
+    "title": "Procurement Report — California #380",
     "document_type": "report",
     "department": "Procurement",
     "region": "California",
@@ -11639,7 +11665,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0381",
-    "title": "Finance Runbook \u2014 Texas #381",
+    "title": "Finance Runbook — Texas #381",
     "document_type": "runbook",
     "department": "Finance",
     "region": "Texas",
@@ -11669,7 +11695,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0382",
-    "title": "HR Manual \u2014 New York #382",
+    "title": "HR Manual — New York #382",
     "document_type": "manual",
     "department": "HR",
     "region": "New York",
@@ -11699,7 +11725,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0383",
-    "title": "Information Security Store Announcement \u2014 Florida #383",
+    "title": "Information Security Store Announcement — Florida #383",
     "document_type": "store_announcement",
     "department": "Information Security",
     "region": "Florida",
@@ -11729,7 +11755,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0384",
-    "title": "Data Engineering Policy \u2014 North Carolina #384",
+    "title": "Data Engineering Policy — North Carolina #384",
     "document_type": "policy",
     "department": "Data Engineering",
     "region": "North Carolina",
@@ -11759,7 +11785,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0385",
-    "title": "Cloud Operations Procedure \u2014 Illinois #385",
+    "title": "Cloud Operations Procedure — Illinois #385",
     "document_type": "procedure",
     "department": "Cloud Operations",
     "region": "Illinois",
@@ -11789,7 +11815,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0386",
-    "title": "Customer Experience Report \u2014 Washington #386",
+    "title": "Customer Experience Report — Washington #386",
     "document_type": "report",
     "department": "Customer Experience",
     "region": "Washington",
@@ -11819,7 +11845,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0387",
-    "title": "Legal Runbook \u2014 Georgia #387",
+    "title": "Legal Runbook — Georgia #387",
     "document_type": "runbook",
     "department": "Legal",
     "region": "Georgia",
@@ -11849,7 +11875,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0388",
-    "title": "Merchandising Manual \u2014 Arizona #388",
+    "title": "Merchandising Manual — Arizona #388",
     "document_type": "manual",
     "department": "Merchandising",
     "region": "Arizona",
@@ -11879,7 +11905,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0389",
-    "title": "Marketing Store Announcement \u2014 Colorado #389",
+    "title": "Marketing Store Announcement — Colorado #389",
     "document_type": "store_announcement",
     "department": "Marketing",
     "region": "Colorado",
@@ -11909,7 +11935,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0390",
-    "title": "Store Operations Policy \u2014 California #390",
+    "title": "Store Operations Policy — California #390",
     "document_type": "policy",
     "department": "Store Operations",
     "region": "California",
@@ -11939,7 +11965,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0391",
-    "title": "Compliance Procedure \u2014 Texas #391",
+    "title": "Compliance Procedure — Texas #391",
     "document_type": "procedure",
     "department": "Compliance",
     "region": "Texas",
@@ -11969,7 +11995,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0392",
-    "title": "Sales Report \u2014 New York #392",
+    "title": "Sales Report — New York #392",
     "document_type": "report",
     "department": "Sales",
     "region": "New York",
@@ -11999,7 +12025,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0393",
-    "title": "Supply Chain Runbook \u2014 Florida #393",
+    "title": "Supply Chain Runbook — Florida #393",
     "document_type": "runbook",
     "department": "Supply Chain",
     "region": "Florida",
@@ -12029,7 +12055,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0394",
-    "title": "Procurement Manual \u2014 North Carolina #394",
+    "title": "Procurement Manual — North Carolina #394",
     "document_type": "manual",
     "department": "Procurement",
     "region": "North Carolina",
@@ -12059,7 +12085,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0395",
-    "title": "Finance Store Announcement \u2014 Illinois #395",
+    "title": "Finance Store Announcement — Illinois #395",
     "document_type": "store_announcement",
     "department": "Finance",
     "region": "Illinois",
@@ -12089,7 +12115,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0396",
-    "title": "HR Policy \u2014 Washington #396",
+    "title": "HR Policy — Washington #396",
     "document_type": "policy",
     "department": "HR",
     "region": "Washington",
@@ -12119,7 +12145,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0397",
-    "title": "Information Security Procedure \u2014 Georgia #397",
+    "title": "Information Security Procedure — Georgia #397",
     "document_type": "procedure",
     "department": "Information Security",
     "region": "Georgia",
@@ -12149,7 +12175,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0398",
-    "title": "Data Engineering Report \u2014 Arizona #398",
+    "title": "Data Engineering Report — Arizona #398",
     "document_type": "report",
     "department": "Data Engineering",
     "region": "Arizona",
@@ -12179,7 +12205,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0399",
-    "title": "Cloud Operations Runbook \u2014 Colorado #399",
+    "title": "Cloud Operations Runbook — Colorado #399",
     "document_type": "runbook",
     "department": "Cloud Operations",
     "region": "Colorado",
@@ -12209,7 +12235,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0400",
-    "title": "Customer Experience Manual \u2014 California #400",
+    "title": "Customer Experience Manual — California #400",
     "document_type": "manual",
     "department": "Customer Experience",
     "region": "California",
@@ -12239,7 +12265,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0401",
-    "title": "Legal Store Announcement \u2014 Texas #401",
+    "title": "Legal Store Announcement — Texas #401",
     "document_type": "store_announcement",
     "department": "Legal",
     "region": "Texas",
@@ -12269,7 +12295,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0402",
-    "title": "Merchandising Policy \u2014 New York #402",
+    "title": "Merchandising Policy — New York #402",
     "document_type": "policy",
     "department": "Merchandising",
     "region": "New York",
@@ -12299,7 +12325,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0403",
-    "title": "Marketing Procedure \u2014 Florida #403",
+    "title": "Marketing Procedure — Florida #403",
     "document_type": "procedure",
     "department": "Marketing",
     "region": "Florida",
@@ -12329,7 +12355,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0404",
-    "title": "Store Operations Report \u2014 North Carolina #404",
+    "title": "Store Operations Report — North Carolina #404",
     "document_type": "report",
     "department": "Store Operations",
     "region": "North Carolina",
@@ -12359,7 +12385,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0405",
-    "title": "Compliance Runbook \u2014 Illinois #405",
+    "title": "Compliance Runbook — Illinois #405",
     "document_type": "runbook",
     "department": "Compliance",
     "region": "Illinois",
@@ -12389,7 +12415,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0406",
-    "title": "Sales Manual \u2014 Washington #406",
+    "title": "Sales Manual — Washington #406",
     "document_type": "manual",
     "department": "Sales",
     "region": "Washington",
@@ -12419,7 +12445,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0407",
-    "title": "Supply Chain Store Announcement \u2014 Georgia #407",
+    "title": "Supply Chain Store Announcement — Georgia #407",
     "document_type": "store_announcement",
     "department": "Supply Chain",
     "region": "Georgia",
@@ -12449,7 +12475,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0408",
-    "title": "Procurement Policy \u2014 Arizona #408",
+    "title": "Procurement Policy — Arizona #408",
     "document_type": "policy",
     "department": "Procurement",
     "region": "Arizona",
@@ -12479,7 +12505,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0409",
-    "title": "Finance Procedure \u2014 Colorado #409",
+    "title": "Finance Procedure — Colorado #409",
     "document_type": "procedure",
     "department": "Finance",
     "region": "Colorado",
@@ -12509,7 +12535,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0410",
-    "title": "HR Report \u2014 California #410",
+    "title": "HR Report — California #410",
     "document_type": "report",
     "department": "HR",
     "region": "California",
@@ -12539,7 +12565,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0411",
-    "title": "Information Security Runbook \u2014 Texas #411",
+    "title": "Information Security Runbook — Texas #411",
     "document_type": "runbook",
     "department": "Information Security",
     "region": "Texas",
@@ -12569,7 +12595,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0412",
-    "title": "Data Engineering Manual \u2014 New York #412",
+    "title": "Data Engineering Manual — New York #412",
     "document_type": "manual",
     "department": "Data Engineering",
     "region": "New York",
@@ -12599,7 +12625,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0413",
-    "title": "Cloud Operations Store Announcement \u2014 Florida #413",
+    "title": "Cloud Operations Store Announcement — Florida #413",
     "document_type": "store_announcement",
     "department": "Cloud Operations",
     "region": "Florida",
@@ -12629,7 +12655,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0414",
-    "title": "Customer Experience Policy \u2014 North Carolina #414",
+    "title": "Customer Experience Policy — North Carolina #414",
     "document_type": "policy",
     "department": "Customer Experience",
     "region": "North Carolina",
@@ -12659,7 +12685,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0415",
-    "title": "Legal Procedure \u2014 Illinois #415",
+    "title": "Legal Procedure — Illinois #415",
     "document_type": "procedure",
     "department": "Legal",
     "region": "Illinois",
@@ -12689,7 +12715,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0416",
-    "title": "Merchandising Report \u2014 Washington #416",
+    "title": "Merchandising Report — Washington #416",
     "document_type": "report",
     "department": "Merchandising",
     "region": "Washington",
@@ -12719,7 +12745,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0417",
-    "title": "Marketing Runbook \u2014 Georgia #417",
+    "title": "Marketing Runbook — Georgia #417",
     "document_type": "runbook",
     "department": "Marketing",
     "region": "Georgia",
@@ -12749,7 +12775,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0418",
-    "title": "Store Operations Manual \u2014 Arizona #418",
+    "title": "Store Operations Manual — Arizona #418",
     "document_type": "manual",
     "department": "Store Operations",
     "region": "Arizona",
@@ -12779,7 +12805,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0419",
-    "title": "Compliance Store Announcement \u2014 Colorado #419",
+    "title": "Compliance Store Announcement — Colorado #419",
     "document_type": "store_announcement",
     "department": "Compliance",
     "region": "Colorado",
@@ -12809,7 +12835,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0420",
-    "title": "Sales Policy \u2014 California #420",
+    "title": "Sales Policy — California #420",
     "document_type": "policy",
     "department": "Sales",
     "region": "California",
@@ -12839,7 +12865,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0421",
-    "title": "Supply Chain Procedure \u2014 Texas #421",
+    "title": "Supply Chain Procedure — Texas #421",
     "document_type": "procedure",
     "department": "Supply Chain",
     "region": "Texas",
@@ -12869,7 +12895,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0422",
-    "title": "Procurement Report \u2014 New York #422",
+    "title": "Procurement Report — New York #422",
     "document_type": "report",
     "department": "Procurement",
     "region": "New York",
@@ -12899,7 +12925,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0423",
-    "title": "Finance Runbook \u2014 Florida #423",
+    "title": "Finance Runbook — Florida #423",
     "document_type": "runbook",
     "department": "Finance",
     "region": "Florida",
@@ -12929,7 +12955,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0424",
-    "title": "HR Manual \u2014 North Carolina #424",
+    "title": "HR Manual — North Carolina #424",
     "document_type": "manual",
     "department": "HR",
     "region": "North Carolina",
@@ -12959,7 +12985,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0425",
-    "title": "Information Security Store Announcement \u2014 Illinois #425",
+    "title": "Information Security Store Announcement — Illinois #425",
     "document_type": "store_announcement",
     "department": "Information Security",
     "region": "Illinois",
@@ -12989,7 +13015,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0426",
-    "title": "Data Engineering Policy \u2014 Washington #426",
+    "title": "Data Engineering Policy — Washington #426",
     "document_type": "policy",
     "department": "Data Engineering",
     "region": "Washington",
@@ -13019,7 +13045,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0427",
-    "title": "Cloud Operations Procedure \u2014 Georgia #427",
+    "title": "Cloud Operations Procedure — Georgia #427",
     "document_type": "procedure",
     "department": "Cloud Operations",
     "region": "Georgia",
@@ -13049,7 +13075,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0428",
-    "title": "Customer Experience Report \u2014 Arizona #428",
+    "title": "Customer Experience Report — Arizona #428",
     "document_type": "report",
     "department": "Customer Experience",
     "region": "Arizona",
@@ -13079,7 +13105,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0429",
-    "title": "Legal Runbook \u2014 Colorado #429",
+    "title": "Legal Runbook — Colorado #429",
     "document_type": "runbook",
     "department": "Legal",
     "region": "Colorado",
@@ -13109,7 +13135,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0430",
-    "title": "Merchandising Manual \u2014 California #430",
+    "title": "Merchandising Manual — California #430",
     "document_type": "manual",
     "department": "Merchandising",
     "region": "California",
@@ -13139,7 +13165,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0431",
-    "title": "Marketing Store Announcement \u2014 Texas #431",
+    "title": "Marketing Store Announcement — Texas #431",
     "document_type": "store_announcement",
     "department": "Marketing",
     "region": "Texas",
@@ -13169,7 +13195,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0432",
-    "title": "Store Operations Policy \u2014 New York #432",
+    "title": "Store Operations Policy — New York #432",
     "document_type": "policy",
     "department": "Store Operations",
     "region": "New York",
@@ -13199,7 +13225,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0433",
-    "title": "Compliance Procedure \u2014 Florida #433",
+    "title": "Compliance Procedure — Florida #433",
     "document_type": "procedure",
     "department": "Compliance",
     "region": "Florida",
@@ -13229,7 +13255,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0434",
-    "title": "Sales Report \u2014 North Carolina #434",
+    "title": "Sales Report — North Carolina #434",
     "document_type": "report",
     "department": "Sales",
     "region": "North Carolina",
@@ -13259,7 +13285,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0435",
-    "title": "Supply Chain Runbook \u2014 Illinois #435",
+    "title": "Supply Chain Runbook — Illinois #435",
     "document_type": "runbook",
     "department": "Supply Chain",
     "region": "Illinois",
@@ -13289,7 +13315,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0436",
-    "title": "Procurement Manual \u2014 Washington #436",
+    "title": "Procurement Manual — Washington #436",
     "document_type": "manual",
     "department": "Procurement",
     "region": "Washington",
@@ -13319,7 +13345,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0437",
-    "title": "Finance Store Announcement \u2014 Georgia #437",
+    "title": "Finance Store Announcement — Georgia #437",
     "document_type": "store_announcement",
     "department": "Finance",
     "region": "Georgia",
@@ -13349,7 +13375,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0438",
-    "title": "HR Policy \u2014 Arizona #438",
+    "title": "HR Policy — Arizona #438",
     "document_type": "policy",
     "department": "HR",
     "region": "Arizona",
@@ -13379,7 +13405,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0439",
-    "title": "Information Security Procedure \u2014 Colorado #439",
+    "title": "Information Security Procedure — Colorado #439",
     "document_type": "procedure",
     "department": "Information Security",
     "region": "Colorado",
@@ -13409,7 +13435,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0440",
-    "title": "Data Engineering Report \u2014 California #440",
+    "title": "Data Engineering Report — California #440",
     "document_type": "report",
     "department": "Data Engineering",
     "region": "California",
@@ -13439,7 +13465,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0441",
-    "title": "Cloud Operations Runbook \u2014 Texas #441",
+    "title": "Cloud Operations Runbook — Texas #441",
     "document_type": "runbook",
     "department": "Cloud Operations",
     "region": "Texas",
@@ -13469,7 +13495,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0442",
-    "title": "Customer Experience Manual \u2014 New York #442",
+    "title": "Customer Experience Manual — New York #442",
     "document_type": "manual",
     "department": "Customer Experience",
     "region": "New York",
@@ -13499,7 +13525,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0443",
-    "title": "Legal Store Announcement \u2014 Florida #443",
+    "title": "Legal Store Announcement — Florida #443",
     "document_type": "store_announcement",
     "department": "Legal",
     "region": "Florida",
@@ -13529,7 +13555,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0444",
-    "title": "Merchandising Policy \u2014 North Carolina #444",
+    "title": "Merchandising Policy — North Carolina #444",
     "document_type": "policy",
     "department": "Merchandising",
     "region": "North Carolina",
@@ -13559,7 +13585,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0445",
-    "title": "Marketing Procedure \u2014 Illinois #445",
+    "title": "Marketing Procedure — Illinois #445",
     "document_type": "procedure",
     "department": "Marketing",
     "region": "Illinois",
@@ -13589,7 +13615,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0446",
-    "title": "Store Operations Report \u2014 Washington #446",
+    "title": "Store Operations Report — Washington #446",
     "document_type": "report",
     "department": "Store Operations",
     "region": "Washington",
@@ -13619,7 +13645,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0447",
-    "title": "Compliance Runbook \u2014 Georgia #447",
+    "title": "Compliance Runbook — Georgia #447",
     "document_type": "runbook",
     "department": "Compliance",
     "region": "Georgia",
@@ -13649,7 +13675,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0448",
-    "title": "Sales Manual \u2014 Arizona #448",
+    "title": "Sales Manual — Arizona #448",
     "document_type": "manual",
     "department": "Sales",
     "region": "Arizona",
@@ -13679,7 +13705,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0449",
-    "title": "Supply Chain Store Announcement \u2014 Colorado #449",
+    "title": "Supply Chain Store Announcement — Colorado #449",
     "document_type": "store_announcement",
     "department": "Supply Chain",
     "region": "Colorado",
@@ -13709,7 +13735,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0450",
-    "title": "Procurement Policy \u2014 California #450",
+    "title": "Procurement Policy — California #450",
     "document_type": "policy",
     "department": "Procurement",
     "region": "California",
@@ -13739,7 +13765,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0451",
-    "title": "Finance Procedure \u2014 Texas #451",
+    "title": "Finance Procedure — Texas #451",
     "document_type": "procedure",
     "department": "Finance",
     "region": "Texas",
@@ -13769,7 +13795,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0452",
-    "title": "HR Report \u2014 New York #452",
+    "title": "HR Report — New York #452",
     "document_type": "report",
     "department": "HR",
     "region": "New York",
@@ -13799,7 +13825,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0453",
-    "title": "Information Security Runbook \u2014 Florida #453",
+    "title": "Information Security Runbook — Florida #453",
     "document_type": "runbook",
     "department": "Information Security",
     "region": "Florida",
@@ -13829,7 +13855,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0454",
-    "title": "Data Engineering Manual \u2014 North Carolina #454",
+    "title": "Data Engineering Manual — North Carolina #454",
     "document_type": "manual",
     "department": "Data Engineering",
     "region": "North Carolina",
@@ -13859,7 +13885,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0455",
-    "title": "Cloud Operations Store Announcement \u2014 Illinois #455",
+    "title": "Cloud Operations Store Announcement — Illinois #455",
     "document_type": "store_announcement",
     "department": "Cloud Operations",
     "region": "Illinois",
@@ -13889,7 +13915,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0456",
-    "title": "Customer Experience Policy \u2014 Washington #456",
+    "title": "Customer Experience Policy — Washington #456",
     "document_type": "policy",
     "department": "Customer Experience",
     "region": "Washington",
@@ -13919,7 +13945,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0457",
-    "title": "Legal Procedure \u2014 Georgia #457",
+    "title": "Legal Procedure — Georgia #457",
     "document_type": "procedure",
     "department": "Legal",
     "region": "Georgia",
@@ -13949,7 +13975,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0458",
-    "title": "Merchandising Report \u2014 Arizona #458",
+    "title": "Merchandising Report — Arizona #458",
     "document_type": "report",
     "department": "Merchandising",
     "region": "Arizona",
@@ -13979,7 +14005,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0459",
-    "title": "Marketing Runbook \u2014 Colorado #459",
+    "title": "Marketing Runbook — Colorado #459",
     "document_type": "runbook",
     "department": "Marketing",
     "region": "Colorado",
@@ -14009,7 +14035,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0460",
-    "title": "Store Operations Manual \u2014 California #460",
+    "title": "Store Operations Manual — California #460",
     "document_type": "manual",
     "department": "Store Operations",
     "region": "California",
@@ -14039,7 +14065,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0461",
-    "title": "Compliance Store Announcement \u2014 Texas #461",
+    "title": "Compliance Store Announcement — Texas #461",
     "document_type": "store_announcement",
     "department": "Compliance",
     "region": "Texas",
@@ -14069,7 +14095,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0462",
-    "title": "Sales Policy \u2014 New York #462",
+    "title": "Sales Policy — New York #462",
     "document_type": "policy",
     "department": "Sales",
     "region": "New York",
@@ -14099,7 +14125,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0463",
-    "title": "Supply Chain Procedure \u2014 Florida #463",
+    "title": "Supply Chain Procedure — Florida #463",
     "document_type": "procedure",
     "department": "Supply Chain",
     "region": "Florida",
@@ -14129,7 +14155,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0464",
-    "title": "Procurement Report \u2014 North Carolina #464",
+    "title": "Procurement Report — North Carolina #464",
     "document_type": "report",
     "department": "Procurement",
     "region": "North Carolina",
@@ -14159,7 +14185,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0465",
-    "title": "Finance Runbook \u2014 Illinois #465",
+    "title": "Finance Runbook — Illinois #465",
     "document_type": "runbook",
     "department": "Finance",
     "region": "Illinois",
@@ -14189,7 +14215,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0466",
-    "title": "HR Manual \u2014 Washington #466",
+    "title": "HR Manual — Washington #466",
     "document_type": "manual",
     "department": "HR",
     "region": "Washington",
@@ -14219,7 +14245,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0467",
-    "title": "Information Security Store Announcement \u2014 Georgia #467",
+    "title": "Information Security Store Announcement — Georgia #467",
     "document_type": "store_announcement",
     "department": "Information Security",
     "region": "Georgia",
@@ -14249,7 +14275,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0468",
-    "title": "Data Engineering Policy \u2014 Arizona #468",
+    "title": "Data Engineering Policy — Arizona #468",
     "document_type": "policy",
     "department": "Data Engineering",
     "region": "Arizona",
@@ -14279,7 +14305,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0469",
-    "title": "Cloud Operations Procedure \u2014 Colorado #469",
+    "title": "Cloud Operations Procedure — Colorado #469",
     "document_type": "procedure",
     "department": "Cloud Operations",
     "region": "Colorado",
@@ -14309,7 +14335,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0470",
-    "title": "Customer Experience Report \u2014 California #470",
+    "title": "Customer Experience Report — California #470",
     "document_type": "report",
     "department": "Customer Experience",
     "region": "California",
@@ -14339,7 +14365,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0471",
-    "title": "Legal Runbook \u2014 Texas #471",
+    "title": "Legal Runbook — Texas #471",
     "document_type": "runbook",
     "department": "Legal",
     "region": "Texas",
@@ -14369,7 +14395,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0472",
-    "title": "Merchandising Manual \u2014 New York #472",
+    "title": "Merchandising Manual — New York #472",
     "document_type": "manual",
     "department": "Merchandising",
     "region": "New York",
@@ -14399,7 +14425,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0473",
-    "title": "Marketing Store Announcement \u2014 Florida #473",
+    "title": "Marketing Store Announcement — Florida #473",
     "document_type": "store_announcement",
     "department": "Marketing",
     "region": "Florida",
@@ -14429,7 +14455,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0474",
-    "title": "Store Operations Policy \u2014 North Carolina #474",
+    "title": "Store Operations Policy — North Carolina #474",
     "document_type": "policy",
     "department": "Store Operations",
     "region": "North Carolina",
@@ -14459,7 +14485,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0475",
-    "title": "Compliance Procedure \u2014 Illinois #475",
+    "title": "Compliance Procedure — Illinois #475",
     "document_type": "procedure",
     "department": "Compliance",
     "region": "Illinois",
@@ -14489,7 +14515,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0476",
-    "title": "Sales Report \u2014 Washington #476",
+    "title": "Sales Report — Washington #476",
     "document_type": "report",
     "department": "Sales",
     "region": "Washington",
@@ -14519,7 +14545,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0477",
-    "title": "Supply Chain Runbook \u2014 Georgia #477",
+    "title": "Supply Chain Runbook — Georgia #477",
     "document_type": "runbook",
     "department": "Supply Chain",
     "region": "Georgia",
@@ -14549,7 +14575,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0478",
-    "title": "Procurement Manual \u2014 Arizona #478",
+    "title": "Procurement Manual — Arizona #478",
     "document_type": "manual",
     "department": "Procurement",
     "region": "Arizona",
@@ -14579,7 +14605,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0479",
-    "title": "Finance Store Announcement \u2014 Colorado #479",
+    "title": "Finance Store Announcement — Colorado #479",
     "document_type": "store_announcement",
     "department": "Finance",
     "region": "Colorado",
@@ -14609,7 +14635,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0480",
-    "title": "HR Policy \u2014 California #480",
+    "title": "HR Policy — California #480",
     "document_type": "policy",
     "department": "HR",
     "region": "California",
@@ -14639,7 +14665,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0481",
-    "title": "Information Security Procedure \u2014 Texas #481",
+    "title": "Information Security Procedure — Texas #481",
     "document_type": "procedure",
     "department": "Information Security",
     "region": "Texas",
@@ -14669,7 +14695,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0482",
-    "title": "Data Engineering Report \u2014 New York #482",
+    "title": "Data Engineering Report — New York #482",
     "document_type": "report",
     "department": "Data Engineering",
     "region": "New York",
@@ -14699,7 +14725,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0483",
-    "title": "Cloud Operations Runbook \u2014 Florida #483",
+    "title": "Cloud Operations Runbook — Florida #483",
     "document_type": "runbook",
     "department": "Cloud Operations",
     "region": "Florida",
@@ -14729,7 +14755,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0484",
-    "title": "Customer Experience Manual \u2014 North Carolina #484",
+    "title": "Customer Experience Manual — North Carolina #484",
     "document_type": "manual",
     "department": "Customer Experience",
     "region": "North Carolina",
@@ -14759,7 +14785,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0485",
-    "title": "Legal Store Announcement \u2014 Illinois #485",
+    "title": "Legal Store Announcement — Illinois #485",
     "document_type": "store_announcement",
     "department": "Legal",
     "region": "Illinois",
@@ -14789,7 +14815,7 @@
   },
   {
     "document_id": "NRG-POL-GOLD-0486",
-    "title": "Merchandising Policy \u2014 Washington #486",
+    "title": "Merchandising Policy — Washington #486",
     "document_type": "policy",
     "department": "Merchandising",
     "region": "Washington",
@@ -14819,7 +14845,7 @@
   },
   {
     "document_id": "NRG-SOP-GOLD-0487",
-    "title": "Marketing Procedure \u2014 Georgia #487",
+    "title": "Marketing Procedure — Georgia #487",
     "document_type": "procedure",
     "department": "Marketing",
     "region": "Georgia",
@@ -14849,7 +14875,7 @@
   },
   {
     "document_id": "NRG-RPT-GOLD-0488",
-    "title": "Store Operations Report \u2014 Arizona #488",
+    "title": "Store Operations Report — Arizona #488",
     "document_type": "report",
     "department": "Store Operations",
     "region": "Arizona",
@@ -14879,7 +14905,7 @@
   },
   {
     "document_id": "NRG-RBK-GOLD-0489",
-    "title": "Compliance Runbook \u2014 Colorado #489",
+    "title": "Compliance Runbook — Colorado #489",
     "document_type": "runbook",
     "department": "Compliance",
     "region": "Colorado",
@@ -14909,7 +14935,7 @@
   },
   {
     "document_id": "NRG-MAN-GOLD-0490",
-    "title": "Sales Manual \u2014 California #490",
+    "title": "Sales Manual — California #490",
     "document_type": "manual",
     "department": "Sales",
     "region": "California",
@@ -14939,7 +14965,7 @@
   },
   {
     "document_id": "NRG-ANN-GOLD-0491",
-    "title": "Supply Chain Store Announcement \u2014 Texas #491",
+    "title": "Supply Chain Store Announcement — Texas #491",
     "document_type": "store_announcement",
     "department": "Supply Chain",
     "region": "Texas",

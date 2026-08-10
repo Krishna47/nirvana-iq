@@ -378,13 +378,15 @@ What is Nirvana Retail's CEO bonus for 2026?
 
 * Refusal / "Not available in corpus"
 
-**🔍 Check in UI:** No relevant chunks
+**🔍 Check in UI:** No relevant chunks (CEO *name* is in `NRG-MAN-HR-013`; CEO *bonus* is not)
 
 **❌ Typical Failure:**
 
 * Fabricated answer
 
 **✅ Fixed in:** V10
+
+Control (in corpus): `Who is the CEO of Nirvana Retail Group?` → **Krishna Turlapati** (`NRG-MAN-HR-013`)
 
 ---
 

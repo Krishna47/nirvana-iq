@@ -4,6 +4,11 @@ headquarters:
   state: North Carolina
   country: United States
 
+leadership:
+  ceo:
+    name: Krishna Turlapati
+    title: Chief Executive Officer
+
 regions:
   - California
   - Texas
@@ -232,3 +237,13 @@ traps:
     status: approved
     effective_date: "2026-01-01"
     flagship_sku: NRG-LAP-1002
+  executive_leadership:
+    document_id: NRG-MAN-HR-013
+    title: Executive Leadership Directory
+    department: HR
+    region: United States
+    version: "1.0"
+    status: approved
+    effective_date: "2026-01-01"
+    ceo_name: Krishna Turlapati
+    ceo_title: Chief Executive Officer

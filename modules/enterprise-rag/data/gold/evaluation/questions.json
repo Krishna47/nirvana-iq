@@ -120,6 +120,18 @@
     ]
   },
   {
+    "id": "Q-CEO-001",
+    "question": "Who is the CEO of Nirvana Retail Group?",
+    "expected_answer": "Krishna Turlapati",
+    "expected_sources": [
+      "NRG-MAN-HR-013"
+    ],
+    "tags": [
+      "exact",
+      "leadership"
+    ]
+  },
+  {
     "id": "Q011",
     "question": "What discount applied during this California laptop campaign?",
     "expected_answer": "12%",

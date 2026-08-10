@@ -3,6 +3,7 @@
 Fictional enterprise used across Nirvana IQ demos.
 
 - **Headquarters:** Charlotte, North Carolina, United States
+- **CEO:** Krishna Turlapati
 - **Domain:** retail (laptops / electronics) with sales, supply chain, security, and ops
 - **Purpose:** shared facts for RAG, agents, evals, and multimodal demos
 
