@@ -21,6 +21,7 @@ export type AskResult = {
   notes: string
   search_query?: string
   search_queries?: string[]
+  applied_filters?: Record<string, unknown>
 }
 
 export type CompareRow = {

@@ -208,6 +208,44 @@ export function Lab() {
             </div>
           )}
 
+          {version === 'v7_metadata' && (
+            <div className="rewrite-panel">
+              <h3>Applied filters</h3>
+              <p className="rewrite-label">
+                Qdrant payload filters inferred from the search query (default: exclude expired)
+              </p>
+              <dl className="rewrite-compare">
+                <div>
+                  <dt>Search query</dt>
+                  <dd>{chat.result.search_query || chat.result.question}</dd>
+                </div>
+                <div>
+                  <dt>Filters</dt>
+                  <dd className="rewrite-output">
+                    <ul className="expanded-query-list">
+                      <li>
+                        exclude_expired:{' '}
+                        {String(chat.result.applied_filters?.exclude_expired ?? true)}
+                      </li>
+                      <li>
+                        region:{' '}
+                        {chat.result.applied_filters?.region
+                          ? String(chat.result.applied_filters.region)
+                          : '—'}
+                      </li>
+                      <li>
+                        year:{' '}
+                        {chat.result.applied_filters?.year
+                          ? String(chat.result.applied_filters.year)
+                          : '—'}
+                      </li>
+                    </ul>
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          )}
+
           <div className="detail-tabs" role="tablist">
             {(['sources', 'chunks', 'metrics'] as Tab[]).map((t) => (
               <button

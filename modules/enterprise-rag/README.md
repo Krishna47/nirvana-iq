@@ -34,7 +34,7 @@ Active pipeline corpus: [`data/gold/`](data/gold/). Ladder: [`docs/rag-ladder.md
 | [v4_reranking](pipelines/v4_reranking/) | Rerank top-k | Runnable |
 | [v5_query_rewrite](pipelines/v5_query_rewrite/) | LlamaIndex rewrite + hybrid | Runnable |
 | [v6_multi_query](pipelines/v6_multi_query/) | Multi-query expand + RRF | Runnable |
-| [v7_metadata](pipelines/v7_metadata/) | Status / date / region filters | Stub |
+| [v7_metadata](pipelines/v7_metadata/) | Status / date / region filters | Runnable |
 | [v8_agentic_rag](pipelines/v8_agentic_rag/) | Retrieve → check → re-retrieve | Stub |
 | [v9_multimodal](pipelines/v9_multimodal/) | Image / table-aware | Stub |
 | [v10_self_rag](pipelines/v10_self_rag/) | Critique / self-correct | Stub |
@@ -68,7 +68,7 @@ Open http://127.0.0.1:5173 (proxies `/api` → FastAPI).
 
 ### Multi-turn Lab chat
 
-Evolution Lab supports **true multi-turn** on runnable versions (v1–v4):
+Evolution Lab supports **true multi-turn** on runnable versions (v1–v7):
 
 1. Prior turns are sent with each `POST /ask` as `messages`.
 2. The backend **condenses** history + the latest question into a standalone `search_query` for retrieval.
@@ -103,5 +103,5 @@ modules/enterprise-rag/
 
 ## Next steps
 
-1. Fill [evaluation/scorecard.md](evaluation/scorecard.md) for v1–v6 after full evals
-2. Climb the ladder: v7 metadata filters against expired-policy failures
+1. Fill [evaluation/scorecard.md](evaluation/scorecard.md) for v1–v7 after full evals
+2. Climb the ladder: v8 agentic retrieve → check → re-retrieve

@@ -66,7 +66,7 @@ export const VERSIONS: VersionMeta[] = [
     short: 'V7',
     title: 'Metadata Filters',
     blurb: 'Status / date / region filters (expired policies).',
-    runnable: false,
+    runnable: true,
   },
   {
     id: 'v8_agentic_rag',

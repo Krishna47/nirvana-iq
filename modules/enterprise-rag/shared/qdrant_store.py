@@ -28,6 +28,27 @@ def get_qdrant() -> QdrantClient:
     return QdrantClient(url=cfg["qdrant_url"], api_key=cfg["qdrant_api_key"], timeout=120)
 
 
+def ensure_payload_indexes(version: str) -> None:
+    """Create payload indexes used by metadata filters (idempotent)."""
+    client = get_qdrant()
+    name = collection_name(version)
+    indexes: list[tuple[str, qm.PayloadSchemaType]] = [
+        ("status", qm.PayloadSchemaType.KEYWORD),
+        ("region", qm.PayloadSchemaType.KEYWORD),
+        ("effective_date", qm.PayloadSchemaType.DATETIME),
+    ]
+    for field_name, schema in indexes:
+        try:
+            client.create_payload_index(
+                collection_name=name,
+                field_name=field_name,
+                field_schema=schema,
+            )
+        except Exception:
+            # Index already exists or remote rejects duplicate create.
+            pass
+
+
 def ensure_collection(version: str, *, recreate: bool = False) -> str:
     client = get_qdrant()
     name = collection_name(version)
@@ -54,6 +75,8 @@ def ensure_collection(version: str, *, recreate: bool = False) -> str:
                 collection_name=name,
                 vectors_config=qm.VectorParams(size=EMBED_DIM, distance=qm.Distance.COSINE),
             )
+    if is_hybrid_version(version):
+        ensure_payload_indexes(version)
     return name
 
 
@@ -116,12 +139,14 @@ def search(
     *,
     query_vector: list[float],
     top_k: int = 4,
+    query_filter: qm.Filter | None = None,
 ) -> list[qm.ScoredPoint]:
     client = get_qdrant()
     name = collection_name(version)
     response = client.query_points(
         collection_name=name,
         query=query_vector,
+        query_filter=query_filter,
         limit=top_k,
         with_payload=True,
     )
@@ -135,7 +160,10 @@ def hybrid_search(
     query_vector: list[float],
     top_k: int = 4,
     prefetch_limit: int = HYBRID_PREFETCH,
+    query_filter: qm.Filter | None = None,
 ) -> list[qm.ScoredPoint]:
+    if query_filter is not None and is_hybrid_version(version):
+        ensure_payload_indexes(version)
     client = get_qdrant()
     name = collection_name(version)
     response = client.query_points(
@@ -145,14 +173,17 @@ def hybrid_search(
                 query=query_vector,
                 using=DENSE_VECTOR_NAME,
                 limit=prefetch_limit,
+                filter=query_filter,
             ),
             qm.Prefetch(
                 query=qm.Document(text=query_text, model=BM25_MODEL),
                 using=SPARSE_VECTOR_NAME,
                 limit=prefetch_limit,
+                filter=query_filter,
             ),
         ],
         query=qm.FusionQuery(fusion=qm.Fusion.RRF),
+        query_filter=query_filter,
         limit=top_k,
         with_payload=True,
     )
