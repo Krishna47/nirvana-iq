@@ -66,6 +66,18 @@ npm run dev
 
 Open http://127.0.0.1:5173 (proxies `/api` → FastAPI).
 
+### Multi-turn Lab chat
+
+Evolution Lab supports **true multi-turn** on runnable versions (v1–v4):
+
+1. Prior turns are sent with each `POST /ask` as `messages`.
+2. The backend **condenses** history + the latest question into a standalone `search_query` for retrieval.
+3. Generation uses conversation history + retrieved chunks.
+4. Metrics tab shows `search_query` vs the raw user question (useful for demos).
+5. Compare and CLI eval stay single-turn. Each Lab version keeps its own chat thread.
+
+Showcase script: [`evaluation/demo-cases/multi_turn_chat.md`](evaluation/demo-cases/multi_turn_chat.md).
+
 ## Layout
 
 ```text

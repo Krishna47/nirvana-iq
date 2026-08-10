@@ -5,6 +5,8 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
+from typing import Literal
+
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
@@ -15,6 +17,8 @@ if str(MODULE_ROOT) not in sys.path:
 
 from pipelines.registry import get_pipeline, list_versions  # noqa: E402
 from shared.contracts import run_pipeline  # noqa: E402
+from shared.conversation import ChatMessage as ConvMessage  # noqa: E402
+from shared.conversation import normalize_history  # noqa: E402
 from shared.corpus import find_documents_by_id  # noqa: E402
 from shared.settings import load_env  # noqa: E402
 
@@ -30,9 +34,18 @@ app.add_middleware(
 )
 
 
+class ChatMessageModel(BaseModel):
+    role: Literal["user", "assistant"]
+    content: str = Field(min_length=1)
+
+
 class AskRequest(BaseModel):
     question: str = Field(min_length=1)
     version: str = "v1_basic_rag"
+    messages: list[ChatMessageModel] = Field(
+        default_factory=list,
+        description="Prior conversation turns (not including the current question).",
+    )
 
 
 class CompareRequest(BaseModel):
@@ -90,7 +103,10 @@ def ask(body: AskRequest) -> dict:
         pipeline = get_pipeline(body.version)
     except SystemExit as exc:
         raise HTTPException(status_code=400, detail=str(exc)) from exc
-    result = run_pipeline(pipeline, body.question)
+    history: list[ConvMessage] = normalize_history(
+        [{"role": m.role, "content": m.content} for m in body.messages]
+    )
+    result = run_pipeline(pipeline, body.question, history=history)
     return result.to_dict()
 
 

@@ -6,6 +6,11 @@ export type RetrievedChunk = {
   metadata: Record<string, unknown>
 }
 
+export type ChatMessage = {
+  role: 'user' | 'assistant'
+  content: string
+}
+
 export type AskResult = {
   version: string
   question: string
@@ -14,6 +19,7 @@ export type AskResult = {
   retrieved_chunks: RetrievedChunk[]
   latency_ms: number
   notes: string
+  search_query?: string
 }
 
 export type CompareRow = {
@@ -73,11 +79,15 @@ export async function fetchVersions(): Promise<string[]> {
   return data.versions as string[]
 }
 
-export async function ask(question: string, version: string): Promise<AskResult> {
+export async function ask(
+  question: string,
+  version: string,
+  messages: ChatMessage[] = [],
+): Promise<AskResult> {
   const res = await fetch(`${BASE}/ask`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ question, version }),
+    body: JSON.stringify({ question, version, messages }),
   })
   if (!res.ok) throw new Error(await parseError(res))
   return res.json()

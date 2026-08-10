@@ -56,7 +56,7 @@ export default function App() {
         element={
           <Shell
             title="Enterprise RAG Evolution Lab"
-            tagline="Same gold corpus. Versioned pipelines. Measure what actually improves."
+            tagline="Versioned pipelines with multi-turn, conversation-aware retrieval on one gold corpus."
           >
             <Lab />
           </Shell>

@@ -8,6 +8,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 
 from shared.contracts import PipelineResult
+from shared.conversation import ChatMessage
 
 
 VERSION = "v5_query_rewrite"
@@ -17,7 +18,13 @@ VERSION = "v5_query_rewrite"
 class Pipeline:
     version: str = VERSION
 
-    def answer(self, question: str) -> PipelineResult:
+    def answer(
+        self,
+        question: str,
+        *,
+        history: list[ChatMessage] | None = None,
+    ) -> PipelineResult:
+        _ = history
         return PipelineResult(
             version=self.version,
             question=question,
@@ -26,6 +33,7 @@ class Pipeline:
             retrieved_chunks=[],
             latency_ms=0.0,
             notes="Stub",
+            search_query=question,
         )
 
 

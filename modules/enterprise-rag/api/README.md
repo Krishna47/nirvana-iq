@@ -32,6 +32,8 @@ uvicorn api.main:app --app-dir modules/enterprise-rag --reload --port 8000
 
 Endpoints: `GET /health`, `GET /versions`, `GET /documents/{document_id}`, `POST /ask`, `POST /compare`.
 
+`POST /ask` accepts optional `messages` (prior `{role, content}` turns). The pipeline condenses history into `search_query` for retrieval and returns it on the result. Compare remains single-turn.
+
 ### Fetch a policy (or any doc) by id
 
 ```bash

@@ -38,22 +38,38 @@ def embed_query(text: str) -> list[float]:
     return embed_texts([text])[0]
 
 
-def chat_answer(*, question: str, context: str, version: str) -> str:
+def chat_answer(
+    *,
+    question: str,
+    context: str,
+    version: str,
+    history: list[dict[str, str]] | None = None,
+) -> str:
     client = get_openai()
     model = settings()["openai_chat_model"]
     system = (
         "You are Nirvana Retail Group's internal knowledge assistant. "
         "Answer only from the provided context. If the context is insufficient, say so. "
         "Cite document_id values when making factual claims. "
+        "Use prior conversation turns only to interpret the latest question; "
+        "do not invent facts from chat history that are not in the context. "
         f"Pipeline version: {version}."
     )
-    user = f"Question:\n{question}\n\nContext:\n{context}"
+    messages: list[dict[str, str]] = [{"role": "system", "content": system}]
+    for turn in history or []:
+        role = turn.get("role")
+        content = (turn.get("content") or "").strip()
+        if role in ("user", "assistant") and content:
+            messages.append({"role": role, "content": content})
+    messages.append(
+        {
+            "role": "user",
+            "content": f"Question:\n{question}\n\nContext:\n{context}",
+        }
+    )
     response = client.chat.completions.create(
         model=model,
-        messages=[
-            {"role": "system", "content": system},
-            {"role": "user", "content": user},
-        ],
+        messages=messages,
         temperature=0.1,
     )
     return (response.choices[0].message.content or "").strip()
